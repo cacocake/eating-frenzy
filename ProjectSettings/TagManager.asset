@@ -3,15 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Consumable
+  - Floor
+  - HoleCharacter
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - FloorLayer
   - Water
   - UI
-  - 
+  - HoleLayer
   - 
   - 
   - 

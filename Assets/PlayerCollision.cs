@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.UI;
 using UnityEngine;
 
-public class PlayerCollision : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class PlayerCollision : MonoBehaviour {
+
+    void OnTriggerEnter(Collider other) {
+        if(!(other.gameObject.tag == "HoleCharacter") || this.gameObject.layer == LayerMask.NameToLayer("HoleLayer")) {
+            return;
+        }
+
+        this.gameObject.layer = LayerMask.NameToLayer("HoleLayer");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void OnTriggerExit(Collider other) {
+        if(!(other.gameObject.tag == "HoleCharacter") || this.gameObject.layer != LayerMask.NameToLayer("HoleLayer")) {
+            return;
+        }
+            
+        this.gameObject.layer = LayerMask.NameToLayer("Default");
     }
 }
