@@ -6,6 +6,7 @@ public class FloatingJoystick : MonoBehaviour {
     public RectTransform Knob;
 
     private void Awake() {
+        gameObject.SetActive(false);
         RectTransform = GetComponent<RectTransform>();
     }
 }

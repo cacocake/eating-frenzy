@@ -7,7 +7,6 @@ using ETouch = UnityEngine.InputSystem.EnhancedTouch;
 
 public class PlayerHole : MonoBehaviour {
     [SerializeField] private float _speed = 5.0f;
-    [SerializeField] private NavMeshAgent _player;
     [SerializeField] private FloatingJoystick _joystick;
     private Finger _movementFinger;
     private Vector2 _movementAmount;
@@ -46,8 +45,10 @@ public class PlayerHole : MonoBehaviour {
     }
 
     private Vector2 ClampStartPositionToScreenBounds(Vector2 startPosition) {
-        Math.Clamp(startPosition.x, _joystickSize.x / 2.0f, Screen.width - _joystickSize.x / 2.0f);
-        Math.Clamp(startPosition.y, _joystickSize.y / 2.0f, Screen.height - _joystickSize.y / 2.0f);
+        startPosition.x = Math.Clamp(startPosition.x, _joystickSize.x / 2.0f, 
+                                     Screen.width - _joystickSize.x / 2.0f);
+        startPosition.y = Math.Clamp(startPosition.y, _joystickSize.y / 2.0f, 
+                                     Screen.height - _joystickSize.y / 2.0f);
 
         return startPosition;
     }
@@ -97,7 +98,6 @@ public class PlayerHole : MonoBehaviour {
     private void GetTouchInput() {
         float moveSpeed = _speed * Time.deltaTime;
         Vector3 scaledMovement = new Vector3(_movementAmount.x, 0.0f, _movementAmount.y) * moveSpeed;
-        transform.LookAt(this.transform.position + scaledMovement, Vector3.up);
         transform.Translate(scaledMovement);
     }
 }
