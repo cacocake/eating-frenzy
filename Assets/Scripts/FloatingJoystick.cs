@@ -8,7 +8,7 @@ public class FloatingJoystick : MonoBehaviour {
     private RectTransform _rectTransform;
     [SerializeField] private RectTransform _knob;
 
-    [HideInInspector] public Vector2 MovementAmount { get; private set; }
+    public Vector2 MovementAmount { get; private set; }
 
     private void Awake() {
         gameObject.SetActive(false);

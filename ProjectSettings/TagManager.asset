@@ -7,6 +7,7 @@ TagManager:
   - Consumable
   - Floor
   - HoleCharacter
+  - ConsumeAreaPlayer
   layers:
   - Default
   - TransparentFX

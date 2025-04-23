@@ -5,6 +5,12 @@ using ETouch = UnityEngine.InputSystem.EnhancedTouch;
 public class PlayerHole : MonoBehaviour {
     [SerializeField] private float _speed = 5.0f;
     [SerializeField] private FloatingJoystick _joystick;
+    private Vector3 baseScale;
+    private float scaleIncreaseFactor = 0.2f;
+
+    private void Awake() {
+        baseScale = transform.localScale;
+    }
 
     private void Update() {
         GetKeyboardInput();
@@ -36,5 +42,9 @@ public class PlayerHole : MonoBehaviour {
         float moveSpeed = _speed * Time.deltaTime;
         Vector3 scaledMovement = new Vector3(_joystick.MovementAmount.x, 0.0f, _joystick.MovementAmount.y) * moveSpeed;
         transform.Translate(scaledMovement);
+    }
+
+    public void IncreaseSize(float level) {
+        transform.localScale = baseScale + new Vector3(scaleIncreaseFactor * level, 0.0f, scaleIncreaseFactor * level);
     }
 }
