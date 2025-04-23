@@ -1,19 +1,24 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
-    public static GameManager Instance { get; private set; }
     [SerializeField] private PlayerHole _player;
-    private ushort _totalPoints = 0;
+    [SerializeField] private ushort _stageTargetPoints;
     private ushort _baseTargetPoints = 10;
-    private ushort _targetPoints = 10;
+    private ushort _previousLevelTargetTotalPoints = 0;
+    private ushort _nextLevelTargetTotalPoints = 10;
     private ushort _currentLevel = 1;
     private ushort _targetScalingPerLevel = 7;
+    public ushort StageTargetPoints => _stageTargetPoints;
+    public ushort TotalPoints {get; private set; } = 0;
+    public static GameManager Instance { get; private set; }
+    public ushort CurrentLevelTargetPoints { get; private set; } = 10;
+    public ushort CurrentLevelPoints { get; private set; } = 0;
     private void Awake() {
         Instance = this;
     }
 
     private void OnEnable() {
-        Debug.Log($"Target Points: {_baseTargetPoints + ((_currentLevel - 1) * _targetScalingPerLevel)}");
         ConsumableObject.OnConsumableObjectSwallowed += HandleConsumableObjectSwallowed;
     }
 
@@ -22,21 +27,26 @@ public class GameManager : MonoBehaviour {
     }
 
     private void HandleConsumableObjectSwallowed(ConsumableObject consumableObject) {
-        _totalPoints += consumableObject.Points;
-        Debug.Log($"Total Points: {_totalPoints}");
-        if(_totalPoints >= _targetPoints) {
+        TotalPoints += consumableObject.Points;
+        if(TotalPoints >= _stageTargetPoints) {
+            Debug.Log("You Win!");
+            return;
+        }
+        
+        if(TotalPoints >= _nextLevelTargetTotalPoints) {
             LevelUp();
         }
+        CurrentLevelPoints = (ushort)(TotalPoints - _previousLevelTargetTotalPoints);
     }
 
     private void LevelUp() {
-        while(_totalPoints >= _targetPoints) {
+        while(TotalPoints >= _nextLevelTargetTotalPoints) {
             _currentLevel++;
-            _targetPoints = (ushort)(_targetPoints + _baseTargetPoints + ((_currentLevel - 1) * _targetScalingPerLevel));
+            _previousLevelTargetTotalPoints = _nextLevelTargetTotalPoints;
+            _nextLevelTargetTotalPoints = (ushort)(_nextLevelTargetTotalPoints + _baseTargetPoints + ((_currentLevel - 1) * _targetScalingPerLevel));
+            CurrentLevelTargetPoints = (ushort)(_baseTargetPoints + ((_currentLevel - 1) * _targetScalingPerLevel));
         }
         
         _player.IncreaseSize(_currentLevel);
-        Debug.Log($"Level Up! Current Level: {_currentLevel}");
-        Debug.Log($"Current Level Target Points: {_baseTargetPoints + ((_currentLevel - 1) * _targetScalingPerLevel)}");
     }
 }
