@@ -8,7 +8,7 @@ public class FloatingJoystick : MonoBehaviour {
     private RectTransform _rectTransform;
     [SerializeField] private RectTransform _knob;
 
-    public Vector2 MovementAmount { get; private set; }
+    public Vector2 KnobDistanceFactorFromCenter { get; private set; }
 
     private void Awake() {
         gameObject.SetActive(false);
@@ -23,7 +23,7 @@ public class FloatingJoystick : MonoBehaviour {
         
         gameObject.SetActive(true);
         
-        MovementAmount = Vector2.zero;
+        KnobDistanceFactorFromCenter = Vector2.zero;
         
         _movementFinger = finger;
         _rectTransform.anchoredPosition = ClampStartPositionToScreenBounds(finger.screenPosition);
@@ -46,7 +46,7 @@ public class FloatingJoystick : MonoBehaviour {
         _movementFinger = null;
         _knob.anchoredPosition = Vector2.zero;
         gameObject.SetActive(false);
-        MovementAmount = Vector2.zero;
+        KnobDistanceFactorFromCenter = Vector2.zero;
     }
 
     public void HandleFingerMove(Finger finger) {
@@ -65,6 +65,6 @@ public class FloatingJoystick : MonoBehaviour {
         }
 
         _knob.anchoredPosition = knobPosition;
-        MovementAmount = knobPosition / maxMovement;
+        KnobDistanceFactorFromCenter = knobPosition / maxMovement;
     }
 }

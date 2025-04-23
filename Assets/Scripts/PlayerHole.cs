@@ -40,7 +40,7 @@ public class PlayerHole : MonoBehaviour {
 
     private void GetTouchInput() {
         float moveSpeed = _speed * Time.deltaTime;
-        Vector3 scaledMovement = new Vector3(_joystick.MovementAmount.x, 0.0f, _joystick.MovementAmount.y) * moveSpeed;
+        Vector3 scaledMovement = new Vector3(_joystick.KnobDistanceFactorFromCenter.x, 0.0f, _joystick.KnobDistanceFactorFromCenter.y) * moveSpeed;
         transform.Translate(scaledMovement);
     }
 
