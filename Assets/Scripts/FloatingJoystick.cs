@@ -17,7 +17,7 @@ public class FloatingJoystick : MonoBehaviour {
     }
 
     public void HandleFingerDown(Finger finger) {
-        if(_movementFinger != null) {
+        if(_movementFinger != null || MenuManager.Instance.IsInWinLoseState()) {
             return;
         }
         
@@ -39,7 +39,7 @@ public class FloatingJoystick : MonoBehaviour {
     }
 
     public void HandleFingerUp(Finger finger) {
-        if(finger != _movementFinger) {
+        if(finger != _movementFinger || MenuManager.Instance.IsInWinLoseState()) {
             return;
         }
 
@@ -50,7 +50,7 @@ public class FloatingJoystick : MonoBehaviour {
     }
 
     public void HandleFingerMove(Finger finger) {
-        if(finger != _movementFinger) {
+        if(finger != _movementFinger || MenuManager.Instance.IsInWinLoseState()) {
             return;
         }
 

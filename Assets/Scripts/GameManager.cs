@@ -4,18 +4,33 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
     [SerializeField] private PlayerHole _player;
     [SerializeField] private ushort _stageTargetPoints;
+    [SerializeField] private float _stageTimeLimit;
     private ushort _baseTargetPoints = 10;
     private ushort _previousLevelTargetTotalPoints = 0;
     private ushort _nextLevelTargetTotalPoints = 10;
     private ushort _currentLevel = 1;
     private ushort _targetScalingPerLevel = 7;
     public ushort StageTargetPoints => _stageTargetPoints;
+    public float StageTimeLimit => _stageTimeLimit;
     public ushort TotalPoints {get; private set; } = 0;
     public static GameManager Instance { get; private set; }
     public ushort CurrentLevelTargetPoints { get; private set; } = 10;
     public ushort CurrentLevelPoints { get; private set; } = 0;
     private void Awake() {
         Instance = this;
+    }
+
+    private void Update() {
+        if (MenuManager.Instance.IsInWinLoseState()) {
+            return;
+        }
+        
+        if(_stageTimeLimit <= 1) {
+            MenuManager.Instance.ShowLoseScreen();
+            return;
+        }
+
+        _stageTimeLimit -= Time.deltaTime;
     }
 
     private void OnEnable() {
@@ -27,9 +42,9 @@ public class GameManager : MonoBehaviour {
     }
 
     private void HandleConsumableObjectSwallowed(ConsumableObject consumableObject) {
-        TotalPoints += consumableObject.Points;
+        TotalPoints = (ushort)Math.Min(TotalPoints + consumableObject.Points, _stageTargetPoints);
         if(TotalPoints >= _stageTargetPoints) {
-            Debug.Log("You Win!");
+            MenuManager.Instance.ShowWinScreen();
             return;
         }
         

@@ -13,6 +13,10 @@ public class PlayerHole : MonoBehaviour {
     }
 
     private void Update() {
+        if (MenuManager.Instance.IsInWinLoseState()) {
+            return;
+        }
+        
         GetKeyboardInput();
         GetTouchInput();
     }
