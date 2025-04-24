@@ -1,0 +1,1032 @@
+Using pre-set license
+Built from '2022.3/release' branch; Version is '2022.3.61f1 (6c53ebaf375d) revision 7099371'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'pt' Physical Memory: 16310 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.61f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Repos/EatingFrenzy/eating-frenzy
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+49259
+Successfully changed project path to: C:/Repos/EatingFrenzy/eating-frenzy
+C:/Repos/EatingFrenzy/eating-frenzy
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [25980]  Target information:
+
+Player connection [25980]  * "[IP] 192.168.1.53 [Port] 0 [Flags] 2 [Guid] 2549221391 [EditorId] 2549221391 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-A9PD2MC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [25980] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [25980] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+Refreshing native plugins compatible for Editor in 16.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.61f1 (6c53ebaf375d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Repos/EatingFrenzy/eating-frenzy/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti (ID=0x2482)
+    Vendor:   NVIDIA
+    VRAM:     8018 MB
+    Driver:   32.0.15.6636
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.023122 seconds.
+- Loaded All Assemblies, in  0.460 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 297 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.618 seconds
+Domain Reload Profiling: 1074ms
+	BeginReloadAssembly (131ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (91ms)
+	LoadAllAssembliesAndSetupDomain (189ms)
+		LoadAssemblies (127ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (185ms)
+			TypeCache.Refresh (183ms)
+				TypeCache.ScanAssembly (167ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (619ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (567ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (419ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (103ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.610 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.587 seconds
+Domain Reload Profiling: 1193ms
+	BeginReloadAssembly (146ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (385ms)
+		LoadAssemblies (328ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (141ms)
+			TypeCache.Refresh (119ms)
+				TypeCache.ScanAssembly (104ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (588ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (447ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (326ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 8.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4275 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (166.6 KB). Loaded Objects now: 4752.
+Memory consumption went from 155.2 MB to 155.0 MB.
+Total: 3.591200 ms (FindLiveObjects: 0.285500 ms CreateObjectMapping: 0.091100 ms MarkObjects: 3.068700 ms  DeleteObjects: 0.145000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.545 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.062 seconds
+Domain Reload Profiling: 1600ms
+	BeginReloadAssembly (162ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (303ms)
+		LoadAssemblies (357ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (35ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1062ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (418ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (66ms)
+			ProcessInitializeOnLoadAttributes (299ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 9.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4233 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (140.2 KB). Loaded Objects now: 4764.
+Memory consumption went from 146.4 MB to 146.3 MB.
+Total: 4.155500 ms (FindLiveObjects: 0.510600 ms CreateObjectMapping: 0.248400 ms MarkObjects: 3.232200 ms  DeleteObjects: 0.163100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 497251c1690a86584fe43fc02edc4a21 -> 37da8e68c242636a416aa261b0d7ceb3
+========================================================================
+Received Import Request.
+  Time since last request: 97097.952869 seconds.
+  path: Assets/Sprites/ControllerPosition.png
+  artifactKey: Guid(e50856ac1264ee74f8aefb89b327973a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/ControllerPosition.png using Guid(e50856ac1264ee74f8aefb89b327973a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '503bb9451fce17b2f8b571d5bea4fb5b') in 0.078295 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/ControllerRadius.png
+  artifactKey: Guid(dcc8e30b875db6b47bf0f69b30d2fa06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/ControllerRadius.png using Guid(dcc8e30b875db6b47bf0f69b30d2fa06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8b92a7f8605c1ed47483f16e67deb44f') in 0.009945 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 57.762858 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Rect-Icon-Blue/Play-Idle.png
+  artifactKey: Guid(7ae5e31c746b13d41aee13d025fb1162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Rect-Icon-Blue/Play-Idle.png using Guid(7ae5e31c746b13d41aee13d025fb1162) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '472b6521d113ea03697db52661e98a90') in 0.008516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.282049 seconds.
+  path: Assets/AssetsFromAssetStore/Tree_Textures/normal_specular.png
+  artifactKey: Guid(edf3e483b83c58e41aa6f6758c190045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Tree_Textures/normal_specular.png using Guid(edf3e483b83c58e41aa6f6758c190045) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b36ceb0974cbfacb22a5558b5e54bbc1') in 0.018055 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AssetsFromAssetStore/Tree_Textures/shadow.png
+  artifactKey: Guid(9c394f2a1d444c9419925d9b24dbe1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Tree_Textures/shadow.png using Guid(9c394f2a1d444c9419925d9b24dbe1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6ebaa00bb0500a633985aa967ab28e45') in 0.023605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.284898 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Rect-Icon-Magenta/Play-Idle.png
+  artifactKey: Guid(5a0ede60061a2154384c1b46fcf478b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Rect-Icon-Magenta/Play-Idle.png using Guid(5a0ede60061a2154384c1b46fcf478b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5120a333db51b1b78d9d4bcdd2be9dd4') in 0.006024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.216572 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Rect-Text-Blue/Play-Idle.png
+  artifactKey: Guid(98f55f44824ee8442bceabec48c9ac07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Rect-Text-Blue/Play-Idle.png using Guid(98f55f44824ee8442bceabec48c9ac07) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6c7f9b383d3ed6c30e31aac8507d9692') in 0.005808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.168043 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Rect-Text-Magenta/Play-Idle.png
+  artifactKey: Guid(f2c6e0b9d8578914ea6d797ab9125af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Rect-Text-Magenta/Play-Idle.png using Guid(f2c6e0b9d8578914ea6d797ab9125af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4ecabf106e20e636b4e0031c23377dd8') in 0.005482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.185887 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Cart-Idle.png
+  artifactKey: Guid(fe7090adf34f2564c816618e8b6ddb47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Cart-Idle.png using Guid(fe7090adf34f2564c816618e8b6ddb47) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5a770949a464ac2ce5de557cf503db20') in 0.007029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.004832 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Exclamation-Click.png
+  artifactKey: Guid(9aca6b6e06c0f14418b57fe5c9822200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Exclamation-Click.png using Guid(9aca6b6e06c0f14418b57fe5c9822200) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f789b112b3880a2c14b8c04a79117c99') in 0.007517 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Gear-Click.png
+  artifactKey: Guid(e9e84efb190cb60459aa980b4c2f4782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Gear-Click.png using Guid(e9e84efb190cb60459aa980b4c2f4782) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0a721e56608433f106f416410a450b5a') in 0.005735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Info-Click.png
+  artifactKey: Guid(d25544bec0d03dd4b80ebd28cf941613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Info-Click.png using Guid(d25544bec0d03dd4b80ebd28cf941613) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0f5bbfdf0c895684cbf67268ff157341') in 0.004779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Sound-One-Idle.png
+  artifactKey: Guid(e6cb78cc49af2dc498656a77e540fd90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Sound-One-Idle.png using Guid(e6cb78cc49af2dc498656a77e540fd90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b2789d2cf32cc21d308b8c070a0173fe') in 0.004948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Sound-Two-Idle.png
+  artifactKey: Guid(298cf5235cd37e14ead493860f2f1f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Sound-Two-Idle.png using Guid(298cf5235cd37e14ead493860f2f1f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd6bbdfe150ca13933c0d7c2c63f26871') in 0.004827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Info-Idle.png
+  artifactKey: Guid(7c337bc9e4f6b44428b72c835282eea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Info-Idle.png using Guid(7c337bc9e4f6b44428b72c835282eea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '21038a07e09adb4a16f4f13857229e40') in 0.005487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/TwoPlayer-Click.png
+  artifactKey: Guid(1364491951c5e6c488d4aeb23ee1ed87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/TwoPlayer-Click.png using Guid(1364491951c5e6c488d4aeb23ee1ed87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a335b2992d9418f2e5928c5c58eb1e4c') in 0.005346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Music-On-Idle.png
+  artifactKey: Guid(b680574433ba7d94d9127dd6ff1bdd79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Music-On-Idle.png using Guid(b680574433ba7d94d9127dd6ff1bdd79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2786e0af33c3918e9f1aadc5dc560b6f') in 0.005714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Podium-Idle.png
+  artifactKey: Guid(09b5766ae364ef64bb97cce1d805bfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Podium-Idle.png using Guid(09b5766ae364ef64bb97cce1d805bfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6f2281d056bdb450a026e14d6f70c523') in 0.006274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Multiplayer-Idle.png
+  artifactKey: Guid(60edbad4e2a00fa4a83812f279bb7127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Multiplayer-Idle.png using Guid(60edbad4e2a00fa4a83812f279bb7127) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7cebad86daeecfc0e4a8b14a98fd8421') in 0.005501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Multiplayer-Click.png
+  artifactKey: Guid(b61a5c36edb0867409835fdd0e32285c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Multiplayer-Click.png using Guid(b61a5c36edb0867409835fdd0e32285c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '86bcbf42da5d6d7aa7c8fa07806378ab') in 0.005544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Thumb-Down-Click.png
+  artifactKey: Guid(e12a5b5b6b17dff45ab4978e3c68993e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Thumb-Down-Click.png using Guid(e12a5b5b6b17dff45ab4978e3c68993e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9ddfcd42407fc87524ff412b738b4c07') in 0.005289 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Levels-Click.png
+  artifactKey: Guid(03267f3c4c329894aaa6e64f45f1cd1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Levels-Click.png using Guid(03267f3c4c329894aaa6e64f45f1cd1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '85f93af3ad97d15dee6288409ce3d229') in 0.004459 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/SolidArrow-Left-Click.png
+  artifactKey: Guid(c8586bde612b7af408886601580d417e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/SolidArrow-Left-Click.png using Guid(c8586bde612b7af408886601580d417e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a998c01fdf88b9a3321fb072ee518eb5') in 0.005839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Home-Click.png
+  artifactKey: Guid(1e538b19c17c1054682c9c53aaefb283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Home-Click.png using Guid(1e538b19c17c1054682c9c53aaefb283) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c48c43e61cf72ca4918087c4b446c669') in 0.005613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Pause-Click.png
+  artifactKey: Guid(81a867847ed6dc94982f7e3a83f6da3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Pause-Click.png using Guid(81a867847ed6dc94982f7e3a83f6da3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '90a3a8d26f80a34cb897a9e20613688b') in 0.004924 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Sound-None-Idle.png
+  artifactKey: Guid(983f4363a341de64ba6972241199d9dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Sound-None-Idle.png using Guid(983f4363a341de64ba6972241199d9dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '56198b744ac8a7985a1596546364abf2') in 0.005603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/SolidArrow-Left-Idle.png
+  artifactKey: Guid(eb08525421347a0488a5ef4eed6d67c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/SolidArrow-Left-Idle.png using Guid(eb08525421347a0488a5ef4eed6d67c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5228a5e0782b9eac55ef3cd32250affc') in 0.005021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Locker-Locked-Idle.png
+  artifactKey: Guid(e5f7a8b118f0bcf4dba00cd4595df03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Locker-Locked-Idle.png using Guid(e5f7a8b118f0bcf4dba00cd4595df03e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '594c29fc009f6d04e03451e5889ae89b') in 0.004987 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/TalkBubble-Idle.png
+  artifactKey: Guid(eabe2df02ea94794a9cd39efb75f462a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/TalkBubble-Idle.png using Guid(eabe2df02ea94794a9cd39efb75f462a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a3810d4321a7d9efba9bb289dd804d9b') in 0.004384 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Locker-Unlocked-Click.png
+  artifactKey: Guid(c80d3d6f1e7052b4dbe6ec0b1681ec67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Locker-Unlocked-Click.png using Guid(c80d3d6f1e7052b4dbe6ec0b1681ec67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'da1075325bf2bc5b02c8b796e57e4d3c') in 0.004082 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Repeat-Right-Click.png
+  artifactKey: Guid(05a00bb024b21af47896f0f0222c16fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Repeat-Right-Click.png using Guid(05a00bb024b21af47896f0f0222c16fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ee79d52d4c6b27e52726883864660f76') in 0.005577 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/MediumArrow-Right-Idle.png
+  artifactKey: Guid(273385e78c5f7444d90b5b0a2186a8ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/MediumArrow-Right-Idle.png using Guid(273385e78c5f7444d90b5b0a2186a8ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bf04c76da6ea631c2e864c6e728f9d38') in 0.005223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Star-Click.png
+  artifactKey: Guid(9c725d43c559ac849911f97c99177685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Star-Click.png using Guid(9c725d43c559ac849911f97c99177685) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '10be7631012737713e10f9776c89fe04') in 0.004919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Music-On-Click.png
+  artifactKey: Guid(70fb3105df72cfb438ebc12c034a1726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Music-On-Click.png using Guid(70fb3105df72cfb438ebc12c034a1726) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bd192c95d224f22081f3fe7420eacd8c') in 0.005703 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/MediumArrow-Left-Idle.png
+  artifactKey: Guid(7954188224b58a7408452f551cf098af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/MediumArrow-Left-Idle.png using Guid(7954188224b58a7408452f551cf098af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1e242cd7876a95148e42479d010dec37') in 0.005241 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Sound-Two-Click.png
+  artifactKey: Guid(a19a66abb1d82b541ba9f26950807ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Sound-Two-Click.png using Guid(a19a66abb1d82b541ba9f26950807ae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6755f3d6f0fbb8a72165c80edbc16faa') in 0.004397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Home-Idle.png
+  artifactKey: Guid(b4d2faeaa1d68a845bdb968bc071907d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Home-Idle.png using Guid(b4d2faeaa1d68a845bdb968bc071907d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '609283f90b1ae42f18691ccff693c9b5') in 0.004697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Thumb-Up-Idle.png
+  artifactKey: Guid(d949274a8d4b0c54b88b1b3963204312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Thumb-Up-Idle.png using Guid(d949274a8d4b0c54b88b1b3963204312) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5de99e36a46239092400f8c5ae84d678') in 0.004664 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Cross-Click.png
+  artifactKey: Guid(34f8859da4a1f5648911f6204fe9e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Cross-Click.png using Guid(34f8859da4a1f5648911f6204fe9e649) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f3d443ef39a423c7bf3c625bb6ad33c4') in 0.005976 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Sound-One-Click.png
+  artifactKey: Guid(5c6502f1fe952814a8b131aab12ad476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Sound-One-Click.png using Guid(5c6502f1fe952814a8b131aab12ad476) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '432368aa417603762ecfe65d79ff142c') in 0.004711 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Player-Click.png
+  artifactKey: Guid(0559d739d7463f14aa473bd8a48f72d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Player-Click.png using Guid(0559d739d7463f14aa473bd8a48f72d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '21b77560fbdc51aebdd186249822eae2') in 0.005720 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Play-Click.png
+  artifactKey: Guid(dac8ff7ac6ddac94893c6457eeffcea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Blue/Play-Click.png using Guid(dac8ff7ac6ddac94893c6457eeffcea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e31b39e5fbc474ed9a20454caae55f4c') in 0.004989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.319043 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Cart-Idle.png
+  artifactKey: Guid(e09a529bbfab504449bc099ac7fd2f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Cart-Idle.png using Guid(e09a529bbfab504449bc099ac7fd2f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0c8a95b9748d76e48485b79da42a645a') in 0.005894 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Levels-Idle.png
+  artifactKey: Guid(8d133a39b9aa24347aa03dec29906632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Levels-Idle.png using Guid(8d133a39b9aa24347aa03dec29906632) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3294758964412fbdeff0e49249e018a8') in 0.004803 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Pause-Click.png
+  artifactKey: Guid(0b0a646603382644b939d7f245f2bdd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Pause-Click.png using Guid(0b0a646603382644b939d7f245f2bdd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e50f8d58630b0f5e89612c22fd73c8e3') in 0.004280 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Player-Idle.png
+  artifactKey: Guid(9f3d3b67cb66a7d43ad65c929d92703a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Player-Idle.png using Guid(9f3d3b67cb66a7d43ad65c929d92703a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8b26d818b847731b1603032a04c6a93e') in 0.005127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.007892 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Repeat-Right-Click.png
+  artifactKey: Guid(7cb9f36d92bea304d8a9d24da90fac84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Repeat-Right-Click.png using Guid(7cb9f36d92bea304d8a9d24da90fac84) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '600a89ae2911c94416dbe35aaf84fd7d') in 0.006243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Home-Click.png
+  artifactKey: Guid(f2fc5d8ad31711746b88b9f817165926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Home-Click.png using Guid(f2fc5d8ad31711746b88b9f817165926) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c47b30b4de0fe89c24a460170fc50243') in 0.014318 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/TwoPlayer-Click.png
+  artifactKey: Guid(c16fefc83e666524985ae19d060d33c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/TwoPlayer-Click.png using Guid(c16fefc83e666524985ae19d060d33c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '36dbfd41fbd6b79f02efa87a1a2773e3') in 0.005381 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Levels-Click.png
+  artifactKey: Guid(4ff0ecb26abadab42804be5fd4aee4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Levels-Click.png using Guid(4ff0ecb26abadab42804be5fd4aee4f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'eb7b6c48db360a606d3de8e3828fbbc1') in 0.006084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Star-Click.png
+  artifactKey: Guid(a24b3cf4164721944afa517dc2e1034d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Star-Click.png using Guid(a24b3cf4164721944afa517dc2e1034d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '980bec3c9197ccf3b111b1f996d137c6') in 0.004875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Exit-Idle.png
+  artifactKey: Guid(127025f449cbcef45a647af91d1ccfe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Exit-Idle.png using Guid(127025f449cbcef45a647af91d1ccfe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cc12ec508d750a051856d6966de32a39') in 0.004446 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Exclamation-Click.png
+  artifactKey: Guid(c391ad97ef39cf548b94fabc1ff97b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Exclamation-Click.png using Guid(c391ad97ef39cf548b94fabc1ff97b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f0d703c2dc2e5d2e79e7fec01d6a5c9a') in 0.005908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Exclamation-Idle.png
+  artifactKey: Guid(23156ca586782b842943504ff9b9f8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Exclamation-Idle.png using Guid(23156ca586782b842943504ff9b9f8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f029871b496c4fbab747e349e8bd21f9') in 0.004933 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Thumb-Down-Idle.png
+  artifactKey: Guid(16088e6927a542543911395476164ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Thumb-Down-Idle.png using Guid(16088e6927a542543911395476164ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c3708cdea94a1593f2c498ccf3cc3b53') in 0.008100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Pause-Idle.png
+  artifactKey: Guid(97d786a91de27c54ca2d353c382965d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Pause-Idle.png using Guid(97d786a91de27c54ca2d353c382965d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3aec3b390a2551d71a70938e0e15617f') in 0.006820 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Locker-Unlocked-Click.png
+  artifactKey: Guid(6d3aac1572e36f14d8d804d8a8fb7d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Locker-Unlocked-Click.png using Guid(6d3aac1572e36f14d8d804d8a8fb7d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '82818a7e5f39215514744a44d67bdcce') in 0.006403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Sound-Two-Idle.png
+  artifactKey: Guid(6770c3ec36c66a646b75ef50f8a931c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Sound-Two-Idle.png using Guid(6770c3ec36c66a646b75ef50f8a931c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '96babe7898c1685446945127b22573ae') in 0.006753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/SolidArrow-Right-Idle.png
+  artifactKey: Guid(515000b0f596ccc4e8c9e17f6d7b236f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/SolidArrow-Right-Idle.png using Guid(515000b0f596ccc4e8c9e17f6d7b236f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '387585b293a396ee036598aea1dedda1') in 0.004989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Sound-One-Click.png
+  artifactKey: Guid(23d67af3627d7f24ca97ea5249b5d69e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Sound-One-Click.png using Guid(23d67af3627d7f24ca97ea5249b5d69e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3c16f92c3a8feeb1182308f68cd2f9a6') in 0.005199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Star-Idle.png
+  artifactKey: Guid(c2482b8e2b917fe4e87be692b2d41b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Star-Idle.png using Guid(c2482b8e2b917fe4e87be692b2d41b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '97659a5098076e9549240ffcd8e47569') in 0.004472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/MediumArrow-Left-Idle.png
+  artifactKey: Guid(d0caf7f3b5da2f644a8a10ce0dcd7861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/MediumArrow-Left-Idle.png using Guid(d0caf7f3b5da2f644a8a10ce0dcd7861) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '13dd659d2a85ec1427508d7b042a85a3') in 0.005098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Music-On-Idle.png
+  artifactKey: Guid(64343bccb50e6614a9ab2590e7d87ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Music-On-Idle.png using Guid(64343bccb50e6614a9ab2590e7d87ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '39bd6012b866823a45cb565b1ac917ff') in 0.005314 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/ShareLink-Click.png
+  artifactKey: Guid(e49f622f04939504a95cd8405c8d18b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/ShareLink-Click.png using Guid(e49f622f04939504a95cd8405c8d18b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8ba5a75755810f98885d26a4fc770ebe') in 0.006570 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Play-Click.png
+  artifactKey: Guid(026e61900f2377747bb9aecbb9f5718e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Play-Click.png using Guid(026e61900f2377747bb9aecbb9f5718e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e55a57be03c465750f92b216a81e9ba7') in 0.004875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Multiplayer-Click.png
+  artifactKey: Guid(2d9430b53e836ab4196ca44e6dd636e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Multiplayer-Click.png using Guid(2d9430b53e836ab4196ca44e6dd636e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f28bf9926eaf19e3a6aa25ffde16c2c3') in 0.005076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/SolidArrow-Right-Click.png
+  artifactKey: Guid(9eef691609a968042bc51ac466e9822f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/SolidArrow-Right-Click.png using Guid(9eef691609a968042bc51ac466e9822f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3a8c63497a851bc82b9ff80361758e92') in 0.005119 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Gear-Click.png
+  artifactKey: Guid(99ec8ca0679ee904294db087d78a05c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Gear-Click.png using Guid(99ec8ca0679ee904294db087d78a05c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b7a9f63ce45ba6ae6b7358b19b6cbbd2') in 0.005230 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Question-Click.png
+  artifactKey: Guid(2e6cf3abd7baf354d81e20415e52a364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Question-Click.png using Guid(2e6cf3abd7baf354d81e20415e52a364) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f4b5dfc6bd1ac7574e9589981f6bf449') in 0.005029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Sound-Three-Click.png
+  artifactKey: Guid(be3bf9efbd88c3c42b29e395dfe22ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Sound-Three-Click.png using Guid(be3bf9efbd88c3c42b29e395dfe22ade) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f749713bbf27246acfd508e4014f9ac3') in 0.004503 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Cross-Idle.png
+  artifactKey: Guid(ff391f1043617144cbd251adef8eed4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Cross-Idle.png using Guid(ff391f1043617144cbd251adef8eed4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '23d5d42fd78a0adbc77ecfde191d5561') in 0.005392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Home-Idle.png
+  artifactKey: Guid(5bbedfa6d4494cb4393c12ca6a457886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Home-Idle.png using Guid(5bbedfa6d4494cb4393c12ca6a457886) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '87cd3bc1d0e06b783d5fa42742785e28') in 0.006176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/TalkBubble-Click.png
+  artifactKey: Guid(c931b87a275eacc4382cebb8a0754bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/TalkBubble-Click.png using Guid(c931b87a275eacc4382cebb8a0754bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd216962f59ad3478b37837e8b23613bd') in 0.006445 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Multiplayer-Idle.png
+  artifactKey: Guid(6d3cbb3ad76374f40aea10540e9da57d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Multiplayer-Idle.png using Guid(6d3cbb3ad76374f40aea10540e9da57d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '37f49292ccf15764de799bfd33e3c64a') in 0.005636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Exit-Click.png
+  artifactKey: Guid(147de3e1944990545b835472f9b206c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Exit-Click.png using Guid(147de3e1944990545b835472f9b206c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '443384e11477d723645ba1c44eb9205e') in 0.005531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Sound-None-Idle.png
+  artifactKey: Guid(56dadd5ab02f0f543aa60cfe67fc1cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Prinbles_Buttons_Cartoon-II (v 1.0) (9_11_2023)/png/Buttons/Square-Icon-Magenta/Sound-None-Idle.png using Guid(56dadd5ab02f0f543aa60cfe67fc1cb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6116d3dd6323d19d8d2a999e901b0e95') in 0.006122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: A operação de E/S foi cancelada devido a uma saída do módulo ou a um pedido da aplicação.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

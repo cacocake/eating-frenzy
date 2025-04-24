@@ -45,3 +45,11 @@ The following packages were updated:
   com.unity.textmeshpro from version 3.0.6 to 3.0.7
   com.unity.timeline from version 1.6.3 to 1.7.7
   com.unity.visualscripting from version 1.7.6 to 1.9.4
+
+=== Thu Apr 24 14:41:38 2025
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.postprocessing@3.4.0
