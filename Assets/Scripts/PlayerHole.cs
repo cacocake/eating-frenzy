@@ -5,8 +5,9 @@ using ETouch = UnityEngine.InputSystem.EnhancedTouch;
 public class PlayerHole : MonoBehaviour {
     [SerializeField] private float _speed = 5.0f;
     [SerializeField] private FloatingJoystick _joystick;
+    [SerializeField] private float _scaleIncreaseFactor = 0.5f;
     private Vector3 _baseScale;
-    private const float ScaleIncreaseFactor = 0.2f;
+    private float _edgePushBackFactor = 0.5f;
 
     private void Awake() {
         _baseScale = transform.localScale;
@@ -35,6 +36,14 @@ public class PlayerHole : MonoBehaviour {
         EnhancedTouchSupport.Disable();
     }
 
+    void OnTriggerEnter(Collider other) {
+        if (other.CompareTag("Edge")) {
+            Debug.Log("Hit Edge!");
+            Vector3 pushDirection = (transform.position - other.transform.position).normalized;
+            transform.position += new Vector3(pushDirection.x, 0.0f, pushDirection.z) * _edgePushBackFactor;
+        }
+    }
+
     private void GetKeyboardInput() {
         float moveSpeed = _speed * Time.deltaTime;
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -49,6 +58,6 @@ public class PlayerHole : MonoBehaviour {
     }
 
     public void IncreaseSize(float level) {
-        transform.localScale = _baseScale + new Vector3(ScaleIncreaseFactor * level, 0.0f, ScaleIncreaseFactor * level);
+        transform.localScale = _baseScale + new Vector3(_scaleIncreaseFactor * level, 0.0f, _scaleIncreaseFactor * level);
     }
 }
