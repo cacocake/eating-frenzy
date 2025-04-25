@@ -8,6 +8,11 @@ TagManager:
   - Floor
   - HoleCharacter
   - ConsumeAreaPlayer
+  - WinScreen
+  - LoseScreen
+  - GUI
+  - PlayButton
+  - ExitButton
   layers:
   - Default
   - TransparentFX

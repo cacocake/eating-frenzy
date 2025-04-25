@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private PlayerHole _player;
     [SerializeField] private ushort _stageTargetPoints;
     [SerializeField] private float _stageTimeLimit;
+    [SerializeField] private Canvas _levelGUI;
     private ushort _baseTargetPoints = 10;
     private ushort _previousLevelTargetTotalPoints = 0;
     private ushort _nextLevelTargetTotalPoints = 10;
@@ -35,13 +36,23 @@ public class GameManager : MonoBehaviour {
 
     private void OnEnable() {
         ConsumableObject.OnConsumableObjectSwallowed += HandleConsumableObjectSwallowed;
+        MenuManager.OnEndGameReached += HandleOnEndGameReached;
+    }
+
+    private void HandleOnEndGameReached(){
+        _levelGUI.gameObject.SetActive(false);
     }
 
     private void OnDisable() {
         ConsumableObject.OnConsumableObjectSwallowed -= HandleConsumableObjectSwallowed;
+        MenuManager.OnEndGameReached -= HandleOnEndGameReached;
     }
 
     private void HandleConsumableObjectSwallowed(ConsumableObject consumableObject) {
+        if(MenuManager.Instance.IsInWinLoseState()) {
+            return;
+        }
+
         TotalPoints = (ushort)Math.Min(TotalPoints + consumableObject.Points, _stageTargetPoints);
         if(TotalPoints >= _stageTargetPoints) {
             MenuManager.Instance.ShowWinScreen();
