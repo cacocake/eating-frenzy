@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem.EnhancedTouch;
 using ETouch = UnityEngine.InputSystem.EnhancedTouch;
@@ -8,14 +9,22 @@ public class PlayerHole : MonoBehaviour {
     [SerializeField] private float _scaleIncreaseFactor = 0.5f;
     private Vector3 _baseScale;
     private float _edgePushBackFactor = 0.5f;
+    private Vector3 _targetScale;
 
     private void Awake() {
         _baseScale = transform.localScale;
+        _targetScale = _baseScale;
     }
 
     private void Update() {
         if (MenuManager.Instance.IsInWinLoseState()) {
             return;
+        }
+
+        if(_targetScale != transform.localScale) {
+            transform.localScale = Vector3.Lerp(transform.localScale, 
+                                                _baseScale + new Vector3(_scaleIncreaseFactor * GameManager.Instance.CurrentLevel, 0.0f, _scaleIncreaseFactor * GameManager.Instance.CurrentLevel),
+                                                Time.deltaTime);
         }
         
         GetKeyboardInput();
@@ -57,7 +66,7 @@ public class PlayerHole : MonoBehaviour {
         transform.Translate(scaledMovement);
     }
 
-    public void IncreaseSize(float level) {
-        transform.localScale = _baseScale + new Vector3(_scaleIncreaseFactor * level, 0.0f, _scaleIncreaseFactor * level);
+    public void TriggerIncreaseSize() {
+        _targetScale = _baseScale + new Vector3(_scaleIncreaseFactor * GameManager.Instance.CurrentLevel, 0.0f, _scaleIncreaseFactor * GameManager.Instance.CurrentLevel);
     }
 }

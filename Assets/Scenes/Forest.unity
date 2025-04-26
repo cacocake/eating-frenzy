@@ -186,6 +186,8 @@ MonoBehaviour:
   - {fileID: 38335279662140195, guid: 34d3f526198dae440bb2ce6005d86055, type: 3}
   - {fileID: 8783306491908617939, guid: f02116c209ecd9e488fc4d2cd8996133, type: 3}
   - {fileID: 7405846476849542632, guid: c6308cb7062fac34e8e50600086b12a1, type: 3}
+  - {fileID: 3851015956068934394, guid: dfb23d60f30c46847ba7815aa09e2567, type: 3}
+  - {fileID: 7402009758359158996, guid: 4ecab060b0afb5d4db61f7f1311b9e24, type: 3}
   _largeConsumablePrefabs:
   - {fileID: 1576488453971893466, guid: a778b631c6253a04899cb31bad047c81, type: 3}
   - {fileID: 2222111361404534124, guid: 88f2fd29f58b9734683512546acec310, type: 3}
@@ -194,10 +196,10 @@ MonoBehaviour:
   - {fileID: 2807449429036958551, guid: f0c16f0ea935ea64297ca1d4d55d9746, type: 3}
   - {fileID: 9069115365609291303, guid: 60f79905accf3b24fa0114b941f1aac0, type: 3}
   _prefabSpacing: 2
-  _consumablePrefabSpawnCount: 2000
-  k_smallConsumableSpawnWeight: 0.2
-  k_mediumConsumableSpawnWeight: 0.5
-  k_largeConsumableSpawnWeight: 0.3
+  _consumablePrefabSpawnCount: 5000
+  k_smallConsumableSpawnWeight: 0.25
+  k_mediumConsumableSpawnWeight: 0.35
+  k_largeConsumableSpawnWeight: 0.5
 --- !u!1 &114844692
 GameObject:
   m_ObjectHideFlags: 0

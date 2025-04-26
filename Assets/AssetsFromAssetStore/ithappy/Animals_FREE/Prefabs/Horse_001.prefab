@@ -646,10 +646,11 @@ GameObject:
   - component: {fileID: 3851015956068934398}
   - component: {fileID: 3851015956068934393}
   - component: {fileID: 3851015956068934392}
-  - component: {fileID: 3851015956068934395}
+  - component: {fileID: 4622887073619915901}
+  - component: {fileID: -5483028006307372150}
   m_Layer: 0
   m_Name: Horse_001
-  m_TagString: Untagged
+  m_TagString: Consumable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -708,7 +709,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3677ca4e9421f2146bce7bec13d42320, type: 2}
-  m_CullingMode: 0
+  m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -742,7 +743,7 @@ MonoBehaviour:
     body: 0.3
     head: 0.7
     eyes: 1
---- !u!114 &3851015956068934395
+--- !u!114 &4622887073619915901
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -751,17 +752,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 3851015956068934394}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2c67ce836140b4479603ebcf944cddd, type: 3}
+  m_Script: {fileID: 11500000, guid: 98ad58844d1a02643a089d42f392c4ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_JumpButton: Jump
-  m_RunKey: 304
-  m_Camera: {fileID: 0}
-  m_MouseX: Mouse X
-  m_MouseY: Mouse Y
-  m_MouseScroll: Mouse ScrollWheel
+  _points: 4
+--- !u!114 &-5483028006307372150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851015956068934394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5e9151e1edc6d4fb3a35edc8b42ffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _alertRange: 5
+  _timeUntilCalmDown: 2
 --- !u!1 &3955406351709833468
 GameObject:
   m_ObjectHideFlags: 0

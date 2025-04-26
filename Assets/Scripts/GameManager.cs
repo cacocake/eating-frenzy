@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
     private ushort _nextLevelTargetTotalPoints = 10;
     private ushort _currentLevel = 1;
     private ushort _targetScalingPerLevel = 7;
+    public ushort CurrentLevel => _currentLevel;
     public ushort StageTargetPoints => _stageTargetPoints;
     public float StageTimeLimit => _stageTimeLimit;
     public ushort TotalPoints {get; private set; } = 0;
@@ -73,6 +74,6 @@ public class GameManager : MonoBehaviour {
             CurrentLevelTargetPoints = (ushort)(_baseTargetPoints + ((_currentLevel - 1) * _targetScalingPerLevel));
         }
         
-        _player.IncreaseSize(_currentLevel);
+        _player.TriggerIncreaseSize();
     }
 }

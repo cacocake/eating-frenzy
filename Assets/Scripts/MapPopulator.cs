@@ -17,12 +17,12 @@ public class MapPopulator : MonoBehaviour {
     [SerializeField] private float k_smallConsumableSpawnWeight = 0.5f;
     [SerializeField] private float k_mediumConsumableSpawnWeight = 0.5f;
     [SerializeField] private float k_largeConsumableSpawnWeight = 0.25f;
+    [SerializeField] private float _smallConsumableSpawnCollisionCheckRadius = 2.0f;
+    [SerializeField] private float _mediumConsumableSpawnCollisionCheckRadius = 4.0f;
+    [SerializeField] private float _largeConsumableSpawnCollisionCheckRadius = 7.0f;
     private ConsumablePrefabData _smallConsumablePrefabData;
     private ConsumablePrefabData _mediumConsumablePrefabData;
     private ConsumablePrefabData _largeConsumablePrefabData;
-    private const float k_smallConsumableSpawnCollisionCheckRadius = 0.5f;
-    private const float k_mediumConsumableSpawnCollisionCheckRadius = 2.0f;
-    private const float k_largeConsumableSpawnCollisionCheckRadius = 7.0f;
     private const float k_edgeSafeDistance = 7.0f;
     private GameObject _floorObject;
     private Dictionary<float, ConsumablePrefabData> _weightConsumablePrefabDataDictionary = new Dictionary<float, ConsumablePrefabData>();
@@ -35,15 +35,15 @@ public class MapPopulator : MonoBehaviour {
         _mapHeight = _floorObject.GetComponent<Collider>().bounds.size.z;
         _smallConsumablePrefabData = new ConsumablePrefabData {
             PrefabContainer = _smallConsumablePrefabs,
-            CollisionCheckRadius = k_smallConsumableSpawnCollisionCheckRadius
+            CollisionCheckRadius = _smallConsumableSpawnCollisionCheckRadius
         };
         _mediumConsumablePrefabData = new ConsumablePrefabData {
             PrefabContainer = _mediumConsumablePrefabs,
-            CollisionCheckRadius = k_mediumConsumableSpawnCollisionCheckRadius
+            CollisionCheckRadius = _mediumConsumableSpawnCollisionCheckRadius
         };
         _largeConsumablePrefabData = new ConsumablePrefabData {
             PrefabContainer = _largeConsumablePrefabs,
-            CollisionCheckRadius = k_largeConsumableSpawnCollisionCheckRadius
+            CollisionCheckRadius = _largeConsumableSpawnCollisionCheckRadius
         };
         _weightConsumablePrefabDataDictionary.Add(k_smallConsumableSpawnWeight, _smallConsumablePrefabData);
         _weightConsumablePrefabDataDictionary.Add(k_mediumConsumableSpawnWeight, _mediumConsumablePrefabData);
@@ -81,7 +81,8 @@ public class MapPopulator : MonoBehaviour {
 
             ushort randomIndex = (ushort)Random.Range(0, consumablePrefabData.PrefabContainer.Length);
             spawnPositions.Add(new Vector3(x, 0.5f, z));
-            Instantiate(consumablePrefabData.PrefabContainer[randomIndex], new Vector3(x, 0.5f, z), Quaternion.Euler(0, Random.Range(0f, 360f), 0)).transform.parent = _floorObject.transform;
+            GameObject prefab = Instantiate(consumablePrefabData.PrefabContainer[randomIndex], new Vector3(x, 0.5f, z), Quaternion.Euler(0, Random.Range(0f, 360f), 0));
+            prefab.transform.parent = _floorObject.transform;
             _consumablePrefabSpawnCount--;
             attempts = 0;
         }
