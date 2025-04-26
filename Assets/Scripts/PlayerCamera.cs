@@ -1,18 +1,18 @@
 using UnityEngine;
 using Cinemachine;
+using System.Collections;
 
 public class PlayerCamera : MonoBehaviour
 {
     [SerializeField] private float _pullBackIncreaseFactor = 0.2f;
+    [SerializeField] private float _pullBackUponPlayerSizeIncreaseDuration = 0.75f;
     private CinemachineTransposer _transposer;
     private ConsumableObject _consumableObjectInBetweenPlayerAndCamera;
     private Vector3 _baseOffset;
-    private Vector3 _targetOffset;
 
     private void Awake() {
         _transposer = GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>();
         _baseOffset = _transposer.m_FollowOffset;
-        _targetOffset = _baseOffset;
     }
     void OnEnable() {
         GameManager.OnLevelUp += TriggerAdaptToLevelUp;
@@ -26,10 +26,6 @@ public class PlayerCamera : MonoBehaviour
         PlayerHole player = GameObject.FindWithTag("PlayerHoleCharacter").GetComponent<PlayerHole>();
         if (player == null) {
             return;
-        }
-
-        if(_targetOffset != _transposer.m_FollowOffset) {
-            _transposer.m_FollowOffset = Vector3.Lerp(_transposer.m_FollowOffset, _targetOffset, Time.deltaTime);
         }
 
         Vector3 direction = player.transform.position - transform.position;
@@ -55,8 +51,25 @@ public class PlayerCamera : MonoBehaviour
         }
     }
     private void TriggerAdaptToLevelUp() {
-        _targetOffset = _baseOffset + new Vector3(0.0f, 
+        //StartCoroutine(PanOutCameraOverTimeDependingOnLevel());
+    }
+
+    private IEnumerator PanOutCameraOverTimeDependingOnLevel() {
+        Vector3 targetOffset = _baseOffset + new Vector3(0.0f, 
                                                   _pullBackIncreaseFactor * GameManager.Instance.CurrentLevel, 
                                                   -_pullBackIncreaseFactor * GameManager.Instance.CurrentLevel);
+        Vector3 currentOffset = _transposer.m_FollowOffset;
+        float elapsedTime = 0.0f;
+        while(elapsedTime <= _pullBackUponPlayerSizeIncreaseDuration) {
+            float progressPercentage = elapsedTime / _pullBackUponPlayerSizeIncreaseDuration;
+            _transposer.m_FollowOffset = Vector3.Lerp(currentOffset, 
+                                                      targetOffset, 
+                                                      Mathf.SmoothStep(0.0f, 1.0f, progressPercentage));
+
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        _transposer.m_FollowOffset = targetOffset;
     }
 }

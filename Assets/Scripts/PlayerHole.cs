@@ -1,4 +1,5 @@
-using System;
+using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem.EnhancedTouch;
 using ETouch = UnityEngine.InputSystem.EnhancedTouch;
@@ -6,29 +7,26 @@ using ETouch = UnityEngine.InputSystem.EnhancedTouch;
 public class PlayerHole : MonoBehaviour {
     [SerializeField] private float _speed = 5.0f;
     [SerializeField] private FloatingJoystick _joystick;
-    [SerializeField] private float _scaleIncreaseFactor = 0.5f;
+    [SerializeField] private float _scaleIncreaseFactor = 0.3f;
+    [SerializeField] private float _scaleDurationPerLevelUp = 0.5f;
     private Vector3 _baseScale;
-    private float _edgePushBackFactor = 0.5f;
-    private Vector3 _targetScale;
+    private float _edgePushBackFactor = 0.01f;   
 
     private void Awake() {
         _baseScale = transform.localScale;
-        _targetScale = _baseScale;
     }
 
     private void Update() {
         if (MenuManager.Instance.IsInWinLoseState()) {
             return;
         }
-
-        if(_targetScale != transform.localScale) {
-            transform.localScale = Vector3.Lerp(transform.localScale, 
-                                                _baseScale + new Vector3(_scaleIncreaseFactor * GameManager.Instance.CurrentLevel, 0.0f, _scaleIncreaseFactor * GameManager.Instance.CurrentLevel),
-                                                Time.deltaTime);
-        }
         
         GetKeyboardInput();
         GetTouchInput();
+    }
+
+    private void OnDestroy() {
+        StopAllCoroutines();
     }
 
     private void OnEnable() {
@@ -36,6 +34,7 @@ public class PlayerHole : MonoBehaviour {
         ETouch.Touch.onFingerDown += _joystick.HandleFingerDown;
         ETouch.Touch.onFingerUp += _joystick.HandleFingerUp;
         ETouch.Touch.onFingerMove += _joystick.HandleFingerMove;
+        GameManager.OnLevelUp += TriggerIncreaseSize;
     }
 
     private void OnDisable() {
@@ -43,11 +42,11 @@ public class PlayerHole : MonoBehaviour {
         ETouch.Touch.onFingerUp -= _joystick.HandleFingerUp;
         ETouch.Touch.onFingerMove -= _joystick.HandleFingerMove;
         EnhancedTouchSupport.Disable();
+        GameManager.OnLevelUp -= TriggerIncreaseSize;
     }
 
-    void OnTriggerEnter(Collider other) {
+    void OnTriggerStay(Collider other) {
         if (other.CompareTag("Edge")) {
-            Debug.Log("Hit Edge!");
             Vector3 pushDirection = (transform.position - other.transform.position).normalized;
             transform.position += new Vector3(pushDirection.x, 0.0f, pushDirection.z) * _edgePushBackFactor;
         }
@@ -67,6 +66,23 @@ public class PlayerHole : MonoBehaviour {
     }
 
     public void TriggerIncreaseSize() {
-        _targetScale = _baseScale + new Vector3(_scaleIncreaseFactor * GameManager.Instance.CurrentLevel, 0.0f, _scaleIncreaseFactor * GameManager.Instance.CurrentLevel);
+        StartCoroutine(IncreaseSizeForNewLevelOverTime());
+    }
+
+    private IEnumerator IncreaseSizeForNewLevelOverTime() {
+        Vector3 targetScale = _baseScale + new Vector3(_scaleIncreaseFactor * GameManager.Instance.CurrentLevel, 
+                                                       0.0f, 
+                                                       _scaleIncreaseFactor * GameManager.Instance.CurrentLevel);
+        Vector3 currentScale = transform.localScale;
+        float elapsedTime = 0.0f;
+        while (elapsedTime < _scaleDurationPerLevelUp) {
+            float progressPercentage = elapsedTime / _scaleDurationPerLevelUp;
+            transform.localScale = Vector3.Lerp(currentScale, 
+                                                targetScale,
+                                                Mathf.SmoothStep(0.0f ,1.0f, progressPercentage));
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        transform.localScale = targetScale;
     }
 }

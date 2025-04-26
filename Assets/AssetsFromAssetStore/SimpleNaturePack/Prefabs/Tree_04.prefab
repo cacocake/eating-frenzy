@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1257895545969857279}
   - component: {fileID: 2780692680659617398}
   - component: {fileID: 3461422629048897427}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree_04_LOD1
   m_TagString: Consumable
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: -8886035748035109185}
   - component: {fileID: 6591679113412973821}
   - component: {fileID: 446148131199929297}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree_04
   m_TagString: Consumable
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 3478584790040504408}
-  - screenRelativeHeight: 0.045200285
+  - screenRelativeHeight: 0.004
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 3461422629048897427}
@@ -163,7 +163,7 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 0
+  m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 8687903930291284306}
   - component: {fileID: 2850665022625380679}
   - component: {fileID: 3478584790040504408}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tree_04_LOD0
   m_TagString: Consumable
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5553859032938903229}
   - component: {fileID: 7955786168372148401}
   - component: {fileID: 3868671224557723846}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stump_01
   m_TagString: Consumable
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 8313632506172493172}
-  - screenRelativeHeight: 0.01
+  - screenRelativeHeight: 0.004
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 8011157136868685097}
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 5968582415777641174}
   - component: {fileID: 3759092166302592149}
   - component: {fileID: 8011157136868685097}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stump_01_LOD1
   m_TagString: Consumable
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 6260085879979622260}
   - component: {fileID: 6476173587137124530}
   - component: {fileID: 8313632506172493172}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stump_01_LOD0
   m_TagString: Consumable
   m_Icon: {fileID: 0}

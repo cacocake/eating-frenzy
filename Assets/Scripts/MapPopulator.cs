@@ -9,23 +9,30 @@ public class MapPopulator : MonoBehaviour {
     }
 
     [SerializeField] private GameObject _edgePrefab;
+    [SerializeField] private GameObject[] _decorationPropPrefabs;
     [SerializeField] private GameObject[] _smallConsumablePrefabs;
     [SerializeField] private GameObject[] _mediumConsumablePrefabs;
     [SerializeField] private GameObject[] _largeConsumablePrefabs;
+    [SerializeField] private GameObject[] _animalConsumablePrefabs;
     [SerializeField] private float _prefabSpacing = 5.0f;
     [SerializeField] private ushort _consumablePrefabSpawnCount = 1000;
-    [SerializeField] private float k_smallConsumableSpawnWeight = 0.5f;
-    [SerializeField] private float k_mediumConsumableSpawnWeight = 0.5f;
-    [SerializeField] private float k_largeConsumableSpawnWeight = 0.25f;
+    [SerializeField] private ushort _decorationPropPrefabSpawnCount = 1000;
+    [SerializeField] private float _smallConsumableSpawnWeight = 0.5f;
+    [SerializeField] private float _mediumConsumableSpawnWeight = 0.5f;
+    [SerializeField] private float _largeConsumableSpawnWeight = 0.25f;
+    [SerializeField] private float _animalConsumableSpawnWeight = 0.25f;
     [SerializeField] private float _smallConsumableSpawnCollisionCheckRadius = 2.0f;
     [SerializeField] private float _mediumConsumableSpawnCollisionCheckRadius = 4.0f;
-    [SerializeField] private float _largeConsumableSpawnCollisionCheckRadius = 7.0f;
+    [SerializeField] private float _largeConsumableSpawnCollisionCheckRadius = 6.0f;
+    [SerializeField] private float _animalConsumableSpawnCollisionCheckRadius = 10.0f;
     private ConsumablePrefabData _smallConsumablePrefabData;
     private ConsumablePrefabData _mediumConsumablePrefabData;
     private ConsumablePrefabData _largeConsumablePrefabData;
-    private const float k_edgeSafeDistance = 7.0f;
+    private ConsumablePrefabData _animalConsumablePrefabData;
+    private const float k_edgeSafeDistance = 5.0f;
     private GameObject _floorObject;
-    private Dictionary<float, ConsumablePrefabData> _weightConsumablePrefabDataDictionary = new Dictionary<float, ConsumablePrefabData>();
+    private ConsumablePrefabData[] _consumables;
+    private float[] _weights;
 
     private float _mapWidth;
     private float _mapHeight;
@@ -45,14 +52,18 @@ public class MapPopulator : MonoBehaviour {
             PrefabContainer = _largeConsumablePrefabs,
             CollisionCheckRadius = _largeConsumableSpawnCollisionCheckRadius
         };
-        _weightConsumablePrefabDataDictionary.Add(k_smallConsumableSpawnWeight, _smallConsumablePrefabData);
-        _weightConsumablePrefabDataDictionary.Add(k_mediumConsumableSpawnWeight, _mediumConsumablePrefabData);
-        _weightConsumablePrefabDataDictionary.Add(k_largeConsumableSpawnWeight, _largeConsumablePrefabData);
-        EdgePopulator();
-        ConsumableObjectPopulator();
+        _animalConsumablePrefabData = new ConsumablePrefabData {
+            PrefabContainer = _animalConsumablePrefabs,
+            CollisionCheckRadius = _animalConsumableSpawnCollisionCheckRadius
+        };
+        _consumables = new ConsumablePrefabData[] {_smallConsumablePrefabData, _mediumConsumablePrefabData, _largeConsumablePrefabData, _animalConsumablePrefabData };
+        _weights = new float[] { _smallConsumableSpawnWeight, _mediumConsumableSpawnWeight, _largeConsumableSpawnWeight, _animalConsumableSpawnWeight };
+        PopulateEdges();
+        PopulateConsumables();
+        PopulateDecorations();
     }
 
-    private void EdgePopulator() {
+    private void PopulateEdges() {
         for(float x = -_mapWidth / 2; x < _mapWidth / 2; x += _prefabSpacing) {
             Instantiate(_edgePrefab, new Vector3(x, 0.1f, (- _mapHeight / 2) + _prefabSpacing), Quaternion.identity).transform.parent = _floorObject.transform;
             Instantiate(_edgePrefab, new Vector3(x, 0.1f, (_mapHeight / 2) - _prefabSpacing), Quaternion.identity).transform.parent = _floorObject.transform;
@@ -63,12 +74,12 @@ public class MapPopulator : MonoBehaviour {
         }
     }
 
-    private void ConsumableObjectPopulator() {
+    private void PopulateConsumables() {
         List<Vector3> spawnPositions = new List<Vector3>();
         int maxAttempts = 10000;
         int attempts = 0;
         while(_consumablePrefabSpawnCount > 0 && attempts < maxAttempts) {
-            ConsumablePrefabData consumablePrefabData = GetRandomPrefabDataFromWeightedDictionary(_weightConsumablePrefabDataDictionary);
+            ConsumablePrefabData consumablePrefabData = GetWeightedRandomConsumablePrefab(_weights);
             
             float x = Random.Range(-(_mapWidth / 2) + k_edgeSafeDistance, (_mapWidth / 2) - k_edgeSafeDistance);
             float z = Random.Range(-(_mapHeight / 2) + k_edgeSafeDistance, (_mapHeight / 2) - k_edgeSafeDistance);
@@ -89,23 +100,34 @@ public class MapPopulator : MonoBehaviour {
         Debug.Log($"{_consumablePrefabSpawnCount} were left to spawn.");
     }
 
-    private ConsumablePrefabData GetRandomPrefabDataFromWeightedDictionary(Dictionary<float, ConsumablePrefabData> weightedDictionary) {
-        if (weightedDictionary == null || weightedDictionary.Count == 0) {
-            Debug.LogError("Weighted dictionary is empty or null.");
+    private void PopulateDecorations() {
+        for(int propCount = 0; propCount <= _decorationPropPrefabSpawnCount; propCount++) {
+            float x = Random.Range(-(_mapWidth / 2) + k_edgeSafeDistance, (_mapWidth / 2) - k_edgeSafeDistance);
+            float z = Random.Range(-(_mapHeight / 2) + k_edgeSafeDistance, (_mapHeight / 2) - k_edgeSafeDistance);
+
+            ushort randomIndex = (ushort)Random.Range(0, _decorationPropPrefabs.Length);
+            GameObject prefab = Instantiate(_decorationPropPrefabs[randomIndex], new Vector3(x, 0.5f, z), Quaternion.Euler(0, Random.Range(0f, 360f), 0));
+            prefab.transform.parent = _floorObject.transform;;
+        }
+    }
+
+    private ConsumablePrefabData GetWeightedRandomConsumablePrefab(float[] weights) {
+        if (weights.Length == 0) {
+            Debug.LogError("Weighted array is empty.");
             return _smallConsumablePrefabData;
         }
 
-        float totalWeight = weightedDictionary.Sum(pair => pair.Key);
+        float totalWeight = weights.Sum();
         float randomValue = Random.Range(0f, totalWeight);
-        float cumulativeWeight = 0f;
-        foreach (var pair in weightedDictionary) {
-            cumulativeWeight += pair.Key;
+        float cumulativeWeight = 0.0f;
+        for(int index = 0; index < weights.Length; index++) {
+            cumulativeWeight += weights[index];
             if (randomValue < cumulativeWeight) {
-                return pair.Value;
+                return _consumables[index];
             }
         }
 
         Debug.LogError("Should not reach here, returning a random value...");
-        return weightedDictionary.ElementAt(Random.Range(0, weightedDictionary.Count)).Value;
+        return _consumables[Random.Range(0, _consumables.Length)];
     }
 }

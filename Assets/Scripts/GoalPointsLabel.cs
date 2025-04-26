@@ -1,11 +1,6 @@
-public class GoalPointsLabel : PointsLabel {
+public class GoalPointsLabel : InfoLabel {
 
-    protected override void Start() {
-        base.Start();
-        _labelTextPrefix = "Goal: {0}/{1}";
-    }
-
-    void Update() {
-        UpdateLabel(_manager.TotalPoints, _manager.StageTargetPoints);   
+    private void Awake() {
+        _labelTextFormat = "{0}/{1}";
     }
 }

@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour {
     public static GameManager Instance { get; private set; }
     public ushort CurrentLevelTargetPoints { get; private set; } = 10;
     public ushort CurrentLevelPoints { get; private set; } = 0;
+    public static event Action OnLevelUp;
+    public static event Action OnPointsChanged;
     private void Awake() {
         Instance = this;
     }
@@ -64,6 +66,7 @@ public class GameManager : MonoBehaviour {
             LevelUp();
         }
         CurrentLevelPoints = (ushort)(TotalPoints - _previousLevelTargetTotalPoints);
+        OnPointsChanged?.Invoke();
     }
 
     private void LevelUp() {
@@ -74,6 +77,6 @@ public class GameManager : MonoBehaviour {
             CurrentLevelTargetPoints = (ushort)(_baseTargetPoints + ((_currentLevel - 1) * _targetScalingPerLevel));
         }
         
-        _player.TriggerIncreaseSize();
+        OnLevelUp?.Invoke();
     }
 }

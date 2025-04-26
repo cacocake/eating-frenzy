@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimeLabel : PointsLabel{
-    protected override void Start() {
-        base.Start();
-        _labelTextPrefix = "Time\n{0}";
+public class TimeLabel : InfoLabel{
+    private void Awake() {
+        _labelTextFormat = "{0}";
     }
 
-    void Update() {
+    private void Update() {
         UpdateLabel((ushort)Mathf.Floor(_manager.StageTimeLimit));   
     }
 }

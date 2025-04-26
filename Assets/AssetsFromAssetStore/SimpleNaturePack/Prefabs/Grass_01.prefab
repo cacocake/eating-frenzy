@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 5690786719881562600}
   - component: {fileID: 3161136069642247217}
   - component: {fileID: 3720084168579074821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grass_01_LOD1
-  m_TagString: Consumable
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &5690786719881562600
 Transform:
@@ -94,12 +94,12 @@ GameObject:
   - component: {fileID: 8927922121296990005}
   - component: {fileID: 1443342737404663106}
   - component: {fileID: 6128016933341854088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grass_01_LOD0
-  m_TagString: Consumable
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 18
   m_IsActive: 1
 --- !u!4 &8927922121296990005
 Transform:
@@ -177,11 +177,10 @@ GameObject:
   - component: {fileID: 8903058273634951509}
   - component: {fileID: 6757531004235149912}
   - component: {fileID: -6226334963624987803}
-  - component: {fileID: 3413472395693897853}
   - component: {fileID: 7429515304787418330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grass_01
-  m_TagString: Consumable
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -214,14 +213,14 @@ LODGroup:
   m_LocalReferencePoint: {x: 0.026811123, y: 0.18182376, z: -0.0010645688}
   m_Size: 0.3790605
   m_FadeMode: 0
-  m_AnimateCrossFading: 0
+  m_AnimateCrossFading: 1
   m_LastLODIsBillboard: 0
   m_LODs:
   - screenRelativeHeight: 0.051319983
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 6128016933341854088}
-  - screenRelativeHeight: 0.01
+  - screenRelativeHeight: 0.004
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 3720084168579074821}
@@ -253,19 +252,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3413472395693897853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8903058273634794869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98ad58844d1a02643a089d42f392c4ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _points: 1
 --- !u!65 &7429515304787418330
 BoxCollider:
   m_ObjectHideFlags: 0

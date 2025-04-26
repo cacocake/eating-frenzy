@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6840989815014681252}
   - component: {fileID: -5597450307890314423}
   - component: {fileID: -7438851247623722248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Branch_01
   m_TagString: Consumable
   m_Icon: {fileID: 0}
