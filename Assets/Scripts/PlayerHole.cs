@@ -10,7 +10,6 @@ public class PlayerHole : MonoBehaviour {
     [SerializeField] private float _scaleIncreaseFactor = 0.3f;
     [SerializeField] private float _scaleDurationPerLevelUp = 0.5f;
     private Vector3 _baseScale;
-    private float _edgePushBackFactor = 0.01f;   
 
     private void Awake() {
         _baseScale = transform.localScale;
@@ -45,18 +44,17 @@ public class PlayerHole : MonoBehaviour {
         GameManager.OnLevelUp -= TriggerIncreaseSize;
     }
 
-    void OnTriggerStay(Collider other) {
-        if (other.CompareTag("Edge")) {
-            Vector3 pushDirection = (transform.position - other.transform.position).normalized;
-            transform.position += new Vector3(pushDirection.x, 0.0f, pushDirection.z) * _edgePushBackFactor;
-        }
-    }
-
     private void GetKeyboardInput() {
         float moveSpeed = _speed * Time.deltaTime;
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
-        transform.Translate(horizontalInput * moveSpeed, 0.0f, verticalInput * moveSpeed);
+        Vector3 movement = new Vector3(horizontalInput, 0.0f, verticalInput) * moveSpeed;
+        if (Physics.Raycast(transform.position, movement.normalized, out RaycastHit hit, movement.magnitude) && hit.collider.CompareTag("Edge")) {
+            Vector3 wallNormal = hit.normal;
+            movement = Vector3.ProjectOnPlane(movement, wallNormal);
+        }
+        transform.Translate(movement);
+
     }
 
     private void GetTouchInput() {

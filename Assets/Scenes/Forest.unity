@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 25470198}
   m_Layer: 7
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Edge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 25470196}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.7, y: -1.42, z: 9.9}
+  m_LocalPosition: {x: 53.7, y: -2, z: 9.9}
   m_LocalScale: {x: 0.379, y: 1, z: 44.692844}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -461,7 +461,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -100.000015, y: -100}
+  m_AnchoredPosition: {x: -100, y: -100}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &141525695
@@ -547,7 +547,7 @@ GameObject:
   - component: {fileID: 175089355}
   m_Layer: 7
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Edge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -561,7 +561,7 @@ Transform:
   m_GameObject: {fileID: 175089353}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 31.5, y: -1.42, z: -12.73}
+  m_LocalPosition: {x: 31.5, y: -2, z: -12.73}
   m_LocalScale: {x: 0.379, y: 1, z: 44.692844}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1358,7 +1358,7 @@ GameObject:
   - component: {fileID: 755689867}
   m_Layer: 7
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Edge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1372,7 +1372,7 @@ Transform:
   m_GameObject: {fileID: 755689862}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 31.5, y: -1.42, z: 32.19}
+  m_LocalPosition: {x: 31.5, y: -2, z: 32.19}
   m_LocalScale: {x: 0.379, y: 1, z: 44.692844}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1523,7 +1523,7 @@ GameObject:
   - component: {fileID: 834521969}
   m_Layer: 7
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Edge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1537,7 +1537,7 @@ Transform:
   m_GameObject: {fileID: 834521967}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.17, y: -1.42, z: 9.9}
+  m_LocalPosition: {x: 9.17, y: -2, z: 9.9}
   m_LocalScale: {x: 0.379, y: 1, z: 44.692844}
   m_ConstrainProportionsScale: 0
   m_Children: []
