@@ -118,7 +118,6 @@
     <Compile Include="Assets\Scripts\MapPopulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\PlayerCamera.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\UrsaAnimation\LOW POLY CUBIC - Goat and Sheep Pack\scripts\AnimationController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\GoalPointsLabel.cs" />
     <Compile Include="Assets\Scripts\InfoLabel.cs" />
