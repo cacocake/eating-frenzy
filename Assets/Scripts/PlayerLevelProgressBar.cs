@@ -1,6 +1,7 @@
 using UnityEngine;
 
 public class PlayerLevelProgressBar : ProgressBar {
+    
     [SerializeField] private NextLevelProgressLabel _nextLevelProgressLabel;
     [SerializeField] private CurrentLevelLabel _currentLevelLabel;
     [SerializeField] private ParticleSystem _levelUpParticles;
@@ -25,7 +26,7 @@ public class PlayerLevelProgressBar : ProgressBar {
             return;
         }
 
-        CurrentValue = GameManager.Instance.CurrentLevelPoints;
+        StartCoroutine(IncreaseBarSmoothly(GameManager.Instance.CurrentLevelPoints));
         _nextLevelProgressLabel.UpdateLabel(GameManager.Instance.CurrentLevelPoints, GameManager.Instance.CurrentLevelTargetPoints);
     }
 
@@ -38,4 +39,5 @@ public class PlayerLevelProgressBar : ProgressBar {
         _currentLevelLabel.UpdateLabel(GameManager.Instance.CurrentLevel);
         _levelUpParticles.Play();
     }
+
 }

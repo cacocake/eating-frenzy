@@ -3,9 +3,12 @@ using UnityEngine;
 
 public class ConsumableObject : MonoBehaviour {
     [SerializeField] private ushort _points;
+    
     public ushort Points => _points;
     public static event Action<ConsumableObject> OnConsumableObjectSwallowed;
+    
     private int _defaultLayer;
+    
     private void Start() {
         _defaultLayer = gameObject.layer;
     }
@@ -50,4 +53,5 @@ public class ConsumableObject : MonoBehaviour {
         }
         renderer.material.color = new Color(1, 1, 1, 1);
     }
+
 }

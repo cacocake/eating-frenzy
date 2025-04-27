@@ -1,15 +1,16 @@
 using System.Collections;
-using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem.EnhancedTouch;
 using ETouch = UnityEngine.InputSystem.EnhancedTouch;
 
 public class PlayerHole : MonoBehaviour {
+    
     [SerializeField] private float _speed = 5.0f;
     [SerializeField] private FloatingJoystick _joystick;
     [SerializeField] private float _scaleIncreaseFactor = 0.3f;
     [SerializeField] private float _scaleDurationPerLevelUp = 0.5f;
     [SerializeField] private AnimationCurve _scaleAnimationCurve;
+    
     private Vector3 _baseScale;
 
     private void Awake() {
@@ -49,16 +50,18 @@ public class PlayerHole : MonoBehaviour {
         float moveSpeed = _speed * Time.deltaTime;
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
-        Vector3 movement = Utils.GetMovementWithEdgeCollisionCheck(transform.position, 
+        Vector3 movement = Utils.GetMovementWithEdgeCollisionCheck(transform.position,
                                                                    new Vector3(horizontalInput, 
-                                                                               0.0f, 
-                                                                               verticalInput) * moveSpeed);
-        
+                                                                   0.0f, 
+                                                                   verticalInput) * moveSpeed);
         transform.Translate(movement);
-
     }
 
     private void GetTouchInput() {
+        if (_joystick == null) {
+            return;
+        }
+
         float moveSpeed = _speed * Time.deltaTime;
         Vector3 scaledMovement = Utils.GetMovementWithEdgeCollisionCheck(transform.position, 
                                                                          new Vector3(_joystick.KnobDistanceFactorFromCenter.x, 

@@ -7,6 +7,7 @@ public class MenuManager : MonoBehaviour {
 
     [SerializeField] private GameObject _winScreen;
     [SerializeField] private GameObject _loseScreen;
+    
     public static MenuManager Instance { get; private set; }
     public static event Action OnEndGameReached;
 
@@ -19,11 +20,11 @@ public class MenuManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
     }
 
-    private void OnEnable(){
+    private void OnEnable() {
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    private void OnDisable(){
+    private void OnDisable() {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
@@ -65,4 +66,5 @@ public class MenuManager : MonoBehaviour {
     public bool IsInWinLoseState() {
         return _winScreen.activeSelf || _loseScreen.activeSelf;
     }
+    
 }

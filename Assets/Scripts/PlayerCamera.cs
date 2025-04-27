@@ -2,11 +2,12 @@ using UnityEngine;
 using Cinemachine;
 using System.Collections;
 
-public class PlayerCamera : MonoBehaviour
-{
+public class PlayerCamera : MonoBehaviour {
+
     [SerializeField] private float _pullBackIncreaseFactor = 0.2f;
     [SerializeField] private float _pullBackUponPlayerSizeIncreaseDuration = 0.75f;
     [SerializeField] private AnimationCurve _pullbackAnimationCurve;
+    
     private CinemachineTransposer _transposer;
     private ConsumableObject _consumableObjectInBetweenPlayerAndCamera;
     private Vector3 _baseOffset;
@@ -73,4 +74,5 @@ public class PlayerCamera : MonoBehaviour
 
         _transposer.m_FollowOffset = targetOffset;
     }
+
 }

@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class GoalProgressBar : ProgressBar
@@ -6,7 +5,6 @@ public class GoalProgressBar : ProgressBar
     [SerializeField] private GoalPointsLabel _goalPointsLabel;
     private void Start() {
         MaxValue = GameManager.Instance.StageTargetPoints;
-        CurrentValue = 0;
         _goalPointsLabel.UpdateLabel(GameManager.Instance.TotalPoints, GameManager.Instance.StageTargetPoints);
     }
 
@@ -24,7 +22,8 @@ public class GoalProgressBar : ProgressBar
             return;
         }
 
-        CurrentValue = GameManager.Instance.TotalPoints;
+        StartCoroutine(IncreaseBarSmoothly(GameManager.Instance.TotalPoints));
         _goalPointsLabel.UpdateLabel(GameManager.Instance.TotalPoints, GameManager.Instance.StageTargetPoints);
     }
+
 }

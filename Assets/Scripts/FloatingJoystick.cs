@@ -3,10 +3,11 @@ using UnityEngine.InputSystem.EnhancedTouch;
 
 public class FloatingJoystick : MonoBehaviour {
 
+     [SerializeField] private RectTransform _knob;
+
     private Finger _movementFinger;
     private Vector2 _size = Vector2.zero;
     private RectTransform _rectTransform;
-    [SerializeField] private RectTransform _knob;
 
     public Vector2 KnobDistanceFactorFromCenter { get; private set; }
 
@@ -67,4 +68,5 @@ public class FloatingJoystick : MonoBehaviour {
         _knob.anchoredPosition = knobPosition;
         KnobDistanceFactorFromCenter = knobPosition / maxMovement;
     }
+
 }
