@@ -29,7 +29,9 @@ public class MapPopulator : MonoBehaviour {
     private ConsumablePrefabData _mediumConsumablePrefabData;
     private ConsumablePrefabData _largeConsumablePrefabData;
     private ConsumablePrefabData _animalConsumablePrefabData;
-    private const float k_edgeSafeDistance = 5.0f;
+    private const float k_consumableSafeDistanceFromEdge = 5.0f;
+    private const float k_decorationSafeDistanceFromEdge = 2.0f;
+    private const float k_consumableHeightSpawn = 0.75f;
     private GameObject _floorObject;
     private ConsumablePrefabData[] _consumables;
     private float[] _weights;
@@ -81,9 +83,9 @@ public class MapPopulator : MonoBehaviour {
         while(_consumablePrefabSpawnCount > 0 && attempts < maxAttempts) {
             ConsumablePrefabData consumablePrefabData = GetWeightedRandomConsumablePrefab(_weights);
             
-            float x = Random.Range(-(_mapWidth / 2) + k_edgeSafeDistance, (_mapWidth / 2) - k_edgeSafeDistance);
-            float z = Random.Range(-(_mapHeight / 2) + k_edgeSafeDistance, (_mapHeight / 2) - k_edgeSafeDistance);
-            bool isNewPositonTooCloseTooSpawnedPositions = spawnPositions.Any(existingSpawnedPosition => (existingSpawnedPosition - new Vector3(x, 0.5f, z)).sqrMagnitude < Mathf.Pow(consumablePrefabData.CollisionCheckRadius, 2));
+            float x = Random.Range(-(_mapWidth / 2) + k_consumableSafeDistanceFromEdge, (_mapWidth / 2) - k_consumableSafeDistanceFromEdge);
+            float z = Random.Range(-(_mapHeight / 2) + k_consumableSafeDistanceFromEdge, (_mapHeight / 2) - k_consumableSafeDistanceFromEdge);
+            bool isNewPositonTooCloseTooSpawnedPositions = spawnPositions.Any(existingSpawnedPosition => (existingSpawnedPosition - new Vector3(x, k_consumableHeightSpawn, z)).sqrMagnitude < Mathf.Pow(consumablePrefabData.CollisionCheckRadius, 2));
             
             if(isNewPositonTooCloseTooSpawnedPositions) {
                 attempts++;
@@ -92,7 +94,7 @@ public class MapPopulator : MonoBehaviour {
 
             ushort randomIndex = (ushort)Random.Range(0, consumablePrefabData.PrefabContainer.Length);
             spawnPositions.Add(new Vector3(x, 0.5f, z));
-            GameObject prefab = Instantiate(consumablePrefabData.PrefabContainer[randomIndex], new Vector3(x, 0.5f, z), Quaternion.Euler(0, Random.Range(0f, 360f), 0));
+            GameObject prefab = Instantiate(consumablePrefabData.PrefabContainer[randomIndex], new Vector3(x, k_consumableHeightSpawn, z), Quaternion.Euler(0, Random.Range(0f, 360f), 0));
             prefab.transform.parent = _floorObject.transform;
             _consumablePrefabSpawnCount--;
             attempts = 0;
@@ -102,11 +104,11 @@ public class MapPopulator : MonoBehaviour {
 
     private void PopulateDecorations() {
         for(int propCount = 0; propCount <= _decorationPropPrefabSpawnCount; propCount++) {
-            float x = Random.Range(-(_mapWidth / 2) + k_edgeSafeDistance, (_mapWidth / 2) - k_edgeSafeDistance);
-            float z = Random.Range(-(_mapHeight / 2) + k_edgeSafeDistance, (_mapHeight / 2) - k_edgeSafeDistance);
+            float x = Random.Range(-(_mapWidth / 2) + k_decorationSafeDistanceFromEdge, (_mapWidth / 2) - k_decorationSafeDistanceFromEdge);
+            float z = Random.Range(-(_mapHeight / 2) + k_decorationSafeDistanceFromEdge, (_mapHeight / 2) - k_decorationSafeDistanceFromEdge);
 
             ushort randomIndex = (ushort)Random.Range(0, _decorationPropPrefabs.Length);
-            GameObject prefab = Instantiate(_decorationPropPrefabs[randomIndex], new Vector3(x, 0.5f, z), Quaternion.Euler(0, Random.Range(0f, 360f), 0));
+            GameObject prefab = Instantiate(_decorationPropPrefabs[randomIndex], new Vector3(x, 0.0f, z), Quaternion.Euler(0, Random.Range(0f, 360f), 0));
             prefab.transform.parent = _floorObject.transform;;
         }
     }

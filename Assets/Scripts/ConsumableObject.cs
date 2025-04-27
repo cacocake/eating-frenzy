@@ -36,10 +36,18 @@ public class ConsumableObject : MonoBehaviour {
     }
 
     public void MakeObjectTransparent() {
-        transform.GetComponentInChildren<Renderer>().material.color = new Color(1, 1, 1, 0.5f);
+        MeshRenderer renderer = transform.GetComponentInChildren<MeshRenderer>();
+        if(renderer == null) {
+            return;
+        }
+        renderer.material.color = new Color(1, 1, 1, 0.5f);
     }
 
     public void ReturnTransparencyToNormal() {
-        transform.GetComponentInChildren<Renderer>().material.color = new Color(1, 1, 1, 1);
+        MeshRenderer renderer = transform.GetComponentInChildren<MeshRenderer>();
+        if(renderer == null) {
+            return;
+        }
+        renderer.material.color = new Color(1, 1, 1, 1);
     }
 }

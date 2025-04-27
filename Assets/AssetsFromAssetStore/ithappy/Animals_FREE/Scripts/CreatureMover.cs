@@ -195,6 +195,7 @@ namespace Controller
 
                 movement = axis.x * right + axis.y * forward;
                 movement = Vector3.ProjectOnPlane(movement, m_Normal);
+                movement = Utils.GetMovementWithEdgeCollisionCheck(m_Transform.position, movement);
             }
 
             private void Displace(float deltaTime, in Vector3 movement, bool isRun)

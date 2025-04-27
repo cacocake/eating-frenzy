@@ -152,7 +152,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 53.7, y: -2, z: 9.9}
-  m_LocalScale: {x: 0.379, y: 1, z: 44.692844}
+  m_LocalScale: {x: 0.379, y: 1, z: 48.43363}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1771745630}
@@ -176,7 +176,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &25470199
 MeshRenderer:
@@ -563,7 +563,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 31.5, y: -2, z: -12.73}
-  m_LocalScale: {x: 0.379, y: 1, z: 44.692844}
+  m_LocalScale: {x: 0.379, y: 1, z: 48.938667}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1771745630}
@@ -587,7 +587,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &175089356
 MeshRenderer:
@@ -1284,7 +1284,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 646897415}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &646897418
 Camera:
   m_ObjectHideFlags: 0
@@ -1466,7 +1466,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 31.5, y: -2, z: 32.19}
-  m_LocalScale: {x: 0.379, y: 1, z: 44.692844}
+  m_LocalScale: {x: 0.379, y: 1, z: 48.987827}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1771745630}
@@ -1490,7 +1490,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &755689865
 MeshRenderer:
@@ -1631,7 +1631,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.17, y: -2, z: 9.9}
-  m_LocalScale: {x: 0.379, y: 1, z: 44.692844}
+  m_LocalScale: {x: 0.379, y: 1, z: 49.229168}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1771745630}
@@ -1655,7 +1655,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &834521970
 MeshRenderer:
@@ -2046,6 +2046,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pullBackIncreaseFactor: 0.5
   _pullBackUponPlayerSizeIncreaseDuration: 2
+  _pullbackAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1260520286
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,6 +2756,66 @@ PrefabInstance:
       propertyPath: _joystick
       value: 
       objectReference: {fileID: 141525695}
+    - target: {fileID: 2320745166901413305, guid: 6acdf492e79159340a7b6252ee7c81cb,
+        type: 3}
+      propertyPath: _scaleAnimationCurve.m_Curve.Array.data[2].time
+      value: 0.16878712
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320745166901413305, guid: 6acdf492e79159340a7b6252ee7c81cb,
+        type: 3}
+      propertyPath: _scaleAnimationCurve.m_Curve.Array.data[3].time
+      value: 0.6220451
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320745166901413305, guid: 6acdf492e79159340a7b6252ee7c81cb,
+        type: 3}
+      propertyPath: _scaleAnimationCurve.m_Curve.Array.data[2].value
+      value: 0.85966724
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320745166901413305, guid: 6acdf492e79159340a7b6252ee7c81cb,
+        type: 3}
+      propertyPath: _scaleAnimationCurve.m_Curve.Array.data[3].value
+      value: 0.010310948
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320745166901413305, guid: 6acdf492e79159340a7b6252ee7c81cb,
+        type: 3}
+      propertyPath: _scaleAnimationCurve.m_Curve.Array.data[1].inSlope
+      value: 2.648141
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320745166901413305, guid: 6acdf492e79159340a7b6252ee7c81cb,
+        type: 3}
+      propertyPath: _scaleAnimationCurve.m_Curve.Array.data[2].inSlope
+      value: 0.46867526
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320745166901413305, guid: 6acdf492e79159340a7b6252ee7c81cb,
+        type: 3}
+      propertyPath: _scaleAnimationCurve.m_Curve.Array.data[3].inSlope
+      value: 0.37232292
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320745166901413305, guid: 6acdf492e79159340a7b6252ee7c81cb,
+        type: 3}
+      propertyPath: _scaleAnimationCurve.m_Curve.Array.data[4].inSlope
+      value: 2.6185374
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320745166901413305, guid: 6acdf492e79159340a7b6252ee7c81cb,
+        type: 3}
+      propertyPath: _scaleAnimationCurve.m_Curve.Array.data[1].outSlope
+      value: 2.648141
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320745166901413305, guid: 6acdf492e79159340a7b6252ee7c81cb,
+        type: 3}
+      propertyPath: _scaleAnimationCurve.m_Curve.Array.data[2].outSlope
+      value: 0.46867526
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320745166901413305, guid: 6acdf492e79159340a7b6252ee7c81cb,
+        type: 3}
+      propertyPath: _scaleAnimationCurve.m_Curve.Array.data[3].outSlope
+      value: 0.37232292
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320745166901413305, guid: 6acdf492e79159340a7b6252ee7c81cb,
+        type: 3}
+      propertyPath: _scaleAnimationCurve.m_Curve.Array.data[4].outSlope
+      value: 2.6185374
+      objectReference: {fileID: 0}
     - target: {fileID: 6217538017674064859, guid: 6acdf492e79159340a7b6252ee7c81cb,
         type: 3}
       propertyPath: m_LocalPosition.x

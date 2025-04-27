@@ -6,6 +6,7 @@ public class PlayerCamera : MonoBehaviour
 {
     [SerializeField] private float _pullBackIncreaseFactor = 0.2f;
     [SerializeField] private float _pullBackUponPlayerSizeIncreaseDuration = 0.75f;
+    [SerializeField] private AnimationCurve _pullbackAnimationCurve;
     private CinemachineTransposer _transposer;
     private ConsumableObject _consumableObjectInBetweenPlayerAndCamera;
     private Vector3 _baseOffset;
@@ -51,7 +52,7 @@ public class PlayerCamera : MonoBehaviour
         }
     }
     private void TriggerAdaptToLevelUp() {
-        //StartCoroutine(PanOutCameraOverTimeDependingOnLevel());
+        StartCoroutine(PanOutCameraOverTimeDependingOnLevel());
     }
 
     private IEnumerator PanOutCameraOverTimeDependingOnLevel() {
@@ -64,7 +65,7 @@ public class PlayerCamera : MonoBehaviour
             float progressPercentage = elapsedTime / _pullBackUponPlayerSizeIncreaseDuration;
             _transposer.m_FollowOffset = Vector3.Lerp(currentOffset, 
                                                       targetOffset, 
-                                                      Mathf.SmoothStep(0.0f, 1.0f, progressPercentage));
+                                                      _pullbackAnimationCurve.Evaluate(progressPercentage));
 
             elapsedTime += Time.deltaTime;
             yield return null;

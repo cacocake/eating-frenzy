@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4175922834104611115}
   - component: {fileID: 1775994166235125708}
   - component: {fileID: 287222047877186625}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Tree_03_LOD1
   m_TagString: Consumable
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 4376338348109310597}
   - component: {fileID: 2915200469212025665}
   - component: {fileID: 8258636257821695437}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Tree_03_LOD0
   m_TagString: Consumable
   m_Icon: {fileID: 0}
@@ -179,7 +179,8 @@ GameObject:
   - component: {fileID: -1732226184956621494}
   - component: {fileID: -5166875218137661235}
   - component: {fileID: 2411587536532301033}
-  m_Layer: 8
+  - component: {fileID: 4578438514021136594}
+  m_Layer: 10
   m_Name: Tree_03
   m_TagString: Consumable
   m_Icon: {fileID: 0}
@@ -237,7 +238,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_CenterOfMass: {x: 0, y: 1, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
@@ -246,12 +247,12 @@ Rigidbody:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
+  m_ImplicitCom: 0
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 32
   m_CollisionDetection: 0
 --- !u!114 &-5166875218137661235
 MonoBehaviour:
@@ -285,5 +286,28 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.6334379, y: 4.996212, z: 3.1472402}
-  m_Center: {x: 0.05589354, y: 2.492753, z: -0.06706643}
+  m_Size: {x: 1.2669199, y: 0.23379517, z: 1.2198381}
+  m_Center: {x: 0.015101999, y: 0.11154461, z: -0.03137386}
+--- !u!136 &4578438514021136594
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6941765000743290380}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.9781304
+  m_Height: 4.996314
+  m_Direction: 1
+  m_Center: {x: -0.00000011920929, y: 2.4976964, z: -0.035681307}

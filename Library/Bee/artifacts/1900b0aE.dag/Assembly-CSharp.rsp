@@ -398,6 +398,7 @@
 "Assets/Scripts/ProgressBar.cs"
 "Assets/Scripts/Rotator.cs"
 "Assets/Scripts/TimeLabel.cs"
+"Assets/Scripts/Utils.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
