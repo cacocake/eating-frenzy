@@ -83,7 +83,7 @@ public class MapPopulator : MonoBehaviour {
             
             float x = Random.Range(-(_mapWidth / 2) + k_edgeSafeDistance, (_mapWidth / 2) - k_edgeSafeDistance);
             float z = Random.Range(-(_mapHeight / 2) + k_edgeSafeDistance, (_mapHeight / 2) - k_edgeSafeDistance);
-            bool isNewPositonTooCloseTooSpawnedPositions = spawnPositions.Any(existingSpawnedPosition => Vector3.Distance(existingSpawnedPosition, new Vector3(x, 0.5f, z)) < consumablePrefabData.CollisionCheckRadius);
+            bool isNewPositonTooCloseTooSpawnedPositions = spawnPositions.Any(existingSpawnedPosition => (existingSpawnedPosition - new Vector3(x, 0.5f, z)).sqrMagnitude < Mathf.Pow(consumablePrefabData.CollisionCheckRadius, 2));
             
             if(isNewPositonTooCloseTooSpawnedPositions) {
                 attempts++;
