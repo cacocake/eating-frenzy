@@ -169,7 +169,7 @@ namespace Controller
 
             public void Move(float deltaTime, in Vector2 axis, in Vector3 target, bool isRun, bool isMoving, out Vector2 animAxis, out bool isAir)
             {
-                var cameraLook = Vector3.Normalize(target - m_Transform.position);
+                var cameraLook = target;
                 var targetForward = m_LastForward;
 
                 ConvertMovement(in axis, in cameraLook, out var movement);
@@ -190,16 +190,8 @@ namespace Controller
                 Vector3 forward;
                 Vector3 right;
 
-                if (m_Space == Space.Self)
-                {
-                    forward = new Vector3(targetForward.x, 0f, targetForward.z).normalized;
-                    right = Vector3.Cross(Vector3.up, forward).normalized;
-                }
-                else
-                {
-                    forward = Vector3.forward;
-                    right = Vector3.right;
-                }
+                forward = Vector3.forward;
+                right = Vector3.right;
 
                 movement = axis.x * right + axis.y * forward;
                 movement = Vector3.ProjectOnPlane(movement, m_Normal);

@@ -5,12 +5,13 @@ namespace Controller {
     public class CreatureAI : MonoBehaviour {
         [SerializeField] private float _alertRange = 5.0f;
         [SerializeField] private float _timeUntilCalmDown = 2.0f;
+        [SerializeField] private float _movementChangeCooldown = 0.5f;
+        private float _elapsedTimeSinceMovementChange = 0.0f;
         private CreatureMover _mover;
         private Vector2 _axis;
         private Vector3 _target;
         private GameObject _playerHole;
         private bool _isRunningAway = false;
-
 
         private void Awake() {
             _mover = GetComponent<CreatureMover>();
@@ -26,6 +27,7 @@ namespace Controller {
         }
 
         public void TrySetInputToRunAwayFromHole() {
+            _elapsedTimeSinceMovementChange += Time.deltaTime;
             if(_playerHole == null) {
                 return;
             }
@@ -42,11 +44,14 @@ namespace Controller {
                 return;
             }
 
-            Vector3 direction = (_playerHole.transform.position - transform.position).normalized;
-            _axis = new Vector2(direction.x, direction.z);
-            _target = direction;
-            _timeUntilCalmDown = 2.0f;
-            _isRunningAway = true;            
+            if(_elapsedTimeSinceMovementChange >= _movementChangeCooldown) {
+                Vector3 direction = (transform.position - _playerHole.transform.position).normalized;
+                _axis = new Vector2(direction.x, direction.z);
+                _target = new Vector3(direction.x, 0.0f, direction.z);
+                _timeUntilCalmDown = 2.0f;
+                _isRunningAway = true;
+                _elapsedTimeSinceMovementChange = 0.0f;
+            }           
         }
 
         public void BindMover(CreatureMover mover) {
