@@ -29,6 +29,7 @@ public class ConsumableObject : MonoBehaviour {
         if(other.gameObject.CompareTag("ConsumeAreaPlayer")) {
             OnConsumableObjectSwallowed?.Invoke(this);
             Destroy(this.gameObject);
+            Handheld.Vibrate();
         }
 
         if((!other.gameObject.CompareTag("HoleCharacter") &&
