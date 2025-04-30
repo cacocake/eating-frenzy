@@ -155,7 +155,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 1, z: 0}
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
@@ -203,8 +203,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.3056016, y: 0.2384181, z: 1.1140237}
-  m_Center: {x: -0.037085056, y: 0.122787714, z: 0.055379868}
+  m_Size: {x: 1.5750396, y: 0.19663724, z: 1.4786085}
+  m_Center: {x: -0.06682813, y: 0.21253438, z: -0.061528742}
 --- !u!136 &3208282729460197981
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -224,10 +224,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.909212
-  m_Height: 5.62833
+  m_Radius: 0.5165302
+  m_Height: 4.672043
   m_Direction: 1
-  m_Center: {x: -0.049387693, y: 2.7798204, z: 0.06349838}
+  m_Center: {x: -0.049387693, y: 2.7798204, z: 0.0035008788}
 --- !u!1 &7155140798900432468
 GameObject:
   m_ObjectHideFlags: 0
