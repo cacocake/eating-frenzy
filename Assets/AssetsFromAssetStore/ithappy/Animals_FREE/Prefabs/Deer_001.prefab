@@ -1109,7 +1109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_WalkSpeed: 1
-  m_RunSpeed: 4
+  m_RunSpeed: 3
   m_RotateSpeed: 245
   m_Space: 1
   m_JumpHeight: 5
@@ -1147,6 +1147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _alertRange: 5
   _timeUntilCalmDown: 2
+  _movementChangeCooldown: 0.5
 --- !u!1 &7500468941402322376
 GameObject:
   m_ObjectHideFlags: 0

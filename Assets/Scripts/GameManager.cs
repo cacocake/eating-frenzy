@@ -44,16 +44,21 @@ public class GameManager : MonoBehaviour {
 
     private void OnEnable() {
         ConsumableObject.OnConsumableObjectSwallowed += HandleConsumableObjectSwallowed;
-        MenuManager.OnEndGameReached += HandleOnEndGameReached;
+        MenuManager.OnGameStopped += HandleOnGameStopped;
+        MenuManager.OnGameResumed += HandleOnGameResumed;
     }
 
-    private void HandleOnEndGameReached(){
+    private void HandleOnGameStopped(){
         _levelGUI.gameObject.SetActive(false);
+    }
+
+    private void HandleOnGameResumed(){
+        _levelGUI.gameObject.SetActive(true);
     }
 
     private void OnDisable() {
         ConsumableObject.OnConsumableObjectSwallowed -= HandleConsumableObjectSwallowed;
-        MenuManager.OnEndGameReached -= HandleOnEndGameReached;
+        MenuManager.OnGameStopped -= HandleOnGameStopped;
     }
 
     private void HandleConsumableObjectSwallowed(ConsumableObject consumableObject) {
@@ -84,5 +89,4 @@ public class GameManager : MonoBehaviour {
         
         OnLevelUp?.Invoke();
     }
-
 }

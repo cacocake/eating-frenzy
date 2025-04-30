@@ -1,0 +1,36 @@
+<libraries>
+  <library
+      name="C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle@@:unityLibrary::release"
+      jars="C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\.transforms\83a94413675771d7fa92d797aa93aa8e\transformed\out\jars\classes.jar;C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\.transforms\83a94413675771d7fa92d797aa93aa8e\transformed\out\jars\libs\R.jar;C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\.transforms\83a94413675771d7fa92d797aa93aa8e\transformed\out\jars\libs\classes-2.jar;C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\.transforms\83a94413675771d7fa92d797aa93aa8e\transformed\out\jars\libs\unity-classes.jar"
+      resolved="Gradle:unityLibrary:unspecified"
+      folder="C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\.transforms\83a94413675771d7fa92d797aa93aa8e\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="__local_aars__:C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\classes.jar:unspecified@jar"
+      jars="C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\classes.jar"
+      resolved="__local_aars__:C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\classes.jar:unspecified"/>
+  <library
+      name="__local_aars__:C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar"
+      jars="C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\unity-classes.jar"
+      resolved="__local_aars__:C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\unity-classes.jar:unspecified"/>
+  <library
+      name="C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle@@:unityLibrary:mobilenotifications.androidlib::release"
+      jars="C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\mobilenotifications.androidlib\build\.transforms\eef92c8a18c24ab625bfd700d7231955\transformed\out\jars\classes.jar;C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\mobilenotifications.androidlib\build\.transforms\eef92c8a18c24ab625bfd700d7231955\transformed\out\jars\libs\R.jar"
+      resolved="Gradle.unityLibrary:mobilenotifications.androidlib:unspecified"
+      folder="C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\mobilenotifications.androidlib\build\.transforms\eef92c8a18c24ab625bfd700d7231955\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+</libraries>

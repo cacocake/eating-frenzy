@@ -7,9 +7,12 @@ public class MenuManager : MonoBehaviour {
 
     [SerializeField] private GameObject _winScreen;
     [SerializeField] private GameObject _loseScreen;
+    [SerializeField] private GameObject _pauseScreen;
     
     public static MenuManager Instance { get; private set; }
-    public static event Action OnEndGameReached;
+    public static event Action OnGameStopped;
+    public static event Action OnGameResumed;
+    public static bool isPaused = false;
 
     private void Start() {
         if (Instance != null) {
@@ -31,6 +34,9 @@ public class MenuManager : MonoBehaviour {
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
         _winScreen.SetActive(false);
         _loseScreen.SetActive(false);
+        _pauseScreen.SetActive(false);
+        isPaused = false;
+        Time.timeScale = 1.0f;
 
         if (scene.name == "MainMenu") {
             GameObject.FindWithTag("PlayButton").GetComponent<Button>().onClick.AddListener(() => {
@@ -38,6 +44,10 @@ public class MenuManager : MonoBehaviour {
             });
             GameObject.FindWithTag("ExitButton").GetComponent<Button>().onClick.AddListener(() => {
                 ExitGame();
+            });
+        } else {
+            GameObject.FindWithTag("SettingsButton").GetComponent<Button>().onClick.AddListener(() => {
+                ShowPauseMenu();
             });
         }
     }
@@ -56,11 +66,25 @@ public class MenuManager : MonoBehaviour {
 
     public void ShowWinScreen() {
         _winScreen.SetActive(true);
-        OnEndGameReached?.Invoke();
+        OnGameStopped?.Invoke();
     }
     public void ShowLoseScreen() {
         _loseScreen.SetActive(true);
-        OnEndGameReached?.Invoke();
+        OnGameStopped?.Invoke();
+    }
+
+    public void ShowPauseMenu() {
+        _pauseScreen.SetActive(true);
+        OnGameStopped?.Invoke();
+        isPaused = true;
+        Time.timeScale = 0.0f;
+    }
+
+    public void HidePauseMenu() {
+        _pauseScreen.SetActive(false);
+        isPaused = false;
+        Time.timeScale = 1;
+        OnGameResumed?.Invoke();
     }
 
     public bool IsInWinLoseState() {

@@ -1243,7 +1243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_WalkSpeed: 1
-  m_RunSpeed: 4
+  m_RunSpeed: 3
   m_RotateSpeed: 245
   m_Space: 1
   m_JumpHeight: 5
@@ -1261,7 +1261,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8073443194988779917}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e5e9151e1edc6d4fb3a35edc8b42ffc, type: 3}
   m_Name: 

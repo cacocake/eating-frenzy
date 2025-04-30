@@ -17,6 +17,7 @@ TagManager:
   - PlayerHoleCharacter
   - PlayerGUI
   - Prop
+  - SettingsButton
   layers:
   - Default
   - TransparentFX

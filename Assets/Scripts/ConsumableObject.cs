@@ -8,9 +8,11 @@ public class ConsumableObject : MonoBehaviour {
     public static event Action<ConsumableObject> OnConsumableObjectSwallowed;
     
     private int _defaultLayer;
+    private MeshRenderer _renderer;
     
     private void Start() {
         _defaultLayer = gameObject.layer;
+        _renderer = transform.GetComponentInChildren<MeshRenderer>();
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -39,19 +41,19 @@ public class ConsumableObject : MonoBehaviour {
     }
 
     public void MakeObjectTransparent() {
-        MeshRenderer renderer = transform.GetComponentInChildren<MeshRenderer>();
-        if(renderer == null) {
+        if(_renderer == null) {
             return;
         }
-        renderer.material.color = new Color(1, 1, 1, 0.5f);
+        Material material = _renderer.material;
+        material.color = new Color(material.color.r, material.color.g, material.color.b, 0.5f);
     }
 
     public void ReturnTransparencyToNormal() {
-        MeshRenderer renderer = transform.GetComponentInChildren<MeshRenderer>();
-        if(renderer == null) {
+        if(_renderer == null) {
             return;
         }
-        renderer.material.color = new Color(1, 1, 1, 1);
+        Material material = _renderer.material;
+        material.color = new Color(material.color.r, material.color.g, material.color.b, 1.0f);
     }
 
 }

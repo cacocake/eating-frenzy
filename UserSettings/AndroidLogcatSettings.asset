@@ -1,13 +1,50 @@
 {
-    "m_SelectedDeviceId": "",
+    "m_SelectedDeviceId": "5e8b07ea",
     "m_SelectedProcess": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "5e8b07ea",
+        "name": "com.CacoCake.EatingFrenzy",
+        "processId": 25528,
         "exited": false
     },
     "m_SelectedPriority": 0,
-    "m_KnownProcessesForSerialization": [],
+    "m_KnownProcessesForSerialization": [
+        {
+            "deviceId": "5e8b07ea",
+            "name": "com.CacoCake.EatingFrenzy",
+            "processId": 4512,
+            "exited": false
+        },
+        {
+            "deviceId": "5e8b07ea",
+            "name": "com.CacoCake.EatingFrenzy",
+            "processId": 6337,
+            "exited": false
+        },
+        {
+            "deviceId": "5e8b07ea",
+            "name": "com.CacoCake.EatingFrenzy",
+            "processId": 14519,
+            "exited": false
+        },
+        {
+            "deviceId": "5e8b07ea",
+            "name": "com.CacoCake.EatingFrenzy",
+            "processId": 15575,
+            "exited": false
+        },
+        {
+            "deviceId": "5e8b07ea",
+            "name": "com.CacoCake.EatingFrenzy",
+            "processId": 19323,
+            "exited": false
+        },
+        {
+            "deviceId": "5e8b07ea",
+            "name": "com.CacoCake.EatingFrenzy",
+            "processId": 25528,
+            "exited": false
+        }
+    ],
     "m_Tags": {
         "m_Entries": [
             {
@@ -45,8 +82,19 @@
         "Height": 0.0
     },
     "m_MemoryViewerState": {
-        "MemoryWindowWidth": 0.0,
-        "MemoryTypeEnabled": [],
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
         "MemoryGroup": 2,
         "AutoCapture": true
     },

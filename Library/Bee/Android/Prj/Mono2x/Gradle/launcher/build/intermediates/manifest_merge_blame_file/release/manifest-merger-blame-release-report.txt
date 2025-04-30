@@ -1,0 +1,174 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.CacoCake.EatingFrenzy"
+4    android:installLocation="preferExternal"
+5    android:versionCode="1"
+6    android:versionName="0.1" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="22"
+9-->C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="35" />
+10-->C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+11
+12    <supports-screens
+12-->C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:3-163
+13        android:anyDensity="true"
+13-->C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:135-160
+14        android:largeScreens="true"
+14-->C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:78-105
+15        android:normalScreens="true"
+15-->C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:49-77
+16        android:smallScreens="true"
+16-->C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:21-48
+17        android:xlargeScreens="true" />
+17-->C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:106-134
+18
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:8:5-67
+19-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:8:22-64
+20
+21    <uses-feature android:glEsVersion="0x00030000" />
+21-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-54
+21-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:19-51
+22    <uses-feature
+22-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-13:36
+23        android:name="android.hardware.vulkan.version"
+23-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-55
+24        android:required="false" />
+24-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:9-33
+25    <uses-feature
+25-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:5-16:36
+26        android:name="android.hardware.type.pc"
+26-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-48
+27        android:required="false" />
+27-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-33
+28    <uses-feature
+28-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:5-19:36
+29        android:name="android.hardware.touchscreen"
+29-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-52
+30        android:required="false" />
+30-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-33
+31    <uses-feature
+31-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:5-22:36
+32        android:name="android.hardware.touchscreen.multitouch"
+32-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-63
+33        android:required="false" />
+33-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:9-33
+34    <uses-feature
+34-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:23:5-25:36
+35        android:name="android.hardware.touchscreen.multitouch.distinct"
+35-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:9-72
+36        android:required="false" />
+36-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:9-33
+37
+38    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+38-->[:unityLibrary:mobilenotifications.androidlib] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\mobilenotifications.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-77
+38-->[:unityLibrary:mobilenotifications.androidlib] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\mobilenotifications.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:7:22-74
+39
+40    <application
+40-->C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:3-83
+41        android:enableOnBackInvokedCallback="false"
+41-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-52
+42        android:extractNativeLibs="true"
+42-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:9-41
+43        android:icon="@mipmap/app_icon"
+43-->C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:49-80
+44        android:label="@string/app_name" >
+44-->C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:16-48
+45        <meta-data
+45-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:9-32:33
+46            android:name="unity.splash-mode"
+46-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-45
+47            android:value="0" />
+47-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-30
+48        <meta-data
+48-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:33:9-35:36
+49            android:name="unity.splash-enable"
+49-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:34:13-47
+50            android:value="True" />
+50-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:35:13-33
+51        <meta-data
+51-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:36:9-38:36
+52            android:name="unity.launch-fullscreen"
+52-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:37:13-51
+53            android:value="True" />
+53-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:38:13-33
+54        <meta-data
+54-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:39:9-41:36
+55            android:name="unity.render-outside-safearea"
+55-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:40:13-57
+56            android:value="True" />
+56-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:41:13-33
+57        <meta-data
+57-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:42:9-44:50
+58            android:name="notch.config"
+58-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:43:13-40
+59            android:value="portrait|landscape" />
+59-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:44:13-47
+60        <meta-data
+60-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:45:9-47:36
+61            android:name="unity.auto-report-fully-drawn"
+61-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:46:13-57
+62            android:value="true" />
+62-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:47:13-33
+63
+64        <activity
+64-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:49:9-70:20
+65            android:name="com.unity3d.player.UnityPlayerActivity"
+65-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:50:13-66
+66            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+66-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:51:13-194
+67            android:exported="true"
+67-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:52:13-36
+68            android:hardwareAccelerated="false"
+68-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:53:13-48
+69            android:launchMode="singleTask"
+69-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:54:13-44
+70            android:resizeableActivity="false"
+70-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:55:13-47
+71            android:screenOrientation="portrait"
+71-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:56:13-49
+72            android:theme="@style/UnityThemeSelector" >
+72-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:57:13-54
+73            <intent-filter>
+73-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:58:13-62:29
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:59:17-77
+74-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:59:27-74
+75
+76                <action android:name="android.intent.action.MAIN" />
+76-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:61:17-69
+76-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:61:25-66
+77            </intent-filter>
+78
+79            <meta-data
+79-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:64:13-66:40
+80                android:name="unityplayer.UnityActivity"
+80-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:65:17-57
+81                android:value="true" />
+81-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:66:17-37
+82            <meta-data
+82-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:67:13-69:40
+83                android:name="notch_support"
+83-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:68:17-45
+84                android:value="true" />
+84-->[:unityLibrary] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:69:17-37
+85        </activity>
+86
+87        <receiver
+87-->[:unityLibrary:mobilenotifications.androidlib] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\mobilenotifications.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-12:40
+88            android:name="com.unity.androidnotifications.UnityNotificationManager"
+88-->[:unityLibrary:mobilenotifications.androidlib] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\mobilenotifications.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-83
+89            android:exported="false" />
+89-->[:unityLibrary:mobilenotifications.androidlib] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\mobilenotifications.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+90
+91        <meta-data
+91-->[:unityLibrary:mobilenotifications.androidlib] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\mobilenotifications.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:9-16:33
+92            android:name="com.unity.androidnotifications.exact_scheduling"
+92-->[:unityLibrary:mobilenotifications.androidlib] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\mobilenotifications.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-75
+93            android:value="0" />
+93-->[:unityLibrary:mobilenotifications.androidlib] C:\Repos\EatingFrenzy\eating-frenzy\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\mobilenotifications.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-30
+94    </application>
+95
+96</manifest>

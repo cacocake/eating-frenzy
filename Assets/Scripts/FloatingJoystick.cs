@@ -1,13 +1,15 @@
 using UnityEngine;
 using UnityEngine.InputSystem.EnhancedTouch;
+using UnityEngine.UI;
 
 public class FloatingJoystick : MonoBehaviour {
 
-     [SerializeField] private RectTransform _knob;
-
+    [SerializeField] private RectTransform _knob;
+    
     private Finger _movementFinger;
     private Vector2 _size = Vector2.zero;
     private RectTransform _rectTransform;
+    private const float k_maxScreenPositionHeightFactorForJoystick = 0.75f;
 
     public Vector2 KnobDistanceFactorFromCenter { get; private set; }
 
@@ -17,8 +19,21 @@ public class FloatingJoystick : MonoBehaviour {
         _size = _rectTransform.rect.size;
     }
 
+    private bool shouldIgnoreFingerEvents() {
+        return MenuManager.Instance.IsInWinLoseState() || MenuManager.isPaused;
+    }
+
     public void HandleFingerDown(Finger finger) {
-        if(_movementFinger != null || MenuManager.Instance.IsInWinLoseState()) {
+        if(_movementFinger != null || shouldIgnoreFingerEvents()) {
+            return;
+        }
+
+        if(_rectTransform == null) {
+            Debug.LogError("_rectTransform is null!");
+            return;
+        }
+
+        if(finger.screenPosition.y > Screen.height * k_maxScreenPositionHeightFactorForJoystick) {
             return;
         }
         
@@ -40,7 +55,12 @@ public class FloatingJoystick : MonoBehaviour {
     }
 
     public void HandleFingerUp(Finger finger) {
-        if(finger != _movementFinger || MenuManager.Instance.IsInWinLoseState()) {
+        if(finger != _movementFinger || shouldIgnoreFingerEvents()) {
+            return;
+        }
+
+        if(_knob == null) {
+            Debug.LogError("_knob is null!");
             return;
         }
 
@@ -51,7 +71,12 @@ public class FloatingJoystick : MonoBehaviour {
     }
 
     public void HandleFingerMove(Finger finger) {
-        if(finger != _movementFinger || MenuManager.Instance.IsInWinLoseState()) {
+        if(finger != _movementFinger || shouldIgnoreFingerEvents()) {
+            return;
+        }
+
+        if(_knob == null) {
+            Debug.LogError("_knob is null!");
             return;
         }
 
