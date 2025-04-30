@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using MobileHapticsProFreeEdition;
 
 public class MenuManager : MonoBehaviour {
 
@@ -12,7 +13,9 @@ public class MenuManager : MonoBehaviour {
     public static MenuManager Instance { get; private set; }
     public static event Action OnGameStopped;
     public static event Action OnGameResumed;
-    public static bool isPaused = false;
+    public static event Action OnVibrationSettingChanged;
+    public static bool IsPaused = false;
+    public static bool AreVibrationsEnabled = true;
 
     private void Start() {
         if (Instance != null) {
@@ -32,12 +35,6 @@ public class MenuManager : MonoBehaviour {
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
-        _winScreen.SetActive(false);
-        _loseScreen.SetActive(false);
-        _pauseScreen.SetActive(false);
-        isPaused = false;
-        Time.timeScale = 1.0f;
-
         if (scene.name == "MainMenu") {
             GameObject.FindWithTag("PlayButton").GetComponent<Button>().onClick.AddListener(() => {
                 LoadPlayScene();
@@ -49,6 +46,18 @@ public class MenuManager : MonoBehaviour {
             GameObject.FindWithTag("SettingsButton").GetComponent<Button>().onClick.AddListener(() => {
                 ShowPauseMenu();
             });
+        }
+        
+        if(_winScreen) {
+            _winScreen.SetActive(false);
+        }
+
+        if(_winScreen) {
+            _loseScreen.SetActive(false);
+        }
+
+        if(_pauseScreen) {
+            _pauseScreen.SetActive(false);
         }
     }
 
@@ -76,19 +85,27 @@ public class MenuManager : MonoBehaviour {
     public void ShowPauseMenu() {
         _pauseScreen.SetActive(true);
         OnGameStopped?.Invoke();
-        isPaused = true;
+        IsPaused = true;
         Time.timeScale = 0.0f;
     }
 
     public void HidePauseMenu() {
         _pauseScreen.SetActive(false);
-        isPaused = false;
+        IsPaused = false;
         Time.timeScale = 1;
         OnGameResumed?.Invoke();
     }
 
     public bool IsInWinLoseState() {
         return _winScreen.activeSelf || _loseScreen.activeSelf;
+    }
+
+    public void ToggleVibrations() {
+        AreVibrationsEnabled = !AreVibrationsEnabled;
+        if(AreVibrationsEnabled) {
+            TapticWave.TriggerHaptic(HapticModes.Failure);
+        }
+        OnVibrationSettingChanged?.Invoke();
     }
     
 }

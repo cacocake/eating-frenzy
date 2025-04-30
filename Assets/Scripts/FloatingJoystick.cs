@@ -20,7 +20,7 @@ public class FloatingJoystick : MonoBehaviour {
     }
 
     private bool shouldIgnoreFingerEvents() {
-        return MenuManager.Instance.IsInWinLoseState() || MenuManager.isPaused;
+        return MenuManager.Instance.IsInWinLoseState() || MenuManager.IsPaused;
     }
 
     public void HandleFingerDown(Finger finger) {

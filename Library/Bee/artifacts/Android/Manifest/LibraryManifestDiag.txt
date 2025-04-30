@@ -9,6 +9,9 @@ android.permission.INTERNET was added because:
 		Unity.InputSystem-FeaturesChecked.txt
 	UnityEngine.Network was present in:
 		Unity.InputSystem-FeaturesChecked.txt
+android.permission.VIBRATE was added because:
+	UnityEngine.Handheld::Vibrate was present in:
+		Assembly-CSharp-FeaturesChecked.txt
 android.hardware.touchscreen.multitouch, android.hardware.touchscreen.multitouch.distinct were enabled because:
 	UnityEngine.Input::get_touches was present in:
 		Cinemachine-FeaturesChecked.txt

@@ -18,6 +18,7 @@ ScriptsOnlyBuild:
     - PlayerLevelProgressBar
     - Rotator
     - TimeLabel
+    - VibrationSettingsLabel
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineComposer
@@ -26,20 +27,16 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachineVirtualCamera
     Unity.AdaptivePerformance.Editor.dll:
     - UnityEditor.AdaptivePerformance.Editor.AdaptivePerformanceGeneralSettingsPerBuildTarget
-    - UnityEditor.AdaptivePerformance.Editor.AdaptivePerformanceManagerSettingsEditor
     Unity.AdaptivePerformance.Google.Android.Editor.dll:
     - UnityEditor.AdaptivePerformance.Google.Android.Editor.GoogleAndroidProviderSettingsEditor
     Unity.AdaptivePerformance.Google.Android.dll:
     - UnityEngine.AdaptivePerformance.Google.Android.GoogleAndroidProviderLoader
     - UnityEngine.AdaptivePerformance.Google.Android.GoogleAndroidProviderSettings
-    Unity.AdaptivePerformance.Samsung.Android.Editor.dll:
-    - UnityEditor.AdaptivePerformance.Samsung.Android.Editor.SamsungAndroidProviderSettingsEditor
     Unity.AdaptivePerformance.Samsung.Android.dll:
     - UnityEngine.AdaptivePerformance.Samsung.Android.SamsungAndroidProviderLoader
     - UnityEngine.AdaptivePerformance.Samsung.Android.SamsungAndroidProviderSettings
     Unity.AdaptivePerformance.Simulator.Editor.dll:
     - UnityEditor.AdaptivePerformance.Simulator.Editor.SimulatorProviderSettings
-    - UnityEditor.AdaptivePerformance.Simulator.Editor.SimulatorProviderSettingsEditor
     Unity.AdaptivePerformance.dll:
     - UnityEngine.AdaptivePerformance.AdaptivePerformanceGeneralSettings
     - UnityEngine.AdaptivePerformance.AdaptivePerformanceManagerSettings
@@ -166,6 +163,21 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
+    methodName: ExitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: LoadMainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: ToggleVibrations
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: LoadPlayScene
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: HidePauseMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
     methodName: LoadMainMenu
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
@@ -184,6 +196,21 @@ ScriptsOnlyBuild:
     methodName: ExitGame
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
+    methodName: ExitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: LoadMainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: ToggleVibrations
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: LoadPlayScene
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: HidePauseMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
     methodName: LoadMainMenu
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
@@ -194,6 +221,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
     methodName: LoadPlayScene
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: ShowPauseMenu
   sceneClasses:
     Assets/Scenes/Forest.unity:
     - Class: 1
@@ -237,55 +267,57 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16800}
+      Script: {instanceID: 16798}
     - Class: 114
-      Script: {instanceID: 16806}
+      Script: {instanceID: 16804}
     - Class: 114
-      Script: {instanceID: 16810}
+      Script: {instanceID: 16876}
     - Class: 114
-      Script: {instanceID: 16880}
+      Script: {instanceID: 17828}
     - Class: 114
-      Script: {instanceID: 17832}
+      Script: {instanceID: 17926}
     - Class: 114
-      Script: {instanceID: 17930}
+      Script: {instanceID: 18150}
     - Class: 114
-      Script: {instanceID: 18154}
+      Script: {instanceID: 18242}
     - Class: 114
-      Script: {instanceID: 18246}
+      Script: {instanceID: 18326}
     - Class: 114
-      Script: {instanceID: 18330}
+      Script: {instanceID: 18502}
     - Class: 114
-      Script: {instanceID: 18506}
+      Script: {instanceID: 18548}
     - Class: 114
-      Script: {instanceID: 18552}
+      Script: {instanceID: 18850}
     - Class: 114
-      Script: {instanceID: 19040}
+      Script: {instanceID: 19038}
     - Class: 114
-      Script: {instanceID: 19434}
+      Script: {instanceID: 19432}
     - Class: 114
-      Script: {instanceID: 19746}
+      Script: {instanceID: 19744}
     - Class: 114
-      Script: {instanceID: 20260}
+      Script: {instanceID: 20258}
     - Class: 114
-      Script: {instanceID: 20304}
+      Script: {instanceID: 20302}
     - Class: 114
-      Script: {instanceID: 20982}
+      Script: {instanceID: 20980}
     - Class: 114
-      Script: {instanceID: 21146}
+      Script: {instanceID: 21144}
     - Class: 114
-      Script: {instanceID: 21202}
+      Script: {instanceID: 21200}
     - Class: 114
-      Script: {instanceID: 21244}
+      Script: {instanceID: 21242}
     - Class: 114
-      Script: {instanceID: 21290}
+      Script: {instanceID: 21288}
     - Class: 114
-      Script: {instanceID: 21516}
+      Script: {instanceID: 21514}
     - Class: 114
-      Script: {instanceID: 21648}
+      Script: {instanceID: 21646}
     - Class: 114
-      Script: {instanceID: 21768}
+      Script: {instanceID: 21766}
     - Class: 114
-      Script: {instanceID: 22382}
+      Script: {instanceID: 22380}
+    - Class: 114
+      Script: {instanceID: 22420}
     - Class: 114
       Script: {instanceID: 22650}
     - Class: 114
@@ -382,33 +414,35 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16806}
+      Script: {instanceID: 16804}
     - Class: 114
-      Script: {instanceID: 16810}
+      Script: {instanceID: 16876}
     - Class: 114
-      Script: {instanceID: 16880}
+      Script: {instanceID: 17664}
     - Class: 114
-      Script: {instanceID: 17668}
+      Script: {instanceID: 18242}
     - Class: 114
-      Script: {instanceID: 18246}
+      Script: {instanceID: 18502}
     - Class: 114
-      Script: {instanceID: 18506}
+      Script: {instanceID: 18548}
     - Class: 114
-      Script: {instanceID: 18552}
+      Script: {instanceID: 18850}
     - Class: 114
-      Script: {instanceID: 19746}
+      Script: {instanceID: 19744}
     - Class: 114
-      Script: {instanceID: 20156}
+      Script: {instanceID: 20154}
     - Class: 114
-      Script: {instanceID: 20302}
+      Script: {instanceID: 20300}
     - Class: 114
-      Script: {instanceID: 20652}
+      Script: {instanceID: 20650}
     - Class: 114
-      Script: {instanceID: 21516}
+      Script: {instanceID: 21514}
     - Class: 114
-      Script: {instanceID: 21648}
+      Script: {instanceID: 21646}
     - Class: 114
-      Script: {instanceID: 22382}
+      Script: {instanceID: 22380}
+    - Class: 114
+      Script: {instanceID: 22420}
     - Class: 114
       Script: {instanceID: 22650}
     - Class: 114
@@ -420,6 +454,8 @@ ScriptsOnlyBuild:
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
@@ -474,12 +510,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Text
-  - hash:
-      serializedVersion: 2
-      Hash: 540882762544409cc4530e60db00e951
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: f235b66bbaad891803c9d777dfd67956
@@ -812,7 +842,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 49823f4befebd7ec28d8d2803c507121
+      Hash: dd04c58cf657fe91577e9395a654f36e
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MenuManager
@@ -912,6 +942,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: VertexShakeA
+  - hash:
+      serializedVersion: 2
+      Hash: f59cab40429cf2cfbd876f9c67e779f1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: VibrationSettingsLabel
   - hash:
       serializedVersion: 2
       Hash: a1ac4c50e55874de16eee3db71aa9784
@@ -1676,7 +1712,7 @@ ScriptsOnlyBuild:
     className: AdaptivePerformanceManagerSpawner
   - hash:
       serializedVersion: 2
-      Hash: 509eec7c05449011cdcb4966f337d151
+      Hash: de7095d546ee9186ca83b237a628fcd8
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerHole
@@ -1776,6 +1812,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine
     namespaceName: Cinemachine
     className: CinemachineBrain
+  - hash:
+      serializedVersion: 2
+      Hash: 540882762544409cc4530e60db00e951
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: 560346f4cbb7006f1b0bb6c77805d7ec
@@ -2138,7 +2180,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: f954062eecedd615e3942de6d62c2b25
+      Hash: 9dbe7c85d357109e9bbf2e968558aa05
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager
@@ -2300,7 +2342,7 @@ ScriptsOnlyBuild:
     className: LensDistortion
   - hash:
       serializedVersion: 2
-      Hash: 36316dcd82ce55770be775ae79480658
+      Hash: baea9614330d0baceb356d120315e682
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: FloatingJoystick
@@ -2406,6 +2448,78 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: e80161a8f541ae0879b38c89da0f8915
+    assemblyName: Assembly-CSharp
+    namespaceName: MobileHapticsProFreeEdition
+    className: CubeMissileDestroy
+  - hash:
+      serializedVersion: 2
+      Hash: 0022e1ebe34ecb9cb3bad54d27964459
+    assemblyName: Assembly-CSharp
+    namespaceName: MobileHapticsProFreeEdition
+    className: SceneController
+  - hash:
+      serializedVersion: 2
+      Hash: f1666c2fde4434c08de91426b1750a4b
+    assemblyName: Assembly-CSharp
+    namespaceName: MobileHapticsProFreeEdition
+    className: Obstacle
+  - hash:
+      serializedVersion: 2
+      Hash: 36cc8ea85f815d42e9b645d9c7cde0a9
+    assemblyName: Assembly-CSharp
+    namespaceName: MobileHapticsProFreeEdition
+    className: ButtonAutoModeOpacity
+  - hash:
+      serializedVersion: 2
+      Hash: defb1da54ccee6767aab83fa9d0abcfd
+    assemblyName: Assembly-CSharp
+    namespaceName: MobileHapticsProFreeEdition
+    className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 3f5156eb978b5cbaca82cb3599501448
+    assemblyName: Assembly-CSharp
+    namespaceName: MobileHapticsProFreeEdition
+    className: SelfDestroy
+  - hash:
+      serializedVersion: 2
+      Hash: 386a32a9bcfa3f95e6055458697c8215
+    assemblyName: Assembly-CSharp
+    namespaceName: MobileHapticsProFreeEdition
+    className: HapticButtonManager
+  - hash:
+      serializedVersion: 2
+      Hash: 142c73ba0aa00d052789d6527e6d7ae4
+    assemblyName: Assembly-CSharp
+    namespaceName: MobileHapticsProFreeEdition
+    className: ButtonColorManager
+  - hash:
+      serializedVersion: 2
+      Hash: 7ae55c8782d6982d8a792a4cb2d44369
+    assemblyName: Assembly-CSharp
+    namespaceName: MobileHapticsProFreeEdition
+    className: Explosion
+  - hash:
+      serializedVersion: 2
+      Hash: 8f792d983435c9ad2c173ce4486202fc
+    assemblyName: Assembly-CSharp
+    namespaceName: MobileHapticsProFreeEdition
+    className: GameHaptics
+  - hash:
+      serializedVersion: 2
+      Hash: a4cfef9cb81c00e0903db47bf26064c3
+    assemblyName: Assembly-CSharp
+    namespaceName: MobileHapticsProFreeEdition
+    className: FPSController
+  - hash:
+      serializedVersion: 2
+      Hash: d7c50cd7b268db736307357503672d91
+    assemblyName: Assembly-CSharp
+    namespaceName: MobileHapticsProFreeEdition
+    className: PlayerController
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 93caadf4359ae8143aad35b3145d31af, type: 2}
+  - {fileID: 2100000, guid: 7def70922c8e3f3488e0ce1d66a701c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: -8886035748035109185}
   - component: {fileID: 6591679113412973821}
   - component: {fileID: 446148131199929297}
-  - component: {fileID: 2944542239742185558}
+  - component: {fileID: 285940782120762198}
   m_Layer: 10
   m_Name: Tree_04
   m_TagString: Consumable
@@ -155,7 +155,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 1, z: 0}
+  m_CenterOfMass: {x: 0, y: 0.5, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ad58844d1a02643a089d42f392c4ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _points: 15
+  _points: 10
 --- !u!65 &446148131199929297
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -203,9 +203,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.7239821, y: 0.3160615, z: 1.7312448}
-  m_Center: {x: 0.019238234, y: 0.18763518, z: -0.03106153}
---- !u!136 &2944542239742185558
+  m_Size: {x: 1.4055221, y: 0.3160615, z: 1.3862467}
+  m_Center: {x: 0.028084278, y: 0.18763518, z: -0.0001001358}
+--- !u!136 &285940782120762198
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,10 +224,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5960318
-  m_Height: 4.772685
+  m_Radius: 0.28768662
+  m_Height: 3.4061375
   m_Direction: 1
-  m_Center: {x: 0, y: 3.3446293, z: -0.031790137}
+  m_Center: {x: 0, y: 2.1142216, z: -0.008853644}
 --- !u!1 &7897144593525785336
 GameObject:
   m_ObjectHideFlags: 0

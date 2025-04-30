@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 93caadf4359ae8143aad35b3145d31af, type: 2}
+  - {fileID: 2100000, guid: 7def70922c8e3f3488e0ce1d66a701c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: -1732226184956621494}
   - component: {fileID: -5166875218137661235}
   - component: {fileID: 2411587536532301033}
-  - component: {fileID: 4578438514021136594}
+  - component: {fileID: 7388502934657996405}
   m_Layer: 10
   m_Name: Tree_03
   m_TagString: Consumable
@@ -238,7 +238,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_CenterOfMass: {x: 0, y: 0.5, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
@@ -288,7 +288,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3831664, y: 0.16610037, z: 1.3317647}
   m_Center: {x: 0.015102029, y: 0.16684395, z: -0.03137386}
---- !u!136 &4578438514021136594
+--- !u!136 &7388502934657996405
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -307,7 +307,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.504865
-  m_Height: 3.1452212
+  m_Radius: 0.3716533
+  m_Height: 2.4679651
   m_Direction: 1
-  m_Center: {x: -0.00000011920929, y: 2.3174493, z: -0.08323592}
+  m_Center: {x: 0.04411915, y: 1.5602145, z: -0.08422753}

@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private ushort _stageTargetPoints;
     [SerializeField] private float _stageTimeLimit;
     [SerializeField] private Canvas _levelGUI;
+    [SerializeField] private Canvas _floatingJoystickGUI;
     
     private ushort _baseTargetPoints = 10;
     private ushort _previousLevelTargetTotalPoints = 0;
@@ -50,15 +51,18 @@ public class GameManager : MonoBehaviour {
 
     private void HandleOnGameStopped(){
         _levelGUI.gameObject.SetActive(false);
+        _floatingJoystickGUI.gameObject.SetActive(true);
     }
 
     private void HandleOnGameResumed(){
         _levelGUI.gameObject.SetActive(true);
+        _floatingJoystickGUI.gameObject.SetActive(true);
     }
 
     private void OnDisable() {
         ConsumableObject.OnConsumableObjectSwallowed -= HandleConsumableObjectSwallowed;
         MenuManager.OnGameStopped -= HandleOnGameStopped;
+        MenuManager.OnGameResumed -= HandleOnGameResumed;
     }
 
     private void HandleConsumableObjectSwallowed(ConsumableObject consumableObject) {
