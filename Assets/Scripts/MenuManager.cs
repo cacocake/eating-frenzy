@@ -2,13 +2,14 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using MobileHapticsProFreeEdition;
 
 public class MenuManager : MonoBehaviour {
 
     [SerializeField] private GameObject _winScreen;
     [SerializeField] private GameObject _loseScreen;
     [SerializeField] private GameObject _pauseScreen;
+    [SerializeField] private AudioSource _winSFX;
+    [SerializeField] private AudioSource _loseSFX;
     
     public static MenuManager Instance { get; private set; }
     public static event Action OnGameStopped;
@@ -16,12 +17,14 @@ public class MenuManager : MonoBehaviour {
     public static event Action OnVibrationSettingChanged;
     public static bool IsPaused = false;
     public static bool AreVibrationsEnabled = true;
+    public static bool IsSoundMuted = false;
 
     private void Start() {
         if (Instance != null) {
             Destroy(gameObject);
             return;
         }
+        Application.targetFrameRate = 60;
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
@@ -59,6 +62,7 @@ public class MenuManager : MonoBehaviour {
         if(_pauseScreen) {
             _pauseScreen.SetActive(false);
         }
+        ResumeGame();
     }
 
     public void LoadPlayScene() {
@@ -75,10 +79,12 @@ public class MenuManager : MonoBehaviour {
 
     public void ShowWinScreen() {
         _winScreen.SetActive(true);
+        _winSFX.Play();
         OnGameStopped?.Invoke();
     }
     public void ShowLoseScreen() {
         _loseScreen.SetActive(true);
+        _loseSFX.Play();
         OnGameStopped?.Invoke();
     }
 
@@ -89,7 +95,7 @@ public class MenuManager : MonoBehaviour {
         Time.timeScale = 0.0f;
     }
 
-    public void HidePauseMenu() {
+    public void ResumeGame() {
         _pauseScreen.SetActive(false);
         IsPaused = false;
         Time.timeScale = 1;
@@ -103,9 +109,15 @@ public class MenuManager : MonoBehaviour {
     public void ToggleVibrations() {
         AreVibrationsEnabled = !AreVibrationsEnabled;
         if(AreVibrationsEnabled) {
-            TapticWave.TriggerHaptic(HapticModes.Failure);
+            Utils.ExecuteHapticVibration(Utils.HapticType.ActivateVibrationSetting);
         }
         OnVibrationSettingChanged?.Invoke();
+    }
+
+    public void ToggleSound() {
+        IsSoundMuted = !IsSoundMuted;
+        AudioListener.pause = IsSoundMuted;
+        AudioListener.volume = IsSoundMuted ? 0.0f : 0.75f;
     }
     
 }

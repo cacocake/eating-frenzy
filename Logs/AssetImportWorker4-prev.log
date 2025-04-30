@@ -1,0 +1,1023 @@
+Using pre-set license
+Built from '2022.3/release' branch; Version is '2022.3.61f1 (6c53ebaf375d) revision 7099371'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'pt' Physical Memory: 16310 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.61f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Repos/EatingFrenzy/eating-frenzy
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+49830
+Successfully changed project path to: C:/Repos/EatingFrenzy/eating-frenzy
+C:/Repos/EatingFrenzy/eating-frenzy
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [16044]  Target information:
+
+Player connection [16044]  * "[IP] 192.168.1.53 [Port] 0 [Flags] 2 [Guid] 2957874847 [EditorId] 2957874847 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-A9PD2MC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [16044] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [16044] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+Refreshing native plugins compatible for Editor in 16.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.61f1 (6c53ebaf375d)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Repos/EatingFrenzy/eating-frenzy/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti (ID=0x2482)
+    Vendor:   NVIDIA
+    VRAM:     8018 MB
+    Driver:   32.0.15.6636
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56556
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.61f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.018350 seconds.
+- Loaded All Assemblies, in  0.405 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 265 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.536 seconds
+Domain Reload Profiling: 938ms
+	BeginReloadAssembly (150ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (128ms)
+		LoadAssemblies (148ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (125ms)
+			TypeCache.Refresh (123ms)
+				TypeCache.ScanAssembly (111ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (536ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (498ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (354ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (102ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.607 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.628 seconds
+Domain Reload Profiling: 1230ms
+	BeginReloadAssembly (135ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (389ms)
+		LoadAssemblies (323ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (141ms)
+			TypeCache.Refresh (117ms)
+				TypeCache.ScanAssembly (103ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (628ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (484ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (346ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 11.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4481 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (2.1 MB). Loaded Objects now: 4952.
+Memory consumption went from 243.0 MB to 240.9 MB.
+Total: 3.634100 ms (FindLiveObjects: 0.292600 ms CreateObjectMapping: 0.102800 ms MarkObjects: 2.759600 ms  DeleteObjects: 0.478200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/GameHaptics.cs: b1e65b233c512fb25409488f733f1594 -> 6a1a1c62e27537ef817e899a50ce6e93
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AndroidTapticWave.cs: b5cc2bcacdb3e4e10240bb7a5d9380dd -> 51616df99f7c1c2a24d5abc4736d11a4
+  custom:scripting/monoscript/fileName/GameManager.cs: 8674a36a52b2cdb44872558212603128 -> 0e6db8576ad8a4fc17984415d720b951
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/PlayerController.cs: 1d8852fcea1e47a7b5a5399abb5a4bd0 -> a0cf070f41db4f2cbffbbaf0ca4e2fa7
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/Explosion.cs: 95d32493addae771bcedb3c9cc3e2170 -> e83b65c0c6fe966c035df8180a1b5cc0
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/HapticsEngineEditor.cs: 0563c73986a27bff84fc45096673d522 -> 48949a0fbc203b7b826a3f3a8a93b747
+  custom:scripting/monoscript/fileName/TapticWave.cs: 8b4db3b6eb9320eaadb7149335db3e5b -> 1b32847a1b829c338408e944cb99ce80
+  custom:scripting/monoscript/fileName/ButtonColorManager.cs: 159182a91f48bf0aa9e0e50230c2371d -> b542d063584619d00013960415ddeca2
+  custom:scripting/monoscript/fileName/Obstacle.cs: e71f5bb1ab8e8973d68104e9f236cc60 -> 87a7cb9285ad63ac004294f85552cdae
+  custom:scripting/monoscript/fileName/SelfDestroy.cs: 3149fbf3a7ae7c07842642ff98428dad -> 6d730ecaa1fbbbb2e540bb2dcb3bb226
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/HapticButtonManager.cs: 34550f58b2b7dd8b70d995d9f9d89d5c -> 17ee750f4eecd186196f2eddb82f4f01
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CubeMissleDestroy.cs: 8e4a2e0051e912e4b0753619c26a6778 -> e3f5d695e3601ca89b51c4222b09d947
+  custom:scripting/monoscript/fileName/SceneController.cs: 4b1d9c0674264ecfef0bcda24d27fa64 -> 6b6cc29c8106daccad0feeb7f9df85fd
+  custom:scripting/monoscript/fileName/ButtonAutoModeOpacity.cs: 4181ad775b7aeb925f316b6929014109 -> e681a68b9d58bf1cb01eb707bc8aa504
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FPSController.cs: 147ceaeea76b57e138e86ca7b214afa2 -> f6639f33d1f170bc09ae66d3f51e2130
+========================================================================
+Received Import Request.
+  Time since last request: 20334.055779 seconds.
+  path: Assets/AssetsFromAssetStore/Lana Studio/Hyper Casual FX/Textures/Blast_directional.png
+  artifactKey: Guid(d4ed2c24a7c24e3419b43faf029ce757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Lana Studio/Hyper Casual FX/Textures/Blast_directional.png using Guid(d4ed2c24a7c24e3419b43faf029ce757) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '687a83b50fea1d4dd00d5709495b552a') in 0.106245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/AssetsFromAssetStore/Lana Studio/Hyper Casual FX/Textures/spark01.png
+  artifactKey: Guid(ae34e1306c59ede4f8b9c9aee3551223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Lana Studio/Hyper Casual FX/Textures/spark01.png using Guid(ae34e1306c59ede4f8b9c9aee3551223) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6cd36ea345b085d22a2052412b29f6f4') in 0.008802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/AssetsFromAssetStore/Lana Studio/Hyper Casual FX/Textures/Circle05.png
+  artifactKey: Guid(d0af66a9d145d5f438be94e94354e0e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Lana Studio/Hyper Casual FX/Textures/Circle05.png using Guid(d0af66a9d145d5f438be94e94354e0e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bec1eb828d089ba11911bb1bb546bf6f') in 0.008670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Lana Studio/Hyper Casual FX/Textures/Flare01.png
+  artifactKey: Guid(892deaf2e1ee28e4cafd18112f565635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Lana Studio/Hyper Casual FX/Textures/Flare01.png using Guid(892deaf2e1ee28e4cafd18112f565635) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4c33a478086676361aa7895870a7aba6') in 0.010449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Lana Studio/Hyper Casual FX/Textures/Flare02.png
+  artifactKey: Guid(c1b77ffedb1987f43a8aeb4b0eecd391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Lana Studio/Hyper Casual FX/Textures/Flare02.png using Guid(c1b77ffedb1987f43a8aeb4b0eecd391) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3d50bb7923a661afdfec3a14b9d5cdf6') in 0.007478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/AssetsFromAssetStore/Lana Studio/Hyper Casual FX/Textures/Circle03.png
+  artifactKey: Guid(9208f0b907763a642ab2a0a4718fa2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Lana Studio/Hyper Casual FX/Textures/Circle03.png using Guid(9208f0b907763a642ab2a0a4718fa2db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6fc3765f32276a16cdc228bbb8fed151') in 0.008906 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.422041 seconds.
+  path: Assets/AssetsFromAssetStore/ithappy/Animals_FREE/Textures/Texture.png
+  artifactKey: Guid(5bf4d5ffdfd914a48be4d1bf61c86666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/ithappy/Animals_FREE/Textures/Texture.png using Guid(5bf4d5ffdfd914a48be4d1bf61c86666) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '870d76fc23a68a6347f60cdc93b0f166') in 0.015079 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.407652 seconds.
+  path: Assets/AssetsFromAssetStore/ithappy/Animals_FREE/Prefabs/Chicken_001.prefab
+  artifactKey: Guid(6b0b0b098177a3b439c80991ec9deacc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/ithappy/Animals_FREE/Prefabs/Chicken_001.prefab using Guid(6b0b0b098177a3b439c80991ec9deacc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5dc925ddc6260714c3d39d29ade4f566') in 0.055408 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 89
+========================================================================
+Received Import Request.
+  Time since last request: 50.170753 seconds.
+  path: Assets/AssetsFromAssetStore/FastMesh/Materials/IconSign 6.mat
+  artifactKey: Guid(83651976724acae44abce86fa629be3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/FastMesh/Materials/IconSign 6.mat using Guid(83651976724acae44abce86fa629be3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '699679715c4c1475aee5782068e02ba4') in 0.020193 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 52.700784 seconds.
+  path: Assets/Adaptive Performance/Provider/Google Android Provider Loader.asset
+  artifactKey: Guid(221834af59d9633498f60d204dc47522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adaptive Performance/Provider/Google Android Provider Loader.asset using Guid(221834af59d9633498f60d204dc47522) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '77c4552289c64fe34adeaf8652cd510e') in 0.001918 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.305523 seconds.
+  path: Assets/Adaptive Performance/Settings/Google Android Provider Settings.asset
+  artifactKey: Guid(248ab9391db9ee64db71570b63239021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Adaptive Performance/Settings/Google Android Provider Settings.asset using Guid(248ab9391db9ee64db71570b63239021) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7c0cff7cfce9d0201fc04ceb4e6dfb21') in 0.004020 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.182676 seconds.
+  path: Assets/AssetsFromAssetStore/Fries and Seagull/Interior 01/Prefabs/Clock.prefab
+  artifactKey: Guid(d7dce48e404868c46a862ca531fddf3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/Fries and Seagull/Interior 01/Prefabs/Clock.prefab using Guid(d7dce48e404868c46a862ca531fddf3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e110ef4e3cb551b35a4241a337fb1c87') in 0.010850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 38
+========================================================================
+Received Import Request.
+  Time since last request: 3.524617 seconds.
+  path: Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts
+  artifactKey: Guid(d670123195064fe4a86b9ed193b651c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts using Guid(d670123195064fe4a86b9ed193b651c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd7555f0762cdefdf01711497b5eba1c6') in 0.000516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.246639 seconds.
+  path: Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Plugins/Android
+  artifactKey: Guid(d7c93721c762bd24c95fc6483077d86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Plugins/Android using Guid(d7c93721c762bd24c95fc6483077d86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ddec8e2c0b07182de4d65af551860bde') in 0.000568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.713577 seconds.
+  path: Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Plugins/Android/AndroidManifest.xml
+  artifactKey: Guid(07c39a47dcbdae34c9d82efa5b5b894b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Plugins/Android/AndroidManifest.xml using Guid(07c39a47dcbdae34c9d82efa5b5b894b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cd51aa0f639a85d1d545884623fb1b10') in 0.001114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 16.932865 seconds.
+  path: Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/AndroidTapticWave.cs
+  artifactKey: Guid(5cfb592839793914fa7fae72d0977b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/AndroidTapticWave.cs using Guid(5cfb592839793914fa7fae72d0977b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2d3af90b31d9b6142ed766ce143485fb') in 0.000747 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.148746 seconds.
+  path: Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/ButtonColorManager.cs
+  artifactKey: Guid(b7d615c06e06a474e96603ce96f67b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/ButtonColorManager.cs using Guid(b7d615c06e06a474e96603ce96f67b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9feda04393977759961ff99d74c8494a') in 0.000689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.273633 seconds.
+  path: Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/GameHaptics.cs
+  artifactKey: Guid(4ae3eb78e91a8e745942d21d47565662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/GameHaptics.cs using Guid(4ae3eb78e91a8e745942d21d47565662) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bf75b012d225cba4902b6cd196834958') in 0.000585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.250657 seconds.
+  path: Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/SceneController.cs
+  artifactKey: Guid(d1ea35226a9b44b48bd76b5feb11a2a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/SceneController.cs using Guid(d1ea35226a9b44b48bd76b5feb11a2a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0cfd7715df7e6a97128dd1155eddca9d') in 0.000602 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.258240 seconds.
+  path: Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/TapticWave.cs
+  artifactKey: Guid(d84d91c01fa8ad9418bde3fe813608db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/TapticWave.cs using Guid(d84d91c01fa8ad9418bde3fe813608db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6dad313d9e2f9a37e0d1dea6ca916480') in 0.000655 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.411531 seconds.
+  path: Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/GameScene
+  artifactKey: Guid(e316f09a1b98f144f9e49f8d70661a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/GameScene using Guid(e316f09a1b98f144f9e49f8d70661a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bcb4e9c72143cab6ebc1feb719ed7991') in 0.000501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.712998 seconds.
+  path: Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/Editor
+  artifactKey: Guid(94a6e5e47504bd64aa0d84c4b95492b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/Editor using Guid(94a6e5e47504bd64aa0d84c4b95492b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8935093cef66bd57beaa7eb43a9a2101') in 0.000554 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.313851 seconds.
+  path: Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/GameScene/HapticButtonManager.cs
+  artifactKey: Guid(67c02cd2064acca419004827e59fc08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetsFromAssetStore/IntelligentLabs/MobileHapticsProFREE/Scripts/GameScene/HapticButtonManager.cs using Guid(67c02cd2064acca419004827e59fc08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8127c2033a70c02c0f8ad95f7fa7892a') in 0.000689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.540 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.291 seconds
+Domain Reload Profiling: 1823ms
+	BeginReloadAssembly (176ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (288ms)
+		LoadAssemblies (346ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (40ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1292ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (493ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (343ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 12.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (2.1 MB). Loaded Objects now: 5011.
+Memory consumption went from 234.2 MB to 232.1 MB.
+Total: 3.824700 ms (FindLiveObjects: 0.332100 ms CreateObjectMapping: 0.113700 ms MarkObjects: 2.745100 ms  DeleteObjects: 0.632700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/GameHaptics.cs: b1e65b233c512fb25409488f733f1594 -> 6a1a1c62e27537ef817e899a50ce6e93
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AndroidTapticWave.cs: b5cc2bcacdb3e4e10240bb7a5d9380dd -> 51616df99f7c1c2a24d5abc4736d11a4
+  custom:scripting/monoscript/fileName/GameManager.cs: 8674a36a52b2cdb44872558212603128 -> 0e6db8576ad8a4fc17984415d720b951
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/PlayerController.cs: 1d8852fcea1e47a7b5a5399abb5a4bd0 -> a0cf070f41db4f2cbffbbaf0ca4e2fa7
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/Explosion.cs: 95d32493addae771bcedb3c9cc3e2170 -> e83b65c0c6fe966c035df8180a1b5cc0
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/HapticsEngineEditor.cs: 0563c73986a27bff84fc45096673d522 -> 48949a0fbc203b7b826a3f3a8a93b747
+  custom:scripting/monoscript/fileName/TapticWave.cs: 8b4db3b6eb9320eaadb7149335db3e5b -> 1b32847a1b829c338408e944cb99ce80
+  custom:scripting/monoscript/fileName/ButtonColorManager.cs: 159182a91f48bf0aa9e0e50230c2371d -> b542d063584619d00013960415ddeca2
+  custom:scripting/monoscript/fileName/Obstacle.cs: e71f5bb1ab8e8973d68104e9f236cc60 -> 87a7cb9285ad63ac004294f85552cdae
+  custom:scripting/monoscript/fileName/SelfDestroy.cs: 3149fbf3a7ae7c07842642ff98428dad -> 6d730ecaa1fbbbb2e540bb2dcb3bb226
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/HapticButtonManager.cs: 34550f58b2b7dd8b70d995d9f9d89d5c -> 17ee750f4eecd186196f2eddb82f4f01
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CubeMissleDestroy.cs: 8e4a2e0051e912e4b0753619c26a6778 -> e3f5d695e3601ca89b51c4222b09d947
+  custom:scripting/monoscript/fileName/SceneController.cs: 4b1d9c0674264ecfef0bcda24d27fa64 -> 6b6cc29c8106daccad0feeb7f9df85fd
+  custom:scripting/monoscript/fileName/ButtonAutoModeOpacity.cs: 4181ad775b7aeb925f316b6929014109 -> e681a68b9d58bf1cb01eb707bc8aa504
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FPSController.cs: 147ceaeea76b57e138e86ca7b214afa2 -> f6639f33d1f170bc09ae66d3f51e2130
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 14.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 15 unused Assets / (2.1 MB). Loaded Objects now: 5011.
+Memory consumption went from 166.3 MB to 164.2 MB.
+Total: 5.012100 ms (FindLiveObjects: 0.667300 ms CreateObjectMapping: 0.264000 ms MarkObjects: 3.447100 ms  DeleteObjects: 0.632600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/GameHaptics.cs: b1e65b233c512fb25409488f733f1594 -> 6a1a1c62e27537ef817e899a50ce6e93
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AndroidTapticWave.cs: b5cc2bcacdb3e4e10240bb7a5d9380dd -> 51616df99f7c1c2a24d5abc4736d11a4
+  custom:scripting/monoscript/fileName/GameManager.cs: 8674a36a52b2cdb44872558212603128 -> 0e6db8576ad8a4fc17984415d720b951
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/PlayerController.cs: 1d8852fcea1e47a7b5a5399abb5a4bd0 -> a0cf070f41db4f2cbffbbaf0ca4e2fa7
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/Explosion.cs: 95d32493addae771bcedb3c9cc3e2170 -> e83b65c0c6fe966c035df8180a1b5cc0
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/HapticsEngineEditor.cs: 0563c73986a27bff84fc45096673d522 -> 48949a0fbc203b7b826a3f3a8a93b747
+  custom:scripting/monoscript/fileName/TapticWave.cs: 8b4db3b6eb9320eaadb7149335db3e5b -> 1b32847a1b829c338408e944cb99ce80
+  custom:scripting/monoscript/fileName/ButtonColorManager.cs: 159182a91f48bf0aa9e0e50230c2371d -> b542d063584619d00013960415ddeca2
+  custom:scripting/monoscript/fileName/Obstacle.cs: e71f5bb1ab8e8973d68104e9f236cc60 -> 87a7cb9285ad63ac004294f85552cdae
+  custom:scripting/monoscript/fileName/SelfDestroy.cs: 3149fbf3a7ae7c07842642ff98428dad -> 6d730ecaa1fbbbb2e540bb2dcb3bb226
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/HapticButtonManager.cs: 34550f58b2b7dd8b70d995d9f9d89d5c -> 17ee750f4eecd186196f2eddb82f4f01
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CubeMissleDestroy.cs: 8e4a2e0051e912e4b0753619c26a6778 -> e3f5d695e3601ca89b51c4222b09d947
+  custom:scripting/monoscript/fileName/SceneController.cs: 4b1d9c0674264ecfef0bcda24d27fa64 -> 6b6cc29c8106daccad0feeb7f9df85fd
+  custom:scripting/monoscript/fileName/ButtonAutoModeOpacity.cs: 4181ad775b7aeb925f316b6929014109 -> e681a68b9d58bf1cb01eb707bc8aa504
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FPSController.cs: 147ceaeea76b57e138e86ca7b214afa2 -> f6639f33d1f170bc09ae66d3f51e2130
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.562 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.347 seconds
+Domain Reload Profiling: 1899ms
+	BeginReloadAssembly (172ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (294ms)
+		LoadAssemblies (350ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (30ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1348ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (515ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (88ms)
+			ProcessInitializeOnLoadAttributes (362ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 12.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (2.1 MB). Loaded Objects now: 5026.
+Memory consumption went from 234.5 MB to 232.3 MB.
+Total: 4.416700 ms (FindLiveObjects: 0.451100 ms CreateObjectMapping: 0.109400 ms MarkObjects: 3.230800 ms  DeleteObjects: 0.623300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/GameHaptics.cs: b1e65b233c512fb25409488f733f1594 -> 6a1a1c62e27537ef817e899a50ce6e93
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AndroidTapticWave.cs: b5cc2bcacdb3e4e10240bb7a5d9380dd -> 51616df99f7c1c2a24d5abc4736d11a4
+  custom:scripting/monoscript/fileName/GameManager.cs: 8674a36a52b2cdb44872558212603128 -> 0e6db8576ad8a4fc17984415d720b951
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/PlayerController.cs: 1d8852fcea1e47a7b5a5399abb5a4bd0 -> a0cf070f41db4f2cbffbbaf0ca4e2fa7
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/Explosion.cs: 95d32493addae771bcedb3c9cc3e2170 -> e83b65c0c6fe966c035df8180a1b5cc0
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/HapticsEngineEditor.cs: 0563c73986a27bff84fc45096673d522 -> 48949a0fbc203b7b826a3f3a8a93b747
+  custom:scripting/monoscript/fileName/TapticWave.cs: 8b4db3b6eb9320eaadb7149335db3e5b -> 1b32847a1b829c338408e944cb99ce80
+  custom:scripting/monoscript/fileName/ButtonColorManager.cs: 159182a91f48bf0aa9e0e50230c2371d -> b542d063584619d00013960415ddeca2
+  custom:scripting/monoscript/fileName/Obstacle.cs: e71f5bb1ab8e8973d68104e9f236cc60 -> 87a7cb9285ad63ac004294f85552cdae
+  custom:scripting/monoscript/fileName/SelfDestroy.cs: 3149fbf3a7ae7c07842642ff98428dad -> 6d730ecaa1fbbbb2e540bb2dcb3bb226
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/HapticButtonManager.cs: 34550f58b2b7dd8b70d995d9f9d89d5c -> 17ee750f4eecd186196f2eddb82f4f01
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CubeMissleDestroy.cs: 8e4a2e0051e912e4b0753619c26a6778 -> e3f5d695e3601ca89b51c4222b09d947
+  custom:scripting/monoscript/fileName/SceneController.cs: 4b1d9c0674264ecfef0bcda24d27fa64 -> 6b6cc29c8106daccad0feeb7f9df85fd
+  custom:scripting/monoscript/fileName/ButtonAutoModeOpacity.cs: 4181ad775b7aeb925f316b6929014109 -> e681a68b9d58bf1cb01eb707bc8aa504
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FPSController.cs: 147ceaeea76b57e138e86ca7b214afa2 -> f6639f33d1f170bc09ae66d3f51e2130
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 14.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 15 unused Assets / (2.1 MB). Loaded Objects now: 5026.
+Memory consumption went from 166.3 MB to 164.2 MB.
+Total: 7.016300 ms (FindLiveObjects: 0.319500 ms CreateObjectMapping: 0.106600 ms MarkObjects: 2.571900 ms  DeleteObjects: 4.017400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/GameHaptics.cs: b1e65b233c512fb25409488f733f1594 -> 6a1a1c62e27537ef817e899a50ce6e93
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AndroidTapticWave.cs: b5cc2bcacdb3e4e10240bb7a5d9380dd -> 51616df99f7c1c2a24d5abc4736d11a4
+  custom:scripting/monoscript/fileName/GameManager.cs: 8674a36a52b2cdb44872558212603128 -> 0e6db8576ad8a4fc17984415d720b951
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/PlayerController.cs: 1d8852fcea1e47a7b5a5399abb5a4bd0 -> a0cf070f41db4f2cbffbbaf0ca4e2fa7
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/Explosion.cs: 95d32493addae771bcedb3c9cc3e2170 -> e83b65c0c6fe966c035df8180a1b5cc0
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/HapticsEngineEditor.cs: 0563c73986a27bff84fc45096673d522 -> 48949a0fbc203b7b826a3f3a8a93b747
+  custom:scripting/monoscript/fileName/TapticWave.cs: 8b4db3b6eb9320eaadb7149335db3e5b -> 1b32847a1b829c338408e944cb99ce80
+  custom:scripting/monoscript/fileName/ButtonColorManager.cs: 159182a91f48bf0aa9e0e50230c2371d -> b542d063584619d00013960415ddeca2
+  custom:scripting/monoscript/fileName/Obstacle.cs: e71f5bb1ab8e8973d68104e9f236cc60 -> 87a7cb9285ad63ac004294f85552cdae
+  custom:scripting/monoscript/fileName/SelfDestroy.cs: 3149fbf3a7ae7c07842642ff98428dad -> 6d730ecaa1fbbbb2e540bb2dcb3bb226
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/HapticButtonManager.cs: 34550f58b2b7dd8b70d995d9f9d89d5c -> 17ee750f4eecd186196f2eddb82f4f01
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CubeMissleDestroy.cs: 8e4a2e0051e912e4b0753619c26a6778 -> e3f5d695e3601ca89b51c4222b09d947
+  custom:scripting/monoscript/fileName/SceneController.cs: 4b1d9c0674264ecfef0bcda24d27fa64 -> 6b6cc29c8106daccad0feeb7f9df85fd
+  custom:scripting/monoscript/fileName/ButtonAutoModeOpacity.cs: 4181ad775b7aeb925f316b6929014109 -> e681a68b9d58bf1cb01eb707bc8aa504
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FPSController.cs: 147ceaeea76b57e138e86ca7b214afa2 -> f6639f33d1f170bc09ae66d3f51e2130
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.585 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.352 seconds
+Domain Reload Profiling: 1927ms
+	BeginReloadAssembly (181ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (295ms)
+		LoadAssemblies (362ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1353ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (472ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (81ms)
+			ProcessInitializeOnLoadAttributes (330ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 13.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (2.1 MB). Loaded Objects now: 5041.
+Memory consumption went from 234.5 MB to 232.4 MB.
+Total: 3.728500 ms (FindLiveObjects: 0.312000 ms CreateObjectMapping: 0.110700 ms MarkObjects: 2.842700 ms  DeleteObjects: 0.461900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/GameHaptics.cs: b1e65b233c512fb25409488f733f1594 -> 6a1a1c62e27537ef817e899a50ce6e93
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AndroidTapticWave.cs: b5cc2bcacdb3e4e10240bb7a5d9380dd -> 51616df99f7c1c2a24d5abc4736d11a4
+  custom:scripting/monoscript/fileName/GameManager.cs: 8674a36a52b2cdb44872558212603128 -> 0e6db8576ad8a4fc17984415d720b951
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/PlayerController.cs: 1d8852fcea1e47a7b5a5399abb5a4bd0 -> a0cf070f41db4f2cbffbbaf0ca4e2fa7
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/Explosion.cs: 95d32493addae771bcedb3c9cc3e2170 -> e83b65c0c6fe966c035df8180a1b5cc0
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/HapticsEngineEditor.cs: 0563c73986a27bff84fc45096673d522 -> 48949a0fbc203b7b826a3f3a8a93b747
+  custom:scripting/monoscript/fileName/TapticWave.cs: 8b4db3b6eb9320eaadb7149335db3e5b -> 1b32847a1b829c338408e944cb99ce80
+  custom:scripting/monoscript/fileName/ButtonColorManager.cs: 159182a91f48bf0aa9e0e50230c2371d -> b542d063584619d00013960415ddeca2
+  custom:scripting/monoscript/fileName/Obstacle.cs: e71f5bb1ab8e8973d68104e9f236cc60 -> 87a7cb9285ad63ac004294f85552cdae
+  custom:scripting/monoscript/fileName/SelfDestroy.cs: 3149fbf3a7ae7c07842642ff98428dad -> 6d730ecaa1fbbbb2e540bb2dcb3bb226
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/HapticButtonManager.cs: 34550f58b2b7dd8b70d995d9f9d89d5c -> 17ee750f4eecd186196f2eddb82f4f01
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CubeMissleDestroy.cs: 8e4a2e0051e912e4b0753619c26a6778 -> e3f5d695e3601ca89b51c4222b09d947
+  custom:scripting/monoscript/fileName/SceneController.cs: 4b1d9c0674264ecfef0bcda24d27fa64 -> 6b6cc29c8106daccad0feeb7f9df85fd
+  custom:scripting/monoscript/fileName/ButtonAutoModeOpacity.cs: 4181ad775b7aeb925f316b6929014109 -> e681a68b9d58bf1cb01eb707bc8aa504
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FPSController.cs: 147ceaeea76b57e138e86ca7b214afa2 -> f6639f33d1f170bc09ae66d3f51e2130
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 26.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 15 unused Assets / (2.1 MB). Loaded Objects now: 5041.
+Memory consumption went from 166.4 MB to 164.2 MB.
+Total: 3.806900 ms (FindLiveObjects: 0.342000 ms CreateObjectMapping: 0.114800 ms MarkObjects: 2.769600 ms  DeleteObjects: 0.579700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/GameHaptics.cs: b1e65b233c512fb25409488f733f1594 -> 6a1a1c62e27537ef817e899a50ce6e93
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AndroidTapticWave.cs: b5cc2bcacdb3e4e10240bb7a5d9380dd -> 51616df99f7c1c2a24d5abc4736d11a4
+  custom:scripting/monoscript/fileName/GameManager.cs: 8674a36a52b2cdb44872558212603128 -> 0e6db8576ad8a4fc17984415d720b951
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/PlayerController.cs: 1d8852fcea1e47a7b5a5399abb5a4bd0 -> a0cf070f41db4f2cbffbbaf0ca4e2fa7
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/Explosion.cs: 95d32493addae771bcedb3c9cc3e2170 -> e83b65c0c6fe966c035df8180a1b5cc0
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/HapticsEngineEditor.cs: 0563c73986a27bff84fc45096673d522 -> 48949a0fbc203b7b826a3f3a8a93b747
+  custom:scripting/monoscript/fileName/TapticWave.cs: 8b4db3b6eb9320eaadb7149335db3e5b -> 1b32847a1b829c338408e944cb99ce80
+  custom:scripting/monoscript/fileName/ButtonColorManager.cs: 159182a91f48bf0aa9e0e50230c2371d -> b542d063584619d00013960415ddeca2
+  custom:scripting/monoscript/fileName/Obstacle.cs: e71f5bb1ab8e8973d68104e9f236cc60 -> 87a7cb9285ad63ac004294f85552cdae
+  custom:scripting/monoscript/fileName/SelfDestroy.cs: 3149fbf3a7ae7c07842642ff98428dad -> 6d730ecaa1fbbbb2e540bb2dcb3bb226
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/HapticButtonManager.cs: 34550f58b2b7dd8b70d995d9f9d89d5c -> 17ee750f4eecd186196f2eddb82f4f01
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CubeMissleDestroy.cs: 8e4a2e0051e912e4b0753619c26a6778 -> e3f5d695e3601ca89b51c4222b09d947
+  custom:scripting/monoscript/fileName/SceneController.cs: 4b1d9c0674264ecfef0bcda24d27fa64 -> 6b6cc29c8106daccad0feeb7f9df85fd
+  custom:scripting/monoscript/fileName/ButtonAutoModeOpacity.cs: 4181ad775b7aeb925f316b6929014109 -> e681a68b9d58bf1cb01eb707bc8aa504
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FPSController.cs: 147ceaeea76b57e138e86ca7b214afa2 -> f6639f33d1f170bc09ae66d3f51e2130
+========================================================================
+Received Import Request.
+  Time since last request: 601.013566 seconds.
+  path: Assets/Scripts/NewBehaviourScript.cs
+  artifactKey: Guid(d3dfcf19eb3b124478735461d4382ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/NewBehaviourScript.cs using Guid(d3dfcf19eb3b124478735461d4382ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3829aae3f420911ee51d212225537d7d') in 0.004768 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.465 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.948 seconds
+Domain Reload Profiling: 2405ms
+	BeginReloadAssembly (163ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (226ms)
+		LoadAssemblies (298ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1949ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (972ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (140ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (162ms)
+			ProcessInitializeOnLoadAttributes (622ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (16ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 19.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (2.1 MB). Loaded Objects now: 5056.
+Memory consumption went from 234.2 MB to 232.1 MB.
+Total: 6.458800 ms (FindLiveObjects: 0.747800 ms CreateObjectMapping: 0.304800 ms MarkObjects: 4.813700 ms  DeleteObjects: 0.591400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/GameHaptics.cs: b1e65b233c512fb25409488f733f1594 -> 6a1a1c62e27537ef817e899a50ce6e93
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AndroidTapticWave.cs: b5cc2bcacdb3e4e10240bb7a5d9380dd -> 51616df99f7c1c2a24d5abc4736d11a4
+  custom:scripting/monoscript/fileName/GameManager.cs: 8674a36a52b2cdb44872558212603128 -> 0e6db8576ad8a4fc17984415d720b951
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/PlayerController.cs: 1d8852fcea1e47a7b5a5399abb5a4bd0 -> a0cf070f41db4f2cbffbbaf0ca4e2fa7
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/Explosion.cs: 95d32493addae771bcedb3c9cc3e2170 -> e83b65c0c6fe966c035df8180a1b5cc0
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/HapticsEngineEditor.cs: 0563c73986a27bff84fc45096673d522 -> 48949a0fbc203b7b826a3f3a8a93b747
+  custom:scripting/monoscript/fileName/TapticWave.cs: 8b4db3b6eb9320eaadb7149335db3e5b -> 1b32847a1b829c338408e944cb99ce80
+  custom:scripting/monoscript/fileName/ButtonColorManager.cs: 159182a91f48bf0aa9e0e50230c2371d -> b542d063584619d00013960415ddeca2
+  custom:scripting/monoscript/fileName/Obstacle.cs: e71f5bb1ab8e8973d68104e9f236cc60 -> 87a7cb9285ad63ac004294f85552cdae
+  custom:scripting/monoscript/fileName/SelfDestroy.cs: 3149fbf3a7ae7c07842642ff98428dad -> 6d730ecaa1fbbbb2e540bb2dcb3bb226
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/HapticButtonManager.cs: 34550f58b2b7dd8b70d995d9f9d89d5c -> 17ee750f4eecd186196f2eddb82f4f01
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CubeMissleDestroy.cs: 8e4a2e0051e912e4b0753619c26a6778 -> e3f5d695e3601ca89b51c4222b09d947
+  custom:scripting/monoscript/fileName/SceneController.cs: 4b1d9c0674264ecfef0bcda24d27fa64 -> 6b6cc29c8106daccad0feeb7f9df85fd
+  custom:scripting/monoscript/fileName/ButtonAutoModeOpacity.cs: 4181ad775b7aeb925f316b6929014109 -> e681a68b9d58bf1cb01eb707bc8aa504
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FPSController.cs: 147ceaeea76b57e138e86ca7b214afa2 -> f6639f33d1f170bc09ae66d3f51e2130
+========================================================================
+Received Import Request.
+  Time since last request: 8.948850 seconds.
+  path: Assets/Scripts/Utils.cs
+  artifactKey: Guid(ebec1ce5497178c48b343a65ecec93fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Utils.cs using Guid(ebec1ce5497178c48b343a65ecec93fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3b93a7d846109ce25289b4728b811129') in 0.003619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.587 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.322 seconds
+Domain Reload Profiling: 1900ms
+	BeginReloadAssembly (200ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (300ms)
+		LoadAssemblies (357ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (37ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1323ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (513ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (378ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 16.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4413 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (2.1 MB). Loaded Objects now: 5071.
+Memory consumption went from 234.2 MB to 232.1 MB.
+Total: 3.923300 ms (FindLiveObjects: 0.360200 ms CreateObjectMapping: 0.156900 ms MarkObjects: 2.950100 ms  DeleteObjects: 0.454900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/GameHaptics.cs: b1e65b233c512fb25409488f733f1594 -> 6a1a1c62e27537ef817e899a50ce6e93
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AndroidTapticWave.cs: b5cc2bcacdb3e4e10240bb7a5d9380dd -> 51616df99f7c1c2a24d5abc4736d11a4
+  custom:scripting/monoscript/fileName/GameManager.cs: 8674a36a52b2cdb44872558212603128 -> 0e6db8576ad8a4fc17984415d720b951
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/PlayerController.cs: 1d8852fcea1e47a7b5a5399abb5a4bd0 -> a0cf070f41db4f2cbffbbaf0ca4e2fa7
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/Explosion.cs: 95d32493addae771bcedb3c9cc3e2170 -> e83b65c0c6fe966c035df8180a1b5cc0
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/HapticsEngineEditor.cs: 0563c73986a27bff84fc45096673d522 -> 48949a0fbc203b7b826a3f3a8a93b747
+  custom:scripting/monoscript/fileName/TapticWave.cs: 8b4db3b6eb9320eaadb7149335db3e5b -> 1b32847a1b829c338408e944cb99ce80
+  custom:scripting/monoscript/fileName/ButtonColorManager.cs: 159182a91f48bf0aa9e0e50230c2371d -> b542d063584619d00013960415ddeca2
+  custom:scripting/monoscript/fileName/Obstacle.cs: e71f5bb1ab8e8973d68104e9f236cc60 -> 87a7cb9285ad63ac004294f85552cdae
+  custom:scripting/monoscript/fileName/SelfDestroy.cs: 3149fbf3a7ae7c07842642ff98428dad -> 6d730ecaa1fbbbb2e540bb2dcb3bb226
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/HapticButtonManager.cs: 34550f58b2b7dd8b70d995d9f9d89d5c -> 17ee750f4eecd186196f2eddb82f4f01
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CubeMissleDestroy.cs: 8e4a2e0051e912e4b0753619c26a6778 -> e3f5d695e3601ca89b51c4222b09d947
+  custom:scripting/monoscript/fileName/SceneController.cs: 4b1d9c0674264ecfef0bcda24d27fa64 -> 6b6cc29c8106daccad0feeb7f9df85fd
+  custom:scripting/monoscript/fileName/ButtonAutoModeOpacity.cs: 4181ad775b7aeb925f316b6929014109 -> e681a68b9d58bf1cb01eb707bc8aa504
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FPSController.cs: 147ceaeea76b57e138e86ca7b214afa2 -> f6639f33d1f170bc09ae66d3f51e2130
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 27.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 15 unused Assets / (2.1 MB). Loaded Objects now: 5071.
+Memory consumption went from 166.3 MB to 164.2 MB.
+Total: 4.273700 ms (FindLiveObjects: 0.512900 ms CreateObjectMapping: 0.132600 ms MarkObjects: 2.984500 ms  DeleteObjects: 0.643000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/GameHaptics.cs: b1e65b233c512fb25409488f733f1594 -> 6a1a1c62e27537ef817e899a50ce6e93
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/AndroidTapticWave.cs: b5cc2bcacdb3e4e10240bb7a5d9380dd -> 51616df99f7c1c2a24d5abc4736d11a4
+  custom:scripting/monoscript/fileName/GameManager.cs: 8674a36a52b2cdb44872558212603128 -> 0e6db8576ad8a4fc17984415d720b951
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/PlayerController.cs: 1d8852fcea1e47a7b5a5399abb5a4bd0 -> a0cf070f41db4f2cbffbbaf0ca4e2fa7
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/Explosion.cs: 95d32493addae771bcedb3c9cc3e2170 -> e83b65c0c6fe966c035df8180a1b5cc0
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/HapticsEngineEditor.cs: 0563c73986a27bff84fc45096673d522 -> 48949a0fbc203b7b826a3f3a8a93b747
+  custom:scripting/monoscript/fileName/TapticWave.cs: 8b4db3b6eb9320eaadb7149335db3e5b -> 1b32847a1b829c338408e944cb99ce80
+  custom:scripting/monoscript/fileName/ButtonColorManager.cs: 159182a91f48bf0aa9e0e50230c2371d -> b542d063584619d00013960415ddeca2
+  custom:scripting/monoscript/fileName/Obstacle.cs: e71f5bb1ab8e8973d68104e9f236cc60 -> 87a7cb9285ad63ac004294f85552cdae
+  custom:scripting/monoscript/fileName/SelfDestroy.cs: 3149fbf3a7ae7c07842642ff98428dad -> 6d730ecaa1fbbbb2e540bb2dcb3bb226
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/HapticButtonManager.cs: 34550f58b2b7dd8b70d995d9f9d89d5c -> 17ee750f4eecd186196f2eddb82f4f01
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CubeMissleDestroy.cs: 8e4a2e0051e912e4b0753619c26a6778 -> e3f5d695e3601ca89b51c4222b09d947
+  custom:scripting/monoscript/fileName/SceneController.cs: 4b1d9c0674264ecfef0bcda24d27fa64 -> 6b6cc29c8106daccad0feeb7f9df85fd
+  custom:scripting/monoscript/fileName/ButtonAutoModeOpacity.cs: 4181ad775b7aeb925f316b6929014109 -> e681a68b9d58bf1cb01eb707bc8aa504
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/FPSController.cs: 147ceaeea76b57e138e86ca7b214afa2 -> f6639f33d1f170bc09ae66d3f51e2130

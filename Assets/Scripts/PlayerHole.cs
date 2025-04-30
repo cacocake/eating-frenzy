@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem.EnhancedTouch;
 using ETouch = UnityEngine.InputSystem.EnhancedTouch;
@@ -12,8 +13,14 @@ public class PlayerHole : MonoBehaviour {
     [SerializeField] private AnimationCurve _scaleAnimationCurve;
     [SerializeField] private float _joystickKnobDistanceMaxSpeedThreshold = 0.35f;
     [SerializeField] private float _joystickKnobDeadzoneThreshold = 0.15f;
+    [SerializeField] private ParticleSystem _levelUpParticles;
+    [SerializeField] private TextMeshPro _floatingPoints;
+    [SerializeField] private AudioSource _swallowSFX;
+    [SerializeField] private AudioSource _levelUpSFX;
     
     private Vector3 _baseScale;
+
+    private const string k_floatingTextFormat = "+{0}";
 
     private void Awake() {
         _baseScale = transform.localScale;
@@ -37,6 +44,7 @@ public class PlayerHole : MonoBehaviour {
         ETouch.Touch.onFingerUp += _joystick.HandleFingerUp;
         ETouch.Touch.onFingerMove += _joystick.HandleFingerMove;
         GameManager.OnLevelUp += TriggerIncreaseSize;
+        ConsumableObject.OnConsumableObjectSwallowed += HandleObjectConsumed;
     }
 
     private void OnDisable() {
@@ -45,6 +53,7 @@ public class PlayerHole : MonoBehaviour {
         ETouch.Touch.onFingerMove -= _joystick.HandleFingerMove;
         EnhancedTouchSupport.Disable();
         GameManager.OnLevelUp -= TriggerIncreaseSize;
+        ConsumableObject.OnConsumableObjectSwallowed -= HandleObjectConsumed;
     }
 
     private void GetTouchInput() {
@@ -79,6 +88,8 @@ public class PlayerHole : MonoBehaviour {
     }
 
     private IEnumerator IncreaseSizeForNewLevelOverTime() {
+        PlayLevelUpParticles();
+        PlayLevelUpSFX();
         Vector3 targetScale = _baseScale + new Vector3(_scaleIncreaseFactor * GameManager.Instance.CurrentLevel, 
                                                        0.0f, 
                                                        _scaleIncreaseFactor * GameManager.Instance.CurrentLevel);
@@ -92,6 +103,43 @@ public class PlayerHole : MonoBehaviour {
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+        StopLevelUpParticles();
         transform.localScale = targetScale;
+    }
+
+    private void HandleObjectConsumed(ConsumableObject consumableObject) {
+        ShowFloatingPoints(consumableObject.Points);
+        PlaySwallowSFX();
+    }
+
+    private void ShowFloatingPoints(ushort points) {
+        if(_floatingPoints) {
+            _floatingPoints = Instantiate(_floatingPoints, transform.position, Quaternion.identity);
+            _floatingPoints.text = string.Format(k_floatingTextFormat, points);
+        }
+    }
+
+    private void PlaySwallowSFX() {
+        if(_swallowSFX) {
+            _swallowSFX.Play(0);
+        }
+    }
+
+    private void PlayLevelUpSFX() {
+        if(_levelUpSFX) {
+            _levelUpSFX.Play();
+        }
+    }
+
+    private void PlayLevelUpParticles() {
+        if(_levelUpParticles){
+            _levelUpParticles.Play();
+        }
+    }
+
+        private void StopLevelUpParticles() {
+        if(_levelUpParticles){
+            _levelUpParticles.Stop();
+        }
     }
 }

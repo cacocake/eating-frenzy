@@ -8,11 +8,11 @@ public class GameManager : MonoBehaviour {
     [SerializeField] private float _stageTimeLimit;
     [SerializeField] private Canvas _levelGUI;
     [SerializeField] private Canvas _floatingJoystickGUI;
+    [SerializeField] private ushort _targetScalingPerLevel = 5;
     
     private ushort _baseTargetPoints = 10;
     private ushort _previousLevelTargetTotalPoints = 0;
     private ushort _nextLevelTargetTotalPoints = 10;
-    private ushort _targetScalingPerLevel = 7;
     
     public ushort StageTargetPoints => _stageTargetPoints;
     public float StageTimeLimit => _stageTimeLimit;
@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour {
 
     private void HandleOnGameStopped(){
         _levelGUI.gameObject.SetActive(false);
-        _floatingJoystickGUI.gameObject.SetActive(true);
+        _floatingJoystickGUI.gameObject.SetActive(false);
     }
 
     private void HandleOnGameResumed(){
@@ -78,6 +78,13 @@ public class GameManager : MonoBehaviour {
         
         if(TotalPoints >= _nextLevelTargetTotalPoints) {
             LevelUp();
+            if(MenuManager.AreVibrationsEnabled) {
+                Utils.ExecuteHapticVibration(Utils.HapticType.LevelUp);
+            }
+        } else {
+            if(MenuManager.AreVibrationsEnabled) {
+                Utils.ExecuteHapticVibration(Utils.HapticType.ConsumedObject);
+            }
         }
         CurrentLevelPoints = (ushort)(TotalPoints - _previousLevelTargetTotalPoints);
         OnPointsChanged?.Invoke();
@@ -90,7 +97,7 @@ public class GameManager : MonoBehaviour {
             _nextLevelTargetTotalPoints = (ushort)(_nextLevelTargetTotalPoints + _baseTargetPoints + ((CurrentLevel - 1) * _targetScalingPerLevel));
             CurrentLevelTargetPoints = (ushort)(_baseTargetPoints + ((CurrentLevel - 1) * _targetScalingPerLevel));
         }
-        
+        Utils.ExecuteHapticVibration(Utils.HapticType.LevelUp);
         OnLevelUp?.Invoke();
     }
 }

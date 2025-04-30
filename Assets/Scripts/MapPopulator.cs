@@ -96,7 +96,6 @@ public class MapPopulator : MonoBehaviour {
             _consumablePrefabSpawnCount--;
             attempts = 0;
         }
-        Debug.Log($"{_consumablePrefabSpawnCount} were left to spawn.");
     }
 
     private void PopulateEdges() { // No longer necessary. Used to populate the edges of the map to save in scene and for quick iteration. Left in for evaluation purposes and future randomization.

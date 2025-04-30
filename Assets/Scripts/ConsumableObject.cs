@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using MobileHapticsProFreeEdition;
 
 public class ConsumableObject : MonoBehaviour {
     [SerializeField] private ushort _points;
@@ -30,9 +29,6 @@ public class ConsumableObject : MonoBehaviour {
         if(other.gameObject.CompareTag("ConsumeAreaPlayer")) {
             OnConsumableObjectSwallowed?.Invoke(this);
             Destroy(this.gameObject);
-            if(MenuManager.AreVibrationsEnabled) {
-                TapticWave.TriggerHaptic(HapticModes.Select);
-            }
         }
 
         if((!other.gameObject.CompareTag("HoleCharacter") &&

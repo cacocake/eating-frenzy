@@ -65,12 +65,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ProgressBar.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Scripts\GameScene\HapticButtonManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Scripts\VibrationSettingsLabel.cs" />
     <Compile Include="Assets\Scripts\CurrentLevelLabel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Scripts\TapticWave.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -83,13 +81,9 @@
     <Compile Include="Assets\Scripts\PlayerHole.cs" />
     <Compile Include="Assets\Scripts\ConsumableObject.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Scripts\GameHaptics.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Scripts\SceneController.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Scripts\GameScene\Explosion.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Scripts\AndroidTapticWave.cs" />
     <Compile Include="Assets\Scripts\CreatureAI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
@@ -98,8 +92,6 @@
     <Compile Include="Assets\AssetsFromAssetStore\ithappy\Animals_FREE\Scripts\PlayerCamera.cs" />
     <Compile Include="Assets\Scripts\TimeLabel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Scripts\GameScene\PlayerController.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Scripts\GameScene\Obstacle.cs" />
     <Compile Include="Assets\Scripts\PlayerLevelProgressBar.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -112,7 +104,6 @@
     <Compile Include="Assets\AssetsFromAssetStore\Fries and Seagull\Interior 01\Scripts\Clock.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Scripts\GameScene\ButtonAutoModeOpacity.cs" />
     <Compile Include="Assets\AssetsFromAssetStore\ithappy\Animals_FREE\Scripts\ThirdPersonCamera.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -126,15 +117,10 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Scripts\GoalProgressBar.cs" />
     <Compile Include="Assets\Scripts\MapPopulator.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Scripts\GameScene\CubeMissleDestroy.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\PlayerCamera.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Scripts\GameScene\SelfDestroy.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Scripts\GameScene\FPSController.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Scripts\GameScene\GameManager.cs" />
     <Compile Include="Assets\Scripts\GoalPointsLabel.cs" />
-    <Compile Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Scripts\ButtonColorManager.cs" />
     <Compile Include="Assets\Scripts\InfoLabel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
   </ItemGroup>
@@ -148,7 +134,6 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\AssetsFromAssetStore\FastMesh\README.txt" />
-    <None Include="Assets\AssetsFromAssetStore\IntelligentLabs\MobileHapticsProFREE\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />

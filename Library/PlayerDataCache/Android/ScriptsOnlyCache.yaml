@@ -27,16 +27,12 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachineVirtualCamera
     Unity.AdaptivePerformance.Editor.dll:
     - UnityEditor.AdaptivePerformance.Editor.AdaptivePerformanceGeneralSettingsPerBuildTarget
-    Unity.AdaptivePerformance.Google.Android.Editor.dll:
-    - UnityEditor.AdaptivePerformance.Google.Android.Editor.GoogleAndroidProviderSettingsEditor
     Unity.AdaptivePerformance.Google.Android.dll:
     - UnityEngine.AdaptivePerformance.Google.Android.GoogleAndroidProviderLoader
     - UnityEngine.AdaptivePerformance.Google.Android.GoogleAndroidProviderSettings
     Unity.AdaptivePerformance.Samsung.Android.dll:
     - UnityEngine.AdaptivePerformance.Samsung.Android.SamsungAndroidProviderLoader
     - UnityEngine.AdaptivePerformance.Samsung.Android.SamsungAndroidProviderSettings
-    Unity.AdaptivePerformance.Simulator.Editor.dll:
-    - UnityEditor.AdaptivePerformance.Simulator.Editor.SimulatorProviderSettings
     Unity.AdaptivePerformance.dll:
     - UnityEngine.AdaptivePerformance.AdaptivePerformanceGeneralSettings
     - UnityEngine.AdaptivePerformance.AdaptivePerformanceManagerSettings
@@ -64,6 +60,8 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.PostProcessing.PostProcessResources
     - UnityEngine.Rendering.PostProcessing.ScreenSpaceReflections
     - UnityEngine.Rendering.PostProcessing.Vignette
+    Unity.ProBuilder.Editor.dll:
+    - UnityEditor.ProBuilder.ProBuilderShapeEditor
     Unity.ProBuilder.dll:
     - UnityEngine.ProBuilder.ProBuilderMesh
     - UnityEngine.ProBuilder.Shapes.ProBuilderShape
@@ -80,7 +78,16 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -175,7 +182,7 @@ ScriptsOnlyBuild:
     methodName: LoadPlayScene
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
-    methodName: HidePauseMenu
+    methodName: ResumeGame
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
     methodName: LoadMainMenu
@@ -208,7 +215,7 @@ ScriptsOnlyBuild:
     methodName: LoadPlayScene
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
-    methodName: HidePauseMenu
+    methodName: ResumeGame
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
     methodName: LoadMainMenu
@@ -224,6 +231,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: MenuManager
     methodName: ShowPauseMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuManager
+    methodName: ToggleSound
   sceneClasses:
     Assets/Scenes/Forest.unity:
     - Class: 1
@@ -256,6 +266,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 91
@@ -273,71 +287,73 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16876}
     - Class: 114
-      Script: {instanceID: 17828}
+      Script: {instanceID: 17830}
     - Class: 114
-      Script: {instanceID: 17926}
+      Script: {instanceID: 17928}
     - Class: 114
-      Script: {instanceID: 18150}
+      Script: {instanceID: 18152}
     - Class: 114
-      Script: {instanceID: 18242}
+      Script: {instanceID: 18244}
     - Class: 114
-      Script: {instanceID: 18326}
+      Script: {instanceID: 18328}
     - Class: 114
-      Script: {instanceID: 18502}
+      Script: {instanceID: 18504}
     - Class: 114
-      Script: {instanceID: 18548}
+      Script: {instanceID: 18550}
     - Class: 114
-      Script: {instanceID: 18850}
+      Script: {instanceID: 18852}
     - Class: 114
-      Script: {instanceID: 19038}
+      Script: {instanceID: 19042}
     - Class: 114
-      Script: {instanceID: 19432}
+      Script: {instanceID: 19440}
     - Class: 114
-      Script: {instanceID: 19744}
+      Script: {instanceID: 19516}
     - Class: 114
-      Script: {instanceID: 20258}
+      Script: {instanceID: 19756}
     - Class: 114
-      Script: {instanceID: 20302}
+      Script: {instanceID: 20270}
     - Class: 114
-      Script: {instanceID: 20980}
+      Script: {instanceID: 20314}
     - Class: 114
-      Script: {instanceID: 21144}
+      Script: {instanceID: 20996}
     - Class: 114
-      Script: {instanceID: 21200}
+      Script: {instanceID: 21160}
     - Class: 114
-      Script: {instanceID: 21242}
+      Script: {instanceID: 21216}
     - Class: 114
-      Script: {instanceID: 21288}
+      Script: {instanceID: 21258}
     - Class: 114
-      Script: {instanceID: 21514}
+      Script: {instanceID: 21304}
     - Class: 114
-      Script: {instanceID: 21646}
+      Script: {instanceID: 21530}
     - Class: 114
-      Script: {instanceID: 21766}
+      Script: {instanceID: 21662}
     - Class: 114
-      Script: {instanceID: 22380}
+      Script: {instanceID: 21782}
     - Class: 114
-      Script: {instanceID: 22420}
+      Script: {instanceID: 22398}
     - Class: 114
-      Script: {instanceID: 22650}
+      Script: {instanceID: 22438}
     - Class: 114
-      Script: {instanceID: 23626}
+      Script: {instanceID: 22668}
     - Class: 114
-      Script: {instanceID: 24042}
+      Script: {instanceID: 23648}
     - Class: 114
-      Script: {instanceID: 24140}
+      Script: {instanceID: 24068}
     - Class: 114
-      Script: {instanceID: 24286}
+      Script: {instanceID: 24166}
     - Class: 114
-      Script: {instanceID: 24582}
+      Script: {instanceID: 24312}
     - Class: 114
-      Script: {instanceID: 24606}
+      Script: {instanceID: 24610}
     - Class: 114
-      Script: {instanceID: 24618}
+      Script: {instanceID: 24634}
     - Class: 114
-      Script: {instanceID: 25084}
+      Script: {instanceID: 24646}
     - Class: 114
-      Script: {instanceID: 25488}
+      Script: {instanceID: 25114}
+    - Class: 114
+      Script: {instanceID: 25518}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -403,6 +419,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 91
@@ -418,39 +438,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16876}
     - Class: 114
-      Script: {instanceID: 17664}
+      Script: {instanceID: 17666}
     - Class: 114
-      Script: {instanceID: 18242}
+      Script: {instanceID: 18244}
     - Class: 114
-      Script: {instanceID: 18502}
+      Script: {instanceID: 18504}
     - Class: 114
-      Script: {instanceID: 18548}
+      Script: {instanceID: 18550}
     - Class: 114
-      Script: {instanceID: 18850}
+      Script: {instanceID: 18852}
     - Class: 114
-      Script: {instanceID: 19744}
+      Script: {instanceID: 19756}
     - Class: 114
-      Script: {instanceID: 20154}
+      Script: {instanceID: 20166}
     - Class: 114
-      Script: {instanceID: 20300}
+      Script: {instanceID: 20312}
     - Class: 114
-      Script: {instanceID: 20650}
+      Script: {instanceID: 20666}
     - Class: 114
-      Script: {instanceID: 21514}
+      Script: {instanceID: 21530}
     - Class: 114
-      Script: {instanceID: 21646}
+      Script: {instanceID: 21662}
     - Class: 114
-      Script: {instanceID: 22380}
+      Script: {instanceID: 22398}
     - Class: 114
-      Script: {instanceID: 22420}
+      Script: {instanceID: 22438}
     - Class: 114
-      Script: {instanceID: 22650}
+      Script: {instanceID: 22668}
     - Class: 114
-      Script: {instanceID: 23626}
+      Script: {instanceID: 23648}
     - Class: 114
-      Script: {instanceID: 24582}
+      Script: {instanceID: 24610}
     - Class: 114
-      Script: {instanceID: 24618}
+      Script: {instanceID: 24646}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -842,7 +862,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: dd04c58cf657fe91577e9395a654f36e
+      Hash: c6e92332123401a0b59fe03c125f3f00
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MenuManager
@@ -1712,7 +1732,7 @@ ScriptsOnlyBuild:
     className: AdaptivePerformanceManagerSpawner
   - hash:
       serializedVersion: 2
-      Hash: de7095d546ee9186ca83b237a628fcd8
+      Hash: 37d1e330872b5914317dd93b53c21cbb
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerHole
@@ -2180,7 +2200,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 9dbe7c85d357109e9bbf2e968558aa05
+      Hash: f17b25740e95f36e5459cfa20c3de115
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager
@@ -2448,78 +2468,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: e80161a8f541ae0879b38c89da0f8915
-    assemblyName: Assembly-CSharp
-    namespaceName: MobileHapticsProFreeEdition
-    className: CubeMissileDestroy
-  - hash:
-      serializedVersion: 2
-      Hash: 0022e1ebe34ecb9cb3bad54d27964459
-    assemblyName: Assembly-CSharp
-    namespaceName: MobileHapticsProFreeEdition
-    className: SceneController
-  - hash:
-      serializedVersion: 2
-      Hash: f1666c2fde4434c08de91426b1750a4b
-    assemblyName: Assembly-CSharp
-    namespaceName: MobileHapticsProFreeEdition
-    className: Obstacle
-  - hash:
-      serializedVersion: 2
-      Hash: 36cc8ea85f815d42e9b645d9c7cde0a9
-    assemblyName: Assembly-CSharp
-    namespaceName: MobileHapticsProFreeEdition
-    className: ButtonAutoModeOpacity
-  - hash:
-      serializedVersion: 2
-      Hash: defb1da54ccee6767aab83fa9d0abcfd
-    assemblyName: Assembly-CSharp
-    namespaceName: MobileHapticsProFreeEdition
-    className: GameManager
-  - hash:
-      serializedVersion: 2
-      Hash: 3f5156eb978b5cbaca82cb3599501448
-    assemblyName: Assembly-CSharp
-    namespaceName: MobileHapticsProFreeEdition
-    className: SelfDestroy
-  - hash:
-      serializedVersion: 2
-      Hash: 386a32a9bcfa3f95e6055458697c8215
-    assemblyName: Assembly-CSharp
-    namespaceName: MobileHapticsProFreeEdition
-    className: HapticButtonManager
-  - hash:
-      serializedVersion: 2
-      Hash: 142c73ba0aa00d052789d6527e6d7ae4
-    assemblyName: Assembly-CSharp
-    namespaceName: MobileHapticsProFreeEdition
-    className: ButtonColorManager
-  - hash:
-      serializedVersion: 2
-      Hash: 7ae55c8782d6982d8a792a4cb2d44369
-    assemblyName: Assembly-CSharp
-    namespaceName: MobileHapticsProFreeEdition
-    className: Explosion
-  - hash:
-      serializedVersion: 2
-      Hash: 8f792d983435c9ad2c173ce4486202fc
-    assemblyName: Assembly-CSharp
-    namespaceName: MobileHapticsProFreeEdition
-    className: GameHaptics
-  - hash:
-      serializedVersion: 2
-      Hash: a4cfef9cb81c00e0903db47bf26064c3
-    assemblyName: Assembly-CSharp
-    namespaceName: MobileHapticsProFreeEdition
-    className: FPSController
-  - hash:
-      serializedVersion: 2
-      Hash: d7c50cd7b268db736307357503672d91
-    assemblyName: Assembly-CSharp
-    namespaceName: MobileHapticsProFreeEdition
-    className: PlayerController
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
