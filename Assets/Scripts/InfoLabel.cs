@@ -16,7 +16,9 @@ public class InfoLabel : MonoBehaviour {
             return;
         }
         string formattedText = string.Format(_labelTextFormat, values);
-        GetComponent<TextMeshProUGUI>().SetText(formattedText);
+        if(TryGetComponent<TextMeshProUGUI>(out var infoLabel)) {
+            infoLabel.SetText(formattedText);
+        }
     }
 
 }

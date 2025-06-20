@@ -18,6 +18,7 @@ TagManager:
   - PlayerGUI
   - Prop
   - SettingsButton
+  - SoundButton
   layers:
   - Default
   - TransparentFX

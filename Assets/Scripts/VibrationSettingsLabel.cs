@@ -19,7 +19,9 @@ public class VibrationSettingsLabel : MonoBehaviour {
     }
 
     private void HandleVibrationSettingChanged() {
-        GetComponent<TextMeshProUGUI>().SetText(MenuManager.AreVibrationsEnabled ? k_disableVibrationLabel : k_enableVibrationLabel); 
+        if(TryGetComponent<TextMeshProUGUI>(out var vibrationSettingsLabel)) {
+            vibrationSettingsLabel.SetText(MenuManager.AreVibrationsEnabled ? k_disableVibrationLabel : k_enableVibrationLabel); 
+        }
     }
 
 }

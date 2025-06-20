@@ -3,7 +3,7 @@
     "m_SelectedProcess": {
         "deviceId": "5e8b07ea",
         "name": "com.CacoCake.EatingFrenzy",
-        "processId": 32560,
+        "processId": 14646,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -162,6 +162,12 @@
             "deviceId": "5e8b07ea",
             "name": "com.CacoCake.EatingFrenzy",
             "processId": 32560,
+            "exited": false
+        },
+        {
+            "deviceId": "5e8b07ea",
+            "name": "com.CacoCake.EatingFrenzy",
+            "processId": 14646,
             "exited": false
         }
     ],

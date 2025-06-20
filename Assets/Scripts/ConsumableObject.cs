@@ -18,42 +18,48 @@ public class ConsumableObject : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if((!other.gameObject.CompareTag("HoleCharacter") &&
             !other.gameObject.CompareTag("PlayerHoleCharacter")) || 
-            this.gameObject.layer == LayerMask.NameToLayer("HoleLayer")) {
+            gameObject.layer == LayerMask.NameToLayer("HoleLayer")) {
             return;
         }
 
-        this.gameObject.layer = LayerMask.NameToLayer("HoleLayer");
+        gameObject.layer = LayerMask.NameToLayer("HoleLayer");
     }
 
     private void OnTriggerExit(Collider other) {
         if(other.gameObject.CompareTag("ConsumeAreaPlayer")) {
             OnConsumableObjectSwallowed?.Invoke(this);
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
 
         if((!other.gameObject.CompareTag("HoleCharacter") &&
             !other.gameObject.CompareTag("PlayerHoleCharacter")) ||
-            this.gameObject.layer != LayerMask.NameToLayer("HoleLayer")) {
+            gameObject.layer != LayerMask.NameToLayer("HoleLayer")) {
             return;
         }
             
-        this.gameObject.layer = _defaultLayer;
+        gameObject.layer = _defaultLayer;
+    }
+
+    private void TrySetAlphaChannel(float alphaChannel) {
+        if(_renderer == null) {
+            return;
+        }
+        
+        Material material = _renderer.material;
+        
+        if(material == null) {
+            return;
+        }
+
+        material.color = new Color(material.color.r, material.color.g, material.color.b, alphaChannel);
     }
 
     public void MakeObjectTransparent() {
-        if(_renderer == null) {
-            return;
-        }
-        Material material = _renderer.material;
-        material.color = new Color(material.color.r, material.color.g, material.color.b, 0.5f);
+       TrySetAlphaChannel(0.5f);
     }
 
     public void ReturnTransparencyToNormal() {
-        if(_renderer == null) {
-            return;
-        }
-        Material material = _renderer.material;
-        material.color = new Color(material.color.r, material.color.g, material.color.b, 1.0f);
+        TrySetAlphaChannel(1.0f);
     }
 
 }

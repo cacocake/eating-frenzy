@@ -58,6 +58,7 @@ public class PlayerHole : MonoBehaviour {
 
     private void GetTouchInput() {
         if (_joystick == null) {
+            Debug.LogError("_joystick is null!");
             return;
         }
 
@@ -74,6 +75,11 @@ public class PlayerHole : MonoBehaviour {
     }
 
     private Vector3 GetDeadzonedMovement() {
+        if(_joystick == null) {
+            Debug.LogError("_joystick is null!");
+            return Vector3.zero;
+        }
+
         float xAxisDeadzone = _joystick.KnobDistanceFactorFromCenter.x < -_joystickKnobDeadzoneThreshold ? _joystick.KnobDistanceFactorFromCenter.x : 
                                                                                                            _joystick.KnobDistanceFactorFromCenter.x > _joystickKnobDeadzoneThreshold ? 
                                                                                                                                                       _joystick.KnobDistanceFactorFromCenter.x : 0.0f;  

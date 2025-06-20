@@ -36,8 +36,13 @@ public class PlayerLevelProgressBar : ProgressBar {
         }
 
         MaxValue = GameManager.Instance.CurrentLevelTargetPoints;
-        _currentLevelLabel.UpdateLabel(GameManager.Instance.CurrentLevel);
-        _levelUpParticles.Play();
+        if(_currentLevelLabel) {
+            _currentLevelLabel.UpdateLabel(GameManager.Instance.CurrentLevel);
+        }
+
+        if(_levelUpParticles) {
+            _levelUpParticles.Play();
+        }
     }
 
 }

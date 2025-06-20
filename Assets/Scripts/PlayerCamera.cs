@@ -1,6 +1,7 @@
 using UnityEngine;
 using Cinemachine;
 using System.Collections;
+using System.Threading.Tasks;
 
 public class PlayerCamera : MonoBehaviour {
 
@@ -13,7 +14,10 @@ public class PlayerCamera : MonoBehaviour {
     private Vector3 _baseOffset;
 
     private void Awake() {
-        _transposer = GetComponent<CinemachineVirtualCamera>().GetCinemachineComponent<CinemachineTransposer>();
+        _transposer = null;
+        if(TryGetComponent<CinemachineVirtualCamera>(out var cinemachineCamera)){
+            _transposer = cinemachineCamera.GetCinemachineComponent<CinemachineTransposer>();
+        }
         _baseOffset = _transposer.m_FollowOffset;
     }
     void OnEnable() {
@@ -38,8 +42,7 @@ public class PlayerCamera : MonoBehaviour {
                 return;
             }
 
-            if (hit.collider.CompareTag("PlayerHoleCharacter"))
-            {
+            if (hit.collider.CompareTag("PlayerHoleCharacter")) {
                 if (_consumableObjectInBetweenPlayerAndCamera != null) {
                     _consumableObjectInBetweenPlayerAndCamera.ReturnTransparencyToNormal();
                     _consumableObjectInBetweenPlayerAndCamera = null;
@@ -53,6 +56,11 @@ public class PlayerCamera : MonoBehaviour {
         }
     }
     private void TriggerAdaptToLevelUp() {
+        if(_transposer == null) {
+            Debug.LogError("_transposer is null!");
+            return;
+        }
+        
         StartCoroutine(PanOutCameraOverTimeDependingOnLevel());
     }
 

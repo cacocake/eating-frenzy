@@ -50,13 +50,23 @@ public class GameManager : MonoBehaviour {
     }
 
     private void HandleOnGameStopped(){
-        _levelGUI.gameObject.SetActive(false);
-        _floatingJoystickGUI.gameObject.SetActive(false);
+        if(_levelGUI) {
+            _levelGUI.gameObject.SetActive(false);
+        }
+
+        if(_floatingJoystickGUI) {
+            _floatingJoystickGUI.gameObject.SetActive(false);
+        }
     }
 
     private void HandleOnGameResumed(){
-        _levelGUI.gameObject.SetActive(true);
-        _floatingJoystickGUI.gameObject.SetActive(true);
+        if(_levelGUI) {
+            _levelGUI.gameObject.SetActive(true);
+        }
+
+        if(_floatingJoystickGUI) {
+            _floatingJoystickGUI.gameObject.SetActive(true);
+        }
     }
 
     private void OnDisable() {

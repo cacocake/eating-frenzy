@@ -27,28 +27,21 @@ public class MenuManager : MonoBehaviour {
         Application.targetFrameRate = 60;
         Instance = this;
         DontDestroyOnLoad(gameObject);
-    }
 
-    private void OnEnable() {
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    private void OnDisable() {
+    void OnDestroy() {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
         if (scene.name == "MainMenu") {
-            GameObject.FindWithTag("PlayButton").GetComponent<Button>().onClick.AddListener(() => {
-                LoadPlayScene();
-            });
-            GameObject.FindWithTag("ExitButton").GetComponent<Button>().onClick.AddListener(() => {
-                ExitGame();
-            });
+            TryAddListenerToButtonObject("PlayButton", LoadPlayScene);
+            TryAddListenerToButtonObject("ExitButton", ExitGame);
         } else {
-            GameObject.FindWithTag("SettingsButton").GetComponent<Button>().onClick.AddListener(() => {
-                ShowPauseMenu();
-            });
+            TryAddListenerToButtonObject("SettingsButton", ShowPauseMenu);
+            TryAddListenerToButtonObject("SoundButton", ToggleSound);
         }
         
         if(_winScreen) {
@@ -65,6 +58,20 @@ public class MenuManager : MonoBehaviour {
         ResumeGame();
     }
 
+    private void TryAddListenerToButtonObject(string tag, Action listener) {
+        GameObject buttonObject = GameObject.FindWithTag(tag);
+        if(buttonObject == null) {
+            Debug.LogError("Could not find object with tag: " + tag);
+            return;
+        }
+        if(buttonObject.TryGetComponent<Button>(out var button)) {
+            button.onClick.RemoveAllListeners();
+            button.onClick.AddListener(() => {
+                listener.Invoke();
+            });
+        }
+    }
+
     public void LoadPlayScene() {
         SceneManager.LoadScene("Forest");
     }
@@ -78,32 +85,49 @@ public class MenuManager : MonoBehaviour {
     }
 
     public void ShowWinScreen() {
-        _winScreen.SetActive(true);
-        _winSFX.Play();
+        if(_winScreen) {
+            _winScreen.SetActive(true);
+        }
+
+        if(_winSFX) {
+            _winSFX.Play();
+        }
+
         OnGameStopped?.Invoke();
     }
     public void ShowLoseScreen() {
-        _loseScreen.SetActive(true);
-        _loseSFX.Play();
+        if(_loseScreen) {
+            _loseScreen.SetActive(true);
+        }
+
+        if(_loseSFX) {
+            _loseSFX.Play();
+        }
+
         OnGameStopped?.Invoke();
     }
 
     public void ShowPauseMenu() {
-        _pauseScreen.SetActive(true);
+        if(_pauseScreen) {
+            _pauseScreen.SetActive(true);
+        }
         OnGameStopped?.Invoke();
         IsPaused = true;
         Time.timeScale = 0.0f;
     }
 
     public void ResumeGame() {
-        _pauseScreen.SetActive(false);
+        if(_pauseScreen) {
+            _pauseScreen.SetActive(false);
+        }
         IsPaused = false;
         Time.timeScale = 1;
         OnGameResumed?.Invoke();
     }
 
     public bool IsInWinLoseState() {
-        return _winScreen.activeSelf || _loseScreen.activeSelf;
+        return (_winScreen && _winScreen.activeSelf) || 
+               (_loseScreen && _loseScreen.activeSelf);
     }
 
     public void ToggleVibrations() {
