@@ -4,6 +4,12 @@
   <img src="https://github.com/user-attachments/assets/3e3ba352-ae5a-4c83-a656-40a27736126d" width=50% height=50%>
 </p>
 
+## License
+
+This project is licensed for viewing and educational purposes only.  
+You may not copy, modify, or redistribute it.  
+See the [LICENSE](LICENSE) file for full terms.
+
 # Project Description
 A unity project done as a take-home assignment, which was done with no prior professional unity experience, just college and hackathon skills. Had to re-learn a lot of concepts as well as new ones.
 The goal was to make a [Hole.IO](https://play.google.com/store/apps/details?id=io.voodoo.holeio&pli=1) clone done in 1 week. As such the polish for the game is really rough as well as the project structure as I had to work through a limited amount of time to have an MVP.
